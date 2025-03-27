@@ -26,19 +26,29 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'pnpm'
-          cache-dependency-path: pnpm-lock.yaml
+          cache: 'npm'  # Cambiamos a npm para evitar problemas con el caché
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: latest
+          run_install: false  # Evitamos la instalación automática
+
+      - name: Install pnpm
+        run: |
+          curl -fsSL https://get.pnpm.io/install.sh | sh -
+          export PATH="$HOME/.local/share/pnpm:$PATH"
+          pnpm --version
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: |
+          export PATH="$HOME/.local/share/pnpm:$PATH"
+          pnpm install --frozen-lockfile
 
       - name: Build Astro project
-        run: pnpm run build
+        run: |
+          export PATH="$HOME/.local/share/pnpm:$PATH"
+          pnpm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
