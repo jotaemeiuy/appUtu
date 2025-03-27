@@ -1,0 +1,193 @@
+---
+import "../../styles/global.css";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+// Define getStaticPaths to tell Astro which routes to generate
+export async function getStaticPaths() {
+  // Importar todos los cursos dinámicamente
+  const cursoFiles = import.meta.glob('../../data/*.json', { eager: true });
+  const allCourses = [];
+  
+  for (const path in cursoFiles) {
+    const curso = cursoFiles[path];
+    allCourses.push(curso.default || curso);
+  }
+  
+  return allCourses.map(course => ({
+    params: { id: course.id },
+    props: { course }
+  }));
+}
+
+// Get the course data from props
+const { course } = Astro.props;
+
+// Separate materials by type
+const teoricos = course.materiales.filter(material => material.tipo === "teorico");
+const practicos = course.materiales.filter(material => material.tipo === "practico");
+
+// Sort notifications by date (newest first)
+const sortedNotifications = [...course.notificaciones].sort((a, b) => 
+  new Date(b.fecha) - new Date(a.fecha)
+);
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{course.curso} - {course.opcion} | Sistema de Cursos UTU</title>
+  </head>
+  <body class="bg-gray-900 text-gray-200 min-h-screen">
+    <Header />
+
+    <main class="container mx-auto px-4 py-8">
+      <!-- Course Header -->
+      <div class={`${course.color} rounded-lg shadow-lg mb-8 overflow-hidden`}>
+        <div class="p-6">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div>
+              <h1 class="text-3xl font-bold text-white">{course.curso}</h1>
+              <p class="text-xl text-white opacity-90 mt-1">{course.opcion}</p>
+            </div>
+            <div class="mt-4 md:mt-0 bg-black bg-opacity-20 px-4 py-2 rounded-lg">
+              <p class="text-white flex items-center">
+                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 21V5C19 3.89543 18.1046 3 17 3H7C5.89543 3 5 3.89543 5 5V21M19 21H5M19 21H21M5 21H3M9 6.99998H15M9 10.5H15M9 14H12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="font-semibold">Escuela:</span> <span class="ml-1">{course.escuela}</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Info -->
+      <div class="bg-gray-800 rounded-lg shadow-lg mb-8 p-6">
+        <h2 class="text-2xl font-bold mb-4 text-white">Información del Curso</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <p class="text-gray-300 mb-4 flex items-start">
+              <svg class="w-5 h-5 mr-2 flex-shrink-0 mt-1 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 7V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>
+                <span class="font-semibold">Horario:</span> 
+                <span class="inline-block">{course.horario}</span>
+              </span>
+            </p>
+            <p class="text-gray-300 mb-4 flex items-center">
+              <svg class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 21H21M3 18H21M5 18V9M19 18V9M7 9H17M7 9C7 9 7 6.75 9.5 5C11.399 3.608 14 4 14 4M7 9V3H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="font-semibold">Salón:</span> {course.salon}
+            </p>
+          </div>
+          <div>
+            <p class="text-gray-300 mb-4 flex items-center">
+              <svg class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="font-semibold">Ascripta:</span> {course.ascripta}
+            </p>
+            <p class="text-gray-300 mb-4 flex items-center">
+              <svg class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="font-semibold">Opción:</span> {course.opcion}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Materials Section -->
+      <div class="bg-gray-800 rounded-lg shadow-lg mb-8">
+        <div class={`${course.color} text-white py-3 px-6 rounded-t-lg`}>
+          <h2 class="text-2xl font-bold">Materiales del Curso</h2>
+        </div>
+        
+        <div class="p-6">
+          <!-- Theoretical Materials -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-4 text-white flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Materiales Teóricos
+            </h3>
+            
+            {teoricos.length > 0 ? (
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {teoricos.map(material => (
+                  <a 
+                    href={material.link} 
+                    target="_blank" 
+                    class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start"
+                  >
+                    <div class={`${course.color} p-3 rounded-lg mr-4`}>
+                      <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 16V3H10L4 9V16M4 9H10V3M12 11H19V21H5V11H12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-medium text-white">{material.descripcion}</h4>
+                      <p class="text-sm text-gray-400 mt-1">Subido: {material.fechaSubida}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            ) : (
+              <p class="text-gray-400">No hay materiales teóricos disponibles.</p>
+            )}
+          </div>
+          
+          <!-- Practical Materials -->
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-white flex items-center">
+              <svg class="w-5 h-5 mr-2 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.7519 11.1679L11.5547 9.03647M11.5547 9.03647L8.35748 6.90502M11.5547 9.03647V14.3615M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Materiales Prácticos
+            </h3>
+            
+            {practicos.length > 0 ? (
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {practicos.map(material => (
+                  <a 
+                    href={material.link} 
+                    target="_blank" 
+                    class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start"
+                  >
+                    <div class={`${course.color} p-3 rounded-lg mr-4`}>
+                      <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 5H18C19.1046 5 20 5.89543 20 7V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V7C4 5.89543 4.89543 5 6 5H8.5M15.5 5H8.5M15.5 5C15.5 3.89543 14.6046 3 13.5 3H10.5C9.39543 3 8.5 3.89543 8.5 5M10 14L12 16L15 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-medium text-white">{material.descripcion}</h4>
+                      <p class="text-sm text-gray-400 mt-1">Subido: {material.fechaSubida}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            ) : (
+              <p class="text-gray-400">No hay materiales prácticos disponibles.</p>
+            )}
+          </div>
+        </div>
+      </div>
+      
+      <!-- Back Button -->
+      <div class="text-center">
+        <a href="/" class="inline-block bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-6 rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Volver a la lista de cursos
+        </a>
+      </div>
+    </main>
+
+    <Footer />
+  </body>
+</html>

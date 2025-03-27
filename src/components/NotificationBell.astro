@@ -1,0 +1,115 @@
+---
+// Importamos los datos de los cursos
+import curso1ma from "../data/curso1ma.json";
+import curso2mt from "../data/curso2mt.json";
+import curso3sm from "../data/curso3sm.json";
+
+// Combinamos todas las notificaciones en un solo array
+const allCourses = [curso1ma, curso2mt, curso3sm];
+let allNotifications = [];
+
+// Extraemos las notificaciones de cada curso y añadimos el nombre del curso
+allCourses.forEach(course => {
+  const courseNotifications = course.notificaciones.map(notification => ({
+    ...notification,
+    curso: course.curso,
+    cursoColor: course.color
+  }));
+  allNotifications = [...allNotifications, ...courseNotifications];
+});
+
+// Ordenamos las notificaciones por fecha (más recientes primero)
+allNotifications.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
+// Filtramos para mostrar solo las notificaciones de los últimos 3 días
+const currentDate = new Date();
+const threeDaysAgo = new Date();
+threeDaysAgo.setDate(currentDate.getDate() - 3);
+
+const recentNotifications = allNotifications.filter(notification => {
+  const notificationDate = new Date(notification.fecha);
+  return notificationDate >= threeDaysAgo;
+});
+
+// Para propósitos de demostración, si no hay notificaciones recientes, mostrar las 3 más recientes
+const notificationsToShow = recentNotifications.length > 0 
+  ? recentNotifications 
+  : allNotifications.slice(0, 3);
+
+const notificationCount = notificationsToShow.length;
+---
+
+<div class="relative inline-block">
+  <button id="notification-button" class="relative p-1 text-gray-400 hover:text-white focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+    </svg>
+    {notificationCount > 0 && (
+      <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-red-500 rounded-full">{notificationCount}</span>
+    )}
+  </button>
+  
+  <div id="notification-dropdown" class="hidden absolute right-0 mt-2 w-80 bg-gray-800 rounded-md shadow-lg overflow-hidden z-50">
+    <div class="py-2">
+      <div class="px-4 py-2 border-b border-gray-700 flex justify-between items-center">
+        <h3 class="text-sm font-medium text-white">Notificaciones</h3>
+        <span class="text-xs text-gray-400">Últimos 3 días</span>
+      </div>
+      
+      {notificationsToShow.length > 0 ? (
+        <div class="max-h-96 overflow-y-auto">
+          {notificationsToShow.map((notification) => (
+            <div class="px-4 py-3 hover:bg-gray-700 border-l-4 border-transparent hover:border-l-4 transition-colors duration-200" style={`border-left-color: var(--${notification.cursoColor.replace('bg-', '')});`}>
+              <div class="flex items-center mb-1">
+                <span class={`text-xs font-semibold px-2 py-1 rounded-full ${notification.cursoColor} text-white`}>
+                  {notification.curso}
+                </span>
+                <span class="text-xs text-gray-400 ml-2">{notification.fecha}</span>
+              </div>
+              <p class="text-sm text-white">{notification.mensaje}</p>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="px-4 py-6 text-center text-gray-400">
+          <p>No hay notificaciones recientes</p>
+        </div>
+      )}
+      
+      <div class="px-4 py-2 border-t border-gray-700">
+        <a href="/notificaciones" class="block text-center text-xs text-blue-400 hover:text-blue-300">Ver todas las notificaciones</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Toggle dropdown when clicking the notification button
+  const button = document.getElementById('notification-button');
+  const dropdown = document.getElementById('notification-dropdown');
+  
+  if (button && dropdown) {
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('hidden');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (dropdown && !dropdown.contains(e.target) && e.target !== button) {
+        dropdown.classList.add('hidden');
+      }
+    });
+  }
+</script>
+
+<style>
+  /* Variables para los colores de Tailwind */
+  :root {
+    --cyan-600: rgb(8, 145, 178);
+    --cyan-400: rgb(34, 211, 238);
+    --purple-600: rgb(147, 51, 234);
+    --green-600: rgb(22, 163, 74);
+    --orange-600: rgb(234, 88, 12);
+  }
+</style>

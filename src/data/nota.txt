@@ -1,0 +1,36 @@
+Para que sea importante un escrito hacer en notificaciones:
+"notificaciones": [
+      {
+        "id": 5,
+        "mensaje": "Se fija prueba para el 25/3",
+        "prueba": true,
+        "fecha": "2025-04-17"
+      }
+  
+    ]
+
+
+// Notificación permanente (no necesita fecha de expiración)
+// Forma 1 (implícita)
+{
+  "id": 1,
+  "mensaje": "Bienvenidos al curso",
+  "fecha": "2025-03-25"
+}
+
+// Forma 2 (explícita)
+{
+  "id": 1,
+  "mensaje": "Bienvenidos al curso",
+  "fecha": "2025-03-25",
+  "tipo": "permanente"
+}
+// Notificación temporal con fecha de expiración
+{
+  "id": 2,
+  "mensaje": "Cambio de horario para la próxima semana",
+  "fecha": "2025-03-25",
+  "tipo": "temporal",
+  "fechaExpiracion": "2025-04-01"
+}
+

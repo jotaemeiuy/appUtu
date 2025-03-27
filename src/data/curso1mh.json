@@ -1,0 +1,22 @@
+{
+    "id": "1mhArroyo",
+    "curso": "1MH",
+    "opcion": "Turismo, Recreación y Ocio",
+    "escuela":"Arroyo Seco",
+    "horario": "Lunes 7:00-8:20 Jueves 8:20-9:40",
+    "salon": "14",
+    "ascripta": "Lucía Cabral",
+    "color": "bg-pink-300",
+    "materiales": [
+      
+    ],
+    "notificaciones": [
+      {
+        "id": 1,
+        "mensaje": "Bienvenidos al curso",
+        "fecha": "2025-03-27",
+        "tipo": "temporal",
+        "fechaExpiracion": "2025-03-28"
+      }
+    ]
+  }
