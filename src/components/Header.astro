@@ -2,10 +2,6 @@
 // Get the current path to highlight the active link
 const currentPath = Astro.url.pathname;
 
-// Determine if we're in production
-const isProduction = import.meta.env.VITE_IS_PRODUCTION === "true";
-const basePath = isProduction ? "/appUtu" : "/";
-
 // Importar todos los cursos dinámicamente
 const importCursos = async () => {
   const cursoFiles = import.meta.glob("../data/*.json");
@@ -76,7 +72,7 @@ recentNotifications = recentNotifications.slice(0, 3);
       <!-- Logo and Site Title -->
       <div class="flex items-center mb-4 md:mb-0">
         <a
-          href="https://jotaemeiuy.github.io/appUtu/"
+          href={`${currentPath}`}
           class="text-white font-bold text-xl flex items-center"
         >
           <svg

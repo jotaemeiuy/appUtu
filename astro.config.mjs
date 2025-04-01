@@ -5,7 +5,7 @@ import vercel from "@astrojs/vercel";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jotaemeiuy.github.io',
-  base: 'appUtu',
+  base: '/appUtu',
   output: "static",
   adapter: vercel(),
   vite: {
