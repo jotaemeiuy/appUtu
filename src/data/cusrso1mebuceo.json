@@ -1,0 +1,39 @@
+{
+    "id": "1mebuceo",
+    "curso": "1ME",
+    "escuela":"Informática Buceo",
+    "opcion": "Tecnologías de la información",
+    "horario": "Jueves 16:30-18:00 Viernes 18:00-19:30",
+    "salon": "Salón 2",
+    "ascripta": "S/C",
+    "color": "bg-blue-600",
+    "materiales": [
+      {
+        "id": 1,
+        "tipo": "teorico",
+        "descripcion": "Introducción a los conjuntos numéricos",
+        "fechaSubida": "2025-03-25",
+        "link": ""
+      },
+      {
+        "id": 2,
+        "tipo": "practico",
+        "descripcion": "Ejercicios de operaciones con conjuntos naturales",
+        "fechaSubida": "2023-03-25",
+        "link": ""
+      }
+      
+    ],
+    "notificaciones": [
+      {
+        "id": 1,
+        "mensaje": "Bienvenidos al curso,se ha subido material teórico",
+        "fecha": "2025-03-25"
+      },
+      {
+        "id": 2,
+        "mensaje": "Se ha subido nuevo material práctico",
+        "fecha": "2023-03-25"
+      }
+    ]
+  }

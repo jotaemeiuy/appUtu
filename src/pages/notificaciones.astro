@@ -1,0 +1,284 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+// Importar todos los cursos dinámicamente
+const importCursos = async () => {
+  const cursoFiles = import.meta.glob('../data/*.json');
+  const cursos = [];
+  
+  for (const path in cursoFiles) {
+    const curso = await cursoFiles[path]();
+    cursos.push(curso.default || curso);
+  }
+  
+  return cursos;
+};
+
+// Cargar todos los cursos
+const allCourses = await importCursos();
+
+// Extract all notifications with course information
+let allNotifications: any[] = [];
+const today = new Date();
+
+allCourses.forEach(course => {
+  course.notificaciones.forEach(notification => {
+    // Agregar propiedades por defecto si no existen
+    const processedNotification = {
+      ...notification,
+      tipo: 'temporal', // Todas las notificaciones son temporales
+      fechaExpiracion: new Date(notification.fecha).setDate(new Date(notification.fecha).getDate() + 2), // Fecha de expiración 2 días después
+      curso: course.curso,
+      cursoId: course.id,
+      opcion: course.opcion,
+      color: course.color
+    };
+
+    // No filtramos por expiración aquí, mostramos todas
+    allNotifications.push(processedNotification);
+  });
+});
+
+// Sort notifications by date (newest first)
+allNotifications.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
+// Group notifications by month
+const groupedNotifications = {};
+allNotifications.forEach(notification => {
+  const date = new Date(notification.fecha);
+  const monthYear = `${date.getMonth() + 1}-${date.getFullYear()}`;
+  
+  if (!groupedNotifications[monthYear]) {
+    groupedNotifications[monthYear] = [];
+  }
+  
+  groupedNotifications[monthYear].push(notification);
+});
+
+// Format month names
+function getMonthName(monthNumber) {
+  const months = [
+    "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+  ];
+  return months[monthNumber - 1];
+}
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notificaciones | Sistema de Cursos UTU</title>
+  </head>
+  <body class="bg-gray-900 text-gray-200 min-h-screen">
+    <Header />
+
+    <main class="container mx-auto px-4 py-8">
+      <h1 class="text-3xl sm:text-4xl font-bold mb-8 text-white">Notificaciones</h1>
+      
+      <!-- Search Bar -->
+      <div class="bg-gray-800 rounded-lg p-4 mb-8">
+        <div class="relative">
+          <input 
+            type="text" 
+            id="search-input"
+            placeholder="Buscar notificaciones..." 
+            class="bg-gray-700 text-white px-4 py-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500 pl-10"
+          />
+          <svg class="w-5 h-5 text-gray-400 absolute left-3 top-3.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Timeline of Notifications -->
+      <div class="relative">
+        <!-- Vertical Timeline Line -->
+        <div class="absolute left-0 sm:left-1/2 transform sm:translate-x-[-50%] w-0.5 h-full bg-gray-700"></div>
+        
+        {Object.entries(groupedNotifications).map(([monthYear, notifications], monthIndex) => {
+          const [month, year] = monthYear.split('-').map(Number);
+          const monthName = getMonthName(month);
+          
+          return (
+            <div class="mb-12 notification-month" data-month-index={monthIndex}>
+              <!-- Month Header -->
+              <div class="relative flex items-center justify-center mb-8">
+                <div class="absolute w-full h-0.5 bg-gray-700"></div>
+                <h2 class="relative bg-gray-900 px-4 text-xl font-bold text-white z-10">
+                  {monthName} {year}
+                </h2>
+              </div>
+              
+              <!-- Notifications for this month -->
+              <div class="space-y-6">
+                {notifications.map((notification, notifIndex) => {
+                  const date = new Date(notification.fecha);
+                  const formattedDate = date.toLocaleDateString('es-ES', {
+                    day: 'numeric',
+                    month: 'short'
+                  });
+                  
+                  // Determine if this notification should be initially visible
+                  // Show only notifications less than 2 days old
+                  const todayUtc = new Date();
+                  todayUtc.setHours(0,0,0,0); // Reset time to midnight
+                  const notificationUtc = new Date(date);
+                  notificationUtc.setHours(0,0,0,0); // Reset time to midnight
+                  const timeDiff = todayUtc - notificationUtc;
+                  const daysSincePublication = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                  const isInitiallyVisible = daysSincePublication < 2;
+
+                  return (
+                    <div 
+                      class={`notification-item relative pl-8 sm:pl-0 ${isInitiallyVisible ? '' : 'hidden-notification hidden'}`} 
+                      data-content={notification.mensaje.toLowerCase()}
+                    >
+                      <div class="flex flex-col sm:flex-row items-start">
+                        <!-- Date for mobile (left side) -->
+                        <div class="sm:hidden absolute left-0 top-0">
+                          <div class="flex items-center">
+                            <div class="bg-gray-700 rounded-full w-6 h-6 flex items-center justify-center border-2 border-blue-500 z-10">
+                              <div class="bg-blue-500 rounded-full w-2 h-2"></div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <!-- Date for desktop (center) -->
+                        <div class="hidden sm:block w-1/2 pr-8 text-right">
+                          <div class="inline-block bg-gray-800 px-3 py-1 rounded-lg text-sm font-medium">
+                            {formattedDate}
+                          </div>
+                          <div class="absolute right-0 top-3 transform translate-x-[50%] bg-gray-700 rounded-full w-6 h-6 flex items-center justify-center border-2 border-blue-500 z-10">
+                            <div class="bg-blue-500 rounded-full w-2 h-2"></div>
+                          </div>
+                        </div>
+                        
+                        <!-- Notification Content -->
+                        <a href={`/curso/${notification.cursoId}`} class="block sm:w-1/2 sm:pl-8">
+                          <div class="bg-gray-800 rounded-lg p-4 shadow-lg hover:bg-gray-700 transition-colors">
+                            <div class="flex items-center mb-3">
+                              <span class={`${notification.color} text-xs font-semibold px-2 py-1 rounded-full text-white mr-2`}>
+                                {notification.curso}
+                              </span>
+                              <span class="sm:hidden text-xs text-gray-400">{formattedDate}</span>
+                            </div>
+                            <p class="text-white">{notification.mensaje}</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+        
+        <!-- Show More Button -->
+        {allNotifications.length > 3 && (
+          <div class="text-center my-8" id="show-more-container">
+            <button 
+              id="show-more-btn"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-md transition-colors shadow-lg flex items-center mx-auto"
+            >
+              <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Ver todas las notificaciones
+            </button>
+          </div>
+        )}
+        
+        <!-- No Notifications Message -->
+        {Object.keys(groupedNotifications).length === 0 && (
+          <div class="text-center py-12 bg-gray-800 rounded-lg">
+            <svg class="w-16 h-16 mx-auto text-gray-600 mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 17H20L18.5951 15.5951C18.2141 15.2141 18 14.6973 18 14.1585V11C18 8.38757 16.3304 6.16509 14 5.34142V5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5V5.34142C7.66962 6.16509 6 8.38757 6 11V14.1585C6 14.6973 5.78595 15.2141 5.40493 15.5951L4 17H9M15 17V18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18V17M15 17H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="text-xl font-semibold text-gray-400">No hay notificaciones</h3>
+            <p class="text-gray-500 mt-2">Cuando haya nuevas notificaciones, aparecerán aquí</p>
+          </div>
+        )}
+        
+        <!-- No Results Message (for search) -->
+        <div id="no-results" class="hidden text-center py-12 bg-gray-800 rounded-lg">
+          <svg class="w-16 h-16 mx-auto text-gray-600 mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 21H14M10 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H17C18.1046 3 19 3.89543 19 5V19C19 20.1046 18.1046 21 17 21H14M10 21V17M14 21V17M9 7H15M9 11H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3 class="text-xl font-semibold text-gray-400">No se encontraron notificaciones</h3>
+          <p class="text-gray-500 mt-2">Intenta con otra búsqueda</p>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+    
+    <script>
+      // Search functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('search-input');
+        const notificationItems = document.querySelectorAll('.notification-item');
+        const noResults = document.getElementById('no-results');
+        const showMoreBtn = document.getElementById('show-more-btn');
+        const showMoreContainer = document.getElementById('show-more-container');
+        
+        // Show more button functionality
+        if (showMoreBtn) {
+          showMoreBtn.addEventListener('click', function() {
+            // Show all hidden notifications
+            document.querySelectorAll('.hidden-notification').forEach(item => {
+              item.classList.remove('hidden');
+            });
+            
+            // Hide the "Show More" button
+            showMoreContainer.style.display = 'none';
+          });
+        }
+        
+        // Search functionality
+        searchInput.addEventListener('input', function() {
+          const searchTerm = this.value.toLowerCase();
+          let visibleCount = 0;
+          
+          // Show all notifications when searching
+          document.querySelectorAll('.hidden-notification').forEach(item => {
+            item.classList.remove('hidden');
+          });
+          
+          // Hide the "Show More" button when searching
+          if (showMoreContainer) {
+            showMoreContainer.style.display = 'none';
+          }
+          
+          notificationItems.forEach(item => {
+            const content = item.getAttribute('data-content');
+            const isVisible = content.includes(searchTerm);
+            
+            item.style.display = isVisible ? 'block' : 'none';
+            
+            if (isVisible) {
+              visibleCount++;
+            }
+          });
+          
+          // Show/hide no results message
+          noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+          
+          // Show "Show More" button again if search is cleared and there are hidden notifications
+          if (searchTerm === '' && showMoreContainer) {
+            const hiddenItems = document.querySelectorAll('.hidden-notification');
+            if (hiddenItems.length > 0) {
+              hiddenItems.forEach(item => {
+                item.classList.add('hidden');
+              });
+              showMoreContainer.style.display = 'block';
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

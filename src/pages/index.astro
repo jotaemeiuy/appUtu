@@ -1,0 +1,60 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import CourseCard from "../components/CourseCard.astro";
+
+// Importar todos los cursos dinámicamente
+const importCursos = async () => {
+  const cursoFiles = import.meta.glob("../data/*.json", { eager: true });
+  const cursos = [];
+
+  for (const path in cursoFiles) {
+    const curso = cursoFiles[path];
+    cursos.push(curso.default || curso);
+  }
+
+  return cursos;
+};
+
+// Cargar todos los cursos
+const allCourses = await importCursos();
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Materiales de Cursos UTU - Prof. Javier Martín</title>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <Header />
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+      <section class="mb-12">
+        <h1 class="text-3xl font-bold mb-6 text-center">Cursos</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {
+            allCourses.map((course) => (
+              <CourseCard
+                id={course.id}
+                curso={course.curso}
+                opcion={course.opcion}
+                escuela={course.escuela}
+                horario={course.horario}
+                salon={course.salon}
+                ascripta={course.ascripta}
+                color={course.color}
+              />
+            ))
+          }
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+    "id": "1meArroyo",
+    "curso": "1ME",
+    "opcion": "Sistemas Mecánicos Automatizados",
+    "escuela":"Arroyo Seco",
+    "horario": "Lunes 8:20-9:40 Viernes 10:35-11:55",
+    "salon": "8",
+    "ascripta": "Cecilia Peláez",
+    "color": "bg-green-800",
+    "materiales": [
+      
+    ],
+    "notificaciones": [
+     
+    ]
+  }

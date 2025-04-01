@@ -1,0 +1,42 @@
+{
+    "id": "1maArroyo",
+    "curso": "1MA",
+    "escuela":"Arroyo Seco",
+    "opcion": "Gestión y Administración",
+    "horario": "Jueves 7:00-8:20 Viernes:8:20-9:40",
+    "salon": "11",
+    "ascripta": "Laura Gutiérrez",
+    "color": "bg-cyan-600",
+    "materiales": [
+      {
+        "id": 1,
+        "tipo": "teorico",
+        "descripcion": "Introducción a los conjuntos numéricos",
+        "fechaSubida": "2025-03-20",
+        "link": ""
+      },
+      {
+        "id": 2,
+        "tipo": "practico",
+        "descripcion": "Ejercicios de operaciones con conjuntos naturales",
+        "fechaSubida": "2023-03-20",
+        "link": ""
+      }
+      
+    ],
+    "notificaciones": [
+      {
+        "id": 1,
+        "mensaje": "Bienvenidos al curso",
+        "fecha": "2025-04-01"
+
+      },
+
+      {
+        "id": 2,
+        "mensaje": "Se ha subido nuevo material práctico",
+        "fecha": "2025-04-03"
+       
+      }
+     ]
+  }

@@ -1,0 +1,286 @@
+---
+// Get the current path to highlight the active link
+const currentPath = Astro.url.pathname;
+
+// Importar todos los cursos dinámicamente
+const importCursos = async () => {
+  const cursoFiles = import.meta.glob("../data/*.json");
+  const cursos = [];
+
+  for (const path in cursoFiles) {
+    const curso = await cursoFiles[path]();
+    cursos.push(curso.default || curso);
+  }
+
+  return cursos;
+};
+
+// Cargar todos los cursos
+const allCourses = await importCursos();
+
+// Count total notifications
+const today = new Date();
+const twoDaysAgo = new Date();
+twoDaysAgo.setDate(today.getDate() - 2);
+
+const totalNotifications = allCourses.reduce((total, course) => {
+  if (course.notificaciones) {
+    const recentNotifications = course.notificaciones.filter((notification) => {
+      const notificationDate = new Date(notification.fecha);
+      return notificationDate >= twoDaysAgo;
+    });
+    return total + recentNotifications.length;
+  }
+  return total;
+}, 0);
+
+// Get the 3 most recent notifications
+let recentNotifications = [];
+allCourses.forEach((course) => {
+  if (course.notificaciones) {
+    const courseNotifications = course.notificaciones
+      .filter((notification) => {
+        const notificationDate = new Date(notification.fecha);
+        return notificationDate >= twoDaysAgo;
+      })
+      .map((notification) => {
+        // Calcular fecha de expiración (2 días después)
+        const expirationDate = new Date(notification.fecha);
+        expirationDate.setDate(expirationDate.getDate() + 2);
+
+        return {
+          ...notification,
+          curso: course.curso,
+          cursoId: course.id,
+          color: course.color,
+          tipo: "temporal",
+          fechaExpiracion: expirationDate.toISOString().split("T")[0],
+        };
+      });
+    recentNotifications = [...recentNotifications, ...courseNotifications];
+  }
+});
+
+// Sort by date (newest first) and take only the first 3
+recentNotifications.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+recentNotifications = recentNotifications.slice(0, 3);
+---
+
+<header class="bg-gray-800 shadow-lg">
+  <div class="container mx-auto px-4 py-3">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <!-- Logo and Site Title -->
+      <div class="flex items-center mb-4 md:mb-0">
+        <a href="/" class="text-white font-bold text-xl flex items-center">
+          <svg
+            class="w-8 h-8 mr-2 text-blue-400"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg>
+          <span>Prof: Javier Martín Materiales para cursos UTU</span>
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="flex space-x-1 md:space-x-4">
+          <li>
+            <a
+              href="/"
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "/" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
+            >
+              <svg
+                class="w-5 h-5 mr-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.5523 5.44772 21 6 21H9M19 10L21 12M19 10V20C19 20.5523 18.5523 21 18 21H15M9 21C9.55228 21 10 20.5523 10 20V16C10 15.4477 10.4477 15 11 15H13C13.5523 15 14 15.4477 14 16V20C14 20.5523 14.4477 21 15 21M9 21H15"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a
+              href="/materiales"
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "/materiales" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
+            >
+              <svg
+                class="w-5 h-5 mr-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 16V3H10L4 9V16M4 9H10V3M12 11H19V21H5V11H12Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+              Materiales
+            </a>
+          </li>
+          <li class="relative">
+            <button
+              id="notifications-btn"
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "/notificaciones" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"} relative`}
+            >
+              <svg
+                class="w-5 h-5 mr-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 17H20L18.5951 15.5951C18.2141 15.2141 18 14.6973 18 14.1585V11C18 8.38757 16.3304 6.16509 14 5.34142V5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5V5.34142C7.66962 6.16509 6 8.38757 6 11V14.1585C6 14.6973 5.78595 15.2141 5.40493 15.5951L4 17H9M15 17V18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18V17M15 17H9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+              Notificaciones
+              {
+                totalNotifications > 0 && (
+                  <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                    {totalNotifications}
+                  </span>
+                )
+              }
+            </button>
+
+            <!-- Notifications Dropdown -->
+            <div
+              id="notifications-dropdown"
+              class="hidden absolute right-0 mt-2 w-80 bg-gray-800 bg-opacity-95 backdrop-blur-sm rounded-lg shadow-lg z-50 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <div class="p-3 border-b border-gray-700">
+                <h3 class="text-white font-medium">Notificaciones recientes</h3>
+              </div>
+
+              <div class="max-h-96 overflow-y-auto">
+                {
+                  recentNotifications.length > 0 ? (
+                    <div>
+                      {recentNotifications.map((notification) => {
+                        const date = new Date(notification.fecha);
+                        const formattedDate = date.toLocaleDateString("es-ES", {
+                          day: "numeric",
+                          month: "short",
+                        });
+
+                        return (
+                          <a
+                            href={`/curso/${notification.cursoId}`}
+                            class="block p-3 hover:bg-gray-700 border-b border-gray-700"
+                          >
+                            <div class="flex items-center mb-1">
+                              <span
+                                class={`${notification.color} text-xs font-semibold px-2 py-0.5 rounded-full text-white mr-2`}
+                              >
+                                {notification.curso}
+                              </span>
+                              <span class="text-xs text-gray-400">
+                                {formattedDate}
+                              </span>
+                            </div>
+                            <p class="text-white text-sm line-clamp-2">
+                              {notification.mensaje}
+                            </p>
+                          </a>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <div class="p-4 text-center text-gray-400">
+                      <p>No hay notificaciones</p>
+                    </div>
+                  )
+                }
+              </div>
+
+              <a
+                href="/notificaciones"
+                class="block p-3 text-center text-blue-400 hover:text-blue-300 bg-gray-900 font-medium"
+              >
+                Ver todas las notificaciones
+              </a>
+            </div>
+          </li>
+          <li>
+            <a
+              href="mailto:prof.javier.martin@gmail.com"
+              class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white flex items-center"
+            >
+              <svg
+                class="w-5 h-5 mr-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Notifications dropdown functionality
+  document.addEventListener("DOMContentLoaded", function () {
+    const notificationsBtn = document.getElementById("notifications-btn");
+    const notificationsDropdown = document.getElementById(
+      "notifications-dropdown",
+    );
+
+    if (notificationsBtn && notificationsDropdown) {
+      // Toggle dropdown when clicking the button
+      notificationsBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        notificationsDropdown.classList.toggle("hidden");
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener("click", function (e) {
+        if (
+          !notificationsBtn.contains(e.target) &&
+          !notificationsDropdown.contains(e.target)
+        ) {
+          notificationsDropdown.classList.add("hidden");
+        }
+      });
+    }
+  });
+</script>
+
+<style>
+  /* Add line-clamp utility for truncating notification text */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

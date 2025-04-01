@@ -1,0 +1,16 @@
+{
+    "id": "1mfbuceo",
+    "curso": "1MF",
+    "escuela":"Informática Buceo",
+    "opcion": "Tecnologías de la información",
+    "horario": "Jueves 14:05-15:35 Viernes 14:50-16:20",
+    "salon": "Salón 3",
+    "ascripta": "S/C",
+    "color": "bg-blue-600",
+    "materiales": [
+      
+    ],
+    "notificaciones": [
+     
+    ]
+  }

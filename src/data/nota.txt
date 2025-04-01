@@ -1,0 +1,9 @@
+Para que sea importante un escrito hacer en notificaciones:
+"notificaciones": [
+      {
+        "id": 5,
+        "mensaje": "Se fija prueba para el 25/3",
+        "prueba": true,
+        "fecha": "2025-04-17"
+      }
+    ]

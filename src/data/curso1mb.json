@@ -1,0 +1,16 @@
+{
+    "id": "1mbArroyo",
+    "curso": "1MB",
+    "escuela":"Arroyo Seco",
+    "opcion": "Gestión y Administración",
+    "horario": "Lunes 9:40-11:15 Jueves 9:40-11:15",
+    "salon": "13",
+    "ascripta": "Cristian Olivera",
+    "color": "bg-cyan-600",
+    "materiales": [
+      
+    ],
+    "notificaciones": [
+      
+    ]
+  }

@@ -1,0 +1,106 @@
+@import "tailwindcss";
+/* Add custom color classes that will always be included */
+@layer utilities {
+    .bg-purple-600 { background-color: rgb(147, 51, 234); }
+    .bg-blue-600 { background-color: rgb(37, 99, 235); }
+    .bg-green-600 { background-color: rgb(22, 163, 74); }
+    .bg-red-600 { background-color: rgb(220, 38, 38); }
+    .bg-yellow-600 { background-color: rgb(202, 138, 4); }
+    .bg-indigo-600 { background-color: rgb(79, 70, 229); }
+    .bg-pink-600 { background-color: rgb(219, 39, 119); }
+    .bg-teal-600 { background-color: rgb(13, 148, 136); }
+    .bg-orange-600 { background-color: rgb(234, 88, 12); }
+    .bg-cyan-600 { background-color: rgb(8, 145, 178); }
+  }
+
+  /* Mobile responsive styles */
+@media (max-width: 425px) {
+  /* Header adjustments */
+  header .container {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  /* Make site title smaller on mobile */
+  header a.text-white.font-bold.text-xl {
+    font-size: 1rem !important;
+  }
+  
+  /* Adjust navigation icons and text */
+  header nav ul {
+    gap: 0.5rem !important;
+  }
+  
+  header nav a, header nav button {
+    padding: 0.5rem 0.25rem !important;
+    font-size: 0.75rem !important;
+  }
+  
+  header nav svg {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    margin-right: 0.25rem !important;
+  }
+  
+  /* Notification dropdown positioning */
+  #notifications-dropdown {
+    width: 280px !important;
+    right: -70px !important;
+  }
+  
+  /* Notification timeline adjustments */
+  .notification-item {
+    padding-left: 1.5rem !important;
+  }
+  
+  .notification-item .bg-gray-800 {
+    padding: 0.75rem !important;
+  }
+}
+
+/* Extra small devices (375px) */
+@media (max-width: 375px) {
+  header nav a, header nav button {
+    font-size: 0.7rem !important;
+  }
+  
+  header nav svg {
+    width: 1.1rem !important;
+    height: 1.1rem !important;
+    margin-right: 0.2rem !important;
+  }
+  
+  /* Smaller notification dots */
+  .notification-item .rounded-full.w-6.h-6 {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+}
+
+/* Very small devices (320px) */
+@media (max-width: 320px) {
+  header a.text-white.font-bold.text-xl {
+    font-size: 0.85rem !important;
+  }
+  
+  header nav a, header nav button {
+    padding: 0.4rem 0.2rem !important;
+    font-size: 0.65rem !important;
+  }
+  
+  header nav svg {
+    width: 1rem !important;
+    height: 1rem !important;
+    margin-right: 0.1rem !important;
+  }
+  
+  /* Hide text labels on smallest screens, show only icons */
+  header nav a span, header nav button span {
+    display: none !important;
+  }
+  
+  /* Make notification timeline more compact */
+  .notification-item .bg-gray-800 {
+    padding: 0.5rem !important;
+  }
+}
