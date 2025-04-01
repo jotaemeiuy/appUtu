@@ -9,13 +9,13 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   devToolbar: {
-    enabled: false
+    enabled: false,
   },
   build: {
     inlineStylesheets: "always",
   },
   i18n: {
     defaultLocale: "es",
-    locales: ["es"]
-  }
+    locales: ["es"],
+  },
 });
