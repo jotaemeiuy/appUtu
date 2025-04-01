@@ -14,13 +14,9 @@ export interface Props {
 // Recibir las props
 const { id, curso, opcion, escuela, horario, salon, ascripta, color } =
   Astro.props;
-
-// Determine if we're in production
-const isProduction = import.meta.env.VITE_IS_PRODUCTION === "true";
-const basePath = isProduction ? "/appUtu" : "";
 ---
 
-<a href={`${basePath}/curso/${id}`} class="block h-full">
+<a href="https://jotaemeiuy.github.io/appUtu/curso/${id}" class="block h-full">
   <div
     class="bg-gray-800 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 h-full cursor-pointer"
   >
