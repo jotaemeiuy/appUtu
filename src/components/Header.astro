@@ -1,6 +1,6 @@
 ---
 // Get the current path to highlight the active link
-const currentPath = Astro.url.pathname;
+const currentPath = Astro.url.pathname.replace("/appUtu", "");
 
 // Importar todos los cursos dinámicamente
 const importCursos = async () => {
@@ -71,7 +71,10 @@ recentNotifications = recentNotifications.slice(0, 3);
     <div class="flex flex-col md:flex-row justify-between items-center">
       <!-- Logo and Site Title -->
       <div class="flex items-center mb-4 md:mb-0">
-        <a href="/" class="text-white font-bold text-xl flex items-center">
+        <a
+          href="/appUtu/"
+          class="text-white font-bold text-xl flex items-center"
+        >
           <svg
             class="w-8 h-8 mr-2 text-blue-400"
             viewBox="0 0 24 24"
@@ -94,7 +97,7 @@ recentNotifications = recentNotifications.slice(0, 3);
         <ul class="flex space-x-1 md:space-x-4">
           <li>
             <a
-              href="/"
+              href="/appUtu/"
               class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "/" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
             >
               <svg
@@ -115,7 +118,7 @@ recentNotifications = recentNotifications.slice(0, 3);
           </li>
           <li>
             <a
-              href="/materiales"
+              href="/appUtu/materiales"
               class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "/materiales" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
             >
               <svg
@@ -184,7 +187,7 @@ recentNotifications = recentNotifications.slice(0, 3);
 
                         return (
                           <a
-                            href={`/curso/${notification.cursoId}`}
+                            href={`/appUtu/curso/${notification.cursoId}`}
                             class="block p-3 hover:bg-gray-700 border-b border-gray-700"
                           >
                             <div class="flex items-center mb-1">
@@ -213,7 +216,7 @@ recentNotifications = recentNotifications.slice(0, 3);
               </div>
 
               <a
-                href="/notificaciones"
+                href="/appUtu/notificaciones"
                 class="block p-3 text-center text-blue-400 hover:text-blue-300 bg-gray-900 font-medium"
               >
                 Ver todas las notificaciones
