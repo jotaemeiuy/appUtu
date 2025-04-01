@@ -1,7 +1,4 @@
 ---
-// Get the current path to highlight the active link
-const currentPath = Astro.url.pathname;
-
 // Importar todos los cursos dinámicamente
 const importCursos = async () => {
   const cursoFiles = import.meta.glob("../data/*.json");
@@ -72,7 +69,7 @@ recentNotifications = recentNotifications.slice(0, 3);
       <!-- Logo and Site Title -->
       <div class="flex items-center mb-4 md:mb-0">
         <a
-          href={`${currentPath}`}
+          href={`${import.meta.env.BASE_URL}`}
           class="text-white font-bold text-xl flex items-center"
         >
           <svg
@@ -97,8 +94,8 @@ recentNotifications = recentNotifications.slice(0, 3);
         <ul class="flex space-x-1 md:space-x-4">
           <li>
             <a
-              href="https://jotaemeiuy.github.io/appUtu/"
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "https://jotaemeiuy.github.io/appUtu/" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
+              href={`${import.meta.env.BASE_URL}`}
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${import.meta.env.BASE_URL ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
             >
               <svg
                 class="w-5 h-5 mr-1"
@@ -118,8 +115,8 @@ recentNotifications = recentNotifications.slice(0, 3);
           </li>
           <li>
             <a
-              href="https://jotaemeiuy.github.io/appUtu/materiales"
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "https://jotaemeiuy.github.io/appUtu/materiales" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
+              href={`${import.meta.env.BASE_URL}/materiales`}
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${import.meta.env.BASE_URL + "/materiales" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
             >
               <svg
                 class="w-5 h-5 mr-1"
@@ -140,7 +137,7 @@ recentNotifications = recentNotifications.slice(0, 3);
           <li class="relative">
             <button
               id="notifications-btn"
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "https://jotaemeiuy.github.io/appUtu/notificaciones" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"} relative`}
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${import.meta.env.BASE_URL + "/notificaciones" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"} relative`}
             >
               <svg
                 class="w-5 h-5 mr-1"
@@ -168,7 +165,7 @@ recentNotifications = recentNotifications.slice(0, 3);
             <!-- Notifications Dropdown -->
             <div
               id="notifications-dropdown"
-              class="hidden absolute right-0 mt-2 w-80 bg-gray-800 bg-opacity-95 backdrop-blur-sm rounded-lg shadow-lg z-50 overflow-hidden transition-all duration-300 ease-in-out"
+              class={`hidden absolute right-0 mt-2 w-80 bg-gray-800 bg-opacity-95 backdrop-blur-sm rounded-lg shadow-lg z-50 overflow-hidden transition-all duration-300 ease-in-out ${import.meta.env.BASE_URL + "/notificaciones" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
             >
               <div class="p-3 border-b border-gray-700">
                 <h3 class="text-white font-medium">Notificaciones recientes</h3>
@@ -187,7 +184,7 @@ recentNotifications = recentNotifications.slice(0, 3);
 
                         return (
                           <a
-                            href={`https://jotaemeiuy.github.io/appUtu/curso/${notification.cursoId}`}
+                            href={`${import.meta.env.BASE_URL}/curso/${notification.cursoId}`}
                             class="block p-3 hover:bg-gray-700 border-b border-gray-700"
                           >
                             <div class="flex items-center mb-1">
@@ -216,7 +213,7 @@ recentNotifications = recentNotifications.slice(0, 3);
               </div>
 
               <a
-                href="https://jotaemeiuy.github.io/appUtu/notificaciones"
+                href={`${import.meta.env.BASE_URL}/notificaciones`}
                 class="block p-3 text-center text-blue-400 hover:text-blue-300 bg-gray-900 font-medium"
               >
                 Ver todas las notificaciones

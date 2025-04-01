@@ -11,11 +11,14 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  build: {
+    env: {
+      BASE_URL: process.env.NODE_ENV === 'production' ? '/appUtu' : '',
+    },
+    inlineStylesheets: "always",
+  },
   devToolbar: {
     enabled: false,
-  },
-  build: {
-    inlineStylesheets: "always",
   },
   i18n: {
     defaultLocale: "es",
