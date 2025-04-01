@@ -1,6 +1,10 @@
 ---
 // Get the current path to highlight the active link
-const currentPath = Astro.url.pathname.replace("/appUtu", "");
+const currentPath = Astro.url.pathname;
+
+// Determine if we're in production
+const isProduction = import.meta.env.VITE_IS_PRODUCTION === "true";
+const basePath = isProduction ? "/appUtu" : "";
 
 // Importar todos los cursos dinámicamente
 const importCursos = async () => {
@@ -72,7 +76,7 @@ recentNotifications = recentNotifications.slice(0, 3);
       <!-- Logo and Site Title -->
       <div class="flex items-center mb-4 md:mb-0">
         <a
-          href="/appUtu/"
+          href={`${basePath}/`}
           class="text-white font-bold text-xl flex items-center"
         >
           <svg
@@ -97,8 +101,8 @@ recentNotifications = recentNotifications.slice(0, 3);
         <ul class="flex space-x-1 md:space-x-4">
           <li>
             <a
-              href="/appUtu/"
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "/" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
+              href={`${basePath}/`}
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === `${basePath}/` ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
             >
               <svg
                 class="w-5 h-5 mr-1"
@@ -118,8 +122,8 @@ recentNotifications = recentNotifications.slice(0, 3);
           </li>
           <li>
             <a
-              href="/appUtu/materiales"
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "/materiales" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
+              href={`${basePath}/materiales`}
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === `${basePath}/materiales` ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
             >
               <svg
                 class="w-5 h-5 mr-1"
@@ -140,7 +144,7 @@ recentNotifications = recentNotifications.slice(0, 3);
           <li class="relative">
             <button
               id="notifications-btn"
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === "/notificaciones" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"} relative`}
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${currentPath === `${basePath}/notificaciones` ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"} relative`}
             >
               <svg
                 class="w-5 h-5 mr-1"
@@ -187,7 +191,7 @@ recentNotifications = recentNotifications.slice(0, 3);
 
                         return (
                           <a
-                            href={`/appUtu/curso/${notification.cursoId}`}
+                            href={`${basePath}/curso/${notification.cursoId}`}
                             class="block p-3 hover:bg-gray-700 border-b border-gray-700"
                           >
                             <div class="flex items-center mb-1">
@@ -216,7 +220,7 @@ recentNotifications = recentNotifications.slice(0, 3);
               </div>
 
               <a
-                href="/appUtu/notificaciones"
+                href={`${basePath}/notificaciones`}
                 class="block p-3 text-center text-blue-400 hover:text-blue-300 bg-gray-900 font-medium"
               >
                 Ver todas las notificaciones
