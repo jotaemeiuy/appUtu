@@ -12,50 +12,117 @@ export interface Props {
 }
 
 // Recibir las props
-const { id, curso, opcion, escuela, horario, salon, ascripta, color } = Astro.props;
+const { id, curso, opcion, escuela, horario, salon, ascripta, color } =
+  Astro.props;
 ---
 
-<a href={`/curso/${id}`} class="block h-full">
-  <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 h-full cursor-pointer">
-    <div class={`${color} text-white py-3 px-4 flex justify-between items-center`}>
+<a href={`/appUtu/curso/${id}`} class="block h-full">
+  <div
+    class="bg-gray-800 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 h-full cursor-pointer"
+  >
+    <div
+      class={`${color} text-white py-3 px-4 flex justify-between items-center`}
+    >
       <h3 class="text-xl font-semibold">{curso}</h3>
-      <span class="text-xs bg-gray-900 bg-opacity-30 px-2 py-1 rounded-full">{id}</span>
+      <span class="text-xs bg-gray-900 bg-opacity-30 px-2 py-1 rounded-full"
+        >{id}</span
+      >
     </div>
     <div class="p-5">
       <p class="text-gray-300 mb-3 flex items-center">
-        <svg class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg
+          class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
         </svg>
-        <span class="font-semibold">Opción:</span> {opcion}
+        <span class="font-semibold">Opción:</span>
+        {opcion}
       </p>
       <p class="text-gray-300 mb-3 flex items-center">
-        <svg class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 21V5C19 3.89543 18.1046 3 17 3H7C5.89543 3 5 3.89543 5 5V21M19 21H5M19 21H21M5 21H3M9 6.99998H15M9 10.5H15M9 14H12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg
+          class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 21V5C19 3.89543 18.1046 3 17 3H7C5.89543 3 5 3.89543 5 5V21M19 21H5M19 21H21M5 21H3M9 6.99998H15M9 10.5H15M9 14H12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
         </svg>
-        <span class="font-semibold">Escuela:</span> {escuela}
+        <span class="font-semibold">Escuela:</span>
+        {escuela}
       </p>
       <p class="text-gray-300 mb-3 flex items-start">
-        <svg class="w-5 h-5 mr-2 flex-shrink-0 mt-1 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
-          <path d="M12 7V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg
+          class="w-5 h-5 mr-2 flex-shrink-0 mt-1 text-blue-400"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"
+          ></circle>
+          <path
+            d="M12 7V12L15 15"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
         </svg>
         <span>
-          <span class="font-semibold">Horario:</span> 
+          <span class="font-semibold">Horario:</span>
           <span class="inline-block">{horario}</span>
         </span>
       </p>
       <p class="text-gray-300 mb-3 flex items-center">
-        <svg class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 21H21M3 18H21M5 18V9M19 18V9M7 9H17M7 9C7 9 7 6.75 9.5 5C11.399 3.608 14 4 14 4M7 9V3H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg
+          class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 21H21M3 18H21M5 18V9M19 18V9M7 9H17M7 9C7 9 7 6.75 9.5 5C11.399 3.608 14 4 14 4M7 9V3H10"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
         </svg>
-        <span class="font-semibold">Salón:</span> {salon}
+        <span class="font-semibold">Salón:</span>
+        {salon}
       </p>
       <p class="text-gray-300 mb-3 flex items-center">
-        <svg class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg
+          class="w-5 h-5 mr-2 flex-shrink-0 text-blue-400"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
         </svg>
-        <span class="font-semibold">Ascripta:</span> {ascripta}
+        <span class="font-semibold">Ascripta:</span>
+        {ascripta}
       </p>
     </div>
   </div>
