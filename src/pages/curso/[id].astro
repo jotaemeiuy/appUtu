@@ -7,8 +7,6 @@ import Footer from "../../components/Footer.astro";
 
 const basePath = import.meta.env.BASE_URL;
 
-console.log(basePath, Astro.url.pathname);
-
 // Define getStaticPaths to tell Astro which routes to generate
 export async function getStaticPaths() {
   // Importar todos los cursos dinámicamente

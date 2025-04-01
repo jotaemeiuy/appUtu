@@ -32,7 +32,7 @@ allCourses.forEach(course => {
       curso: course.curso,
       cursoId: course.id,
       opcion: course.opcion,
-      color: course.color
+      color: course.color,
     };
 
     // No filtramos por expiración aquí, mostramos todas
@@ -60,7 +60,7 @@ allNotifications.forEach(notification => {
 function getMonthName(monthNumber) {
   const months = [
     "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre",
   ];
   return months[monthNumber - 1];
 }
@@ -118,7 +118,7 @@ function getMonthName(monthNumber) {
                   const date = new Date(notification.fecha);
                   const formattedDate = date.toLocaleDateString('es-ES', {
                     day: 'numeric',
-                    month: 'short'
+                    month: 'short',
                   });
                   
                   // Determine if this notification should be initially visible

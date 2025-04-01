@@ -16,7 +16,7 @@ const { id, curso, opcion, escuela, horario, salon, ascripta, color } =
   Astro.props;
 ---
 
-<a href={`${import.meta.env.BASE_URL}/curso/${id}`} class="block h-full">
+<a href={import.meta.env.BASE_URL + "/curso/" + id} class="block h-full">
   <div
     class="bg-gray-800 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 h-full cursor-pointer"
   >
