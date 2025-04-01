@@ -5,14 +5,14 @@ import Footer from "../components/Footer.astro";
 
 // Importar todos los cursos dinámicamente
 const importCursos = async () => {
-  const cursoFiles = import.meta.glob('../data/*.json');
+  const cursoFiles = import.meta.glob("../data/*.json");
   const cursos = [];
-  
+
   for (const path in cursoFiles) {
     const curso = await cursoFiles[path]();
     cursos.push(curso.default || curso);
   }
-  
+
   return cursos;
 };
 
@@ -21,22 +21,25 @@ const allCourses = await importCursos();
 
 // Extract all materials with course information
 let allMaterials = [];
-allCourses.forEach(course => {
-  if (course.materiales) {
-    const courseMaterials = course.materiales.map(material => ({
+allCourses.forEach((course) => {
+  // Validar que el curso tenga la propiedad materiales
+  if (course && course.materiales) {
+    const courseMaterials = course.materiales.map((material) => ({
       ...material,
       curso: course.curso,
       cursoId: course.id,
       opcion: course.opcion,
-      color: course.color
+      color: course.color,
     }));
     allMaterials = [...allMaterials, ...courseMaterials];
   }
 });
 
 // Separate materials by type
-const teoricos = allMaterials.filter(material => material.tipo === "teorico");
-const practicos = allMaterials.filter(material => material.tipo === "practico");
+const teoricos = allMaterials.filter((material) => material.tipo === "teorico");
+const practicos = allMaterials.filter(
+  (material) => material.tipo === "practico",
+);
 
 // Sort by date (newest first)
 teoricos.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
@@ -53,199 +56,295 @@ practicos.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
     <Header />
 
     <main class="container mx-auto px-4 py-8">
-      <h1 class="text-3xl sm:text-4xl font-bold mb-8 text-white">Materiales de Estudio</h1>
-      
+      <h1 class="text-3xl sm:text-4xl font-bold mb-8 text-white">
+        Materiales de Estudio
+      </h1>
+
       <!-- Filter Controls -->
-      <div class="bg-gray-800 rounded-lg p-4 mb-8 flex flex-col sm:flex-row justify-between items-center">
+      <div
+        class="bg-gray-800 rounded-lg p-4 mb-8 flex flex-col sm:flex-row justify-between items-center"
+      >
         <div class="mb-4 sm:mb-0">
-          <h2 class="text-xl font-semibold text-white mb-2">Filtrar por tipo</h2>
+          <h2 class="text-xl font-semibold text-white mb-2">
+            Filtrar por tipo
+          </h2>
           <div class="flex space-x-2">
-            <button id="btn-all" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+            <button
+              id="btn-all"
+              class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+            >
               Todos
             </button>
-            <button id="btn-teorico" class="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors">
+            <button
+              id="btn-teorico"
+              class="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors"
+            >
               Teóricos
             </button>
-            <button id="btn-practico" class="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors">
+            <button
+              id="btn-practico"
+              class="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors"
+            >
               Prácticos
             </button>
           </div>
         </div>
         <div>
           <h2 class="text-xl font-semibold text-white mb-2">Buscar</h2>
-          <input 
-            type="text" 
+          <input
+            type="text"
             id="search-input"
-            placeholder="Buscar materiales..." 
+            placeholder="Buscar materiales..."
             class="bg-gray-700 text-white px-4 py-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
       </div>
-      
+
       <!-- Materials List -->
       <div id="all-materials" class="space-y-8">
         <!-- Theoretical Materials -->
         <div id="teoricos-section">
           <h2 class="text-2xl font-bold mb-4 text-white flex items-center">
-            <svg class="w-6 h-6 mr-2 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              class="w-6 h-6 mr-2 text-blue-400"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
             </svg>
             Materiales Teóricos
           </h2>
-          
+
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {teoricos.map(material => (
-              <a 
-                href={material.link} 
-                target="_blank" 
-                class="bg-gray-800 hover:bg-gray-700 rounded-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl material-card"
-                data-description={material.descripcion.toLowerCase()}
-              >
-                <div class={`${material.color} h-2 w-full`}></div>
-                <div class="p-5">
-                  <div class="flex justify-between items-start mb-3">
-                    <span class={`${material.color} text-xs font-semibold px-2 py-1 rounded-full text-white`}>
-                      {material.curso}
-                    </span>
-                    <span class="text-xs text-gray-400">{material.fechaSubida}</span>
+            {
+              teoricos.map((material) => (
+                <a
+                  href={material.link}
+                  target="_blank"
+                  class="bg-gray-800 hover:bg-gray-700 rounded-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl material-card"
+                  data-description={material.descripcion.toLowerCase()}
+                >
+                  <div class={`${material.color} h-2 w-full`} />
+                  <div class="p-5">
+                    <div class="flex justify-between items-start mb-3">
+                      <span
+                        class={`${material.color} text-xs font-semibold px-2 py-1 rounded-full text-white`}
+                      >
+                        {material.curso}
+                      </span>
+                      <span class="text-xs text-gray-400">
+                        {material.fechaSubida}
+                      </span>
+                    </div>
+                    <h3 class="font-semibold text-white mb-2">
+                      {material.descripcion}
+                    </h3>
+                    <p class="text-sm text-gray-400">{material.opcion}</p>
+                    <div class="mt-4 flex justify-between items-center">
+                      <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">
+                        Teórico
+                      </span>
+                      <svg
+                        class="w-5 h-5 text-gray-400"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.5 5H18C19.1046 5 20 5.89543 20 7V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V7C4 5.89543 4.89543 5 6 5H8.5M15.5 5H8.5M15.5 5C15.5 3.89543 14.6046 3 13.5 3H10.5C9.39543 3 8.5 3.89543 8.5 5M10 14L12 16L15 13"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                  <h3 class="font-semibold text-white mb-2">{material.descripcion}</h3>
-                  <p class="text-sm text-gray-400">{material.opcion}</p>
-                  <div class="mt-4 flex justify-between items-center">
-                    <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">Teórico</span>
-                    <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 10V16M12 16L9 13M12 16L15 13M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L18.7071 8.70711C18.8946 8.89464 19 9.149 19 9.41421V19C19 20.1046 18.1046 21 17 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            ))}
+                </a>
+              ))
+            }
           </div>
         </div>
-        
+
         <!-- Practical Materials -->
         <div id="practicos-section">
           <h2 class="text-2xl font-bold mb-4 text-white flex items-center">
-            <svg class="w-6 h-6 mr-2 text-blue-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.7519 11.1679L11.5547 9.03647M11.5547 9.03647L8.35748 6.90502M11.5547 9.03647V14.3615M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              class="w-6 h-6 mr-2 text-blue-400"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.7519 11.1679L11.5547 9.03647M11.5547 9.03647L8.35748 6.90502M11.5547 9.03647V14.3615M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
             </svg>
             Materiales Prácticos
           </h2>
-          
+
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {practicos.map(material => (
-              <a 
-                href={material.link} 
-                target="_blank" 
-                class="bg-gray-800 hover:bg-gray-700 rounded-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl material-card"
-                data-description={material.descripcion.toLowerCase()}
-              >
-                <div class={`${material.color} h-2 w-full`}></div>
-                <div class="p-5">
-                  <div class="flex justify-between items-start mb-3">
-                    <span class={`${material.color} text-xs font-semibold px-2 py-1 rounded-full text-white`}>
-                      {material.curso}
-                    </span>
-                    <span class="text-xs text-gray-400">{material.fechaSubida}</span>
+            {
+              practicos.map((material) => (
+                <a
+                  href={material.link}
+                  target="_blank"
+                  class="bg-gray-800 hover:bg-gray-700 rounded-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl material-card"
+                  data-description={material.descripcion.toLowerCase()}
+                >
+                  <div class={`${material.color} h-2 w-full`} />
+                  <div class="p-5">
+                    <div class="flex justify-between items-start mb-3">
+                      <span
+                        class={`${material.color} text-xs font-semibold px-2 py-1 rounded-full text-white`}
+                      >
+                        {material.curso}
+                      </span>
+                      <span class="text-xs text-gray-400">
+                        {material.fechaSubida}
+                      </span>
+                    </div>
+                    <h3 class="font-semibold text-white mb-2">
+                      {material.descripcion}
+                    </h3>
+                    <p class="text-sm text-gray-400">{material.opcion}</p>
+                    <div class="mt-4 flex justify-between items-center">
+                      <span class="text-xs bg-green-900 text-green-200 px-2 py-1 rounded">
+                        Práctico
+                      </span>
+                      <svg
+                        class="w-5 h-5 text-gray-400"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.5 5H18C19.1046 5 20 5.89543 20 7V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V7C4 5.89543 4.89543 5 6 5H8.5M15.5 5H8.5M15.5 5C15.5 3.89543 14.6046 3 13.5 3H10.5C9.39543 3 8.5 3.89543 8.5 5M10 14L12 16L15 13"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                  <h3 class="font-semibold text-white mb-2">{material.descripcion}</h3>
-                  <p class="text-sm text-gray-400">{material.opcion}</p>
-                  <div class="mt-4 flex justify-between items-center">
-                    <span class="text-xs bg-green-900 text-green-200 px-2 py-1 rounded">Práctico</span>
-                    <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.5 5H18C19.1046 5 20 5.89543 20 7V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V7C4 5.89543 4.89543 5 6 5H8.5M15.5 5H8.5M15.5 5C15.5 3.89543 14.6046 3 13.5 3H10.5C9.39543 3 8.5 3.89543 8.5 5M10 14L12 16L15 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            ))}
+                </a>
+              ))
+            }
           </div>
         </div>
       </div>
-      
+
       <!-- No Results Message -->
       <div id="no-results" class="hidden text-center py-12">
-        <svg class="w-16 h-16 mx-auto text-gray-600 mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 21H14M10 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H17C18.1046 3 19 3.89543 19 5V19C19 20.1046 18.1046 21 17 21H14M10 21V17M14 21V17M9 7H15M9 11H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg
+          class="w-16 h-16 mx-auto text-gray-600 mb-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 21H14M10 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H17C18.1046 3 19 3.89543 19 5V19C19 20.1046 18.1046 21 17 21H14M10 21V17M14 21V17M9 7H15M9 11H15"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
         </svg>
-        <h3 class="text-xl font-semibold text-gray-400">No se encontraron materiales</h3>
-        <p class="text-gray-500 mt-2">Intenta con otra búsqueda o cambia los filtros</p>
+        <h3 class="text-xl font-semibold text-gray-400">
+          No se encontraron materiales
+        </h3>
+        <p class="text-gray-500 mt-2">
+          Intenta con otra búsqueda o cambia los filtros
+        </p>
       </div>
     </main>
 
     <Footer />
-    
+
     <script>
       // Filter and search functionality
-      document.addEventListener('DOMContentLoaded', function() {
-        const btnAll = document.getElementById('btn-all');
-        const btnTeorico = document.getElementById('btn-teorico');
-        const btnPractico = document.getElementById('btn-practico');
-        const searchInput = document.getElementById('search-input');
-        const teoricosSection = document.getElementById('teoricos-section');
-        const practicosSection = document.getElementById('practicos-section');
-        const noResults = document.getElementById('no-results');
-        const materialCards = document.querySelectorAll('.material-card');
-        
+      document.addEventListener("DOMContentLoaded", function () {
+        const btnAll = document.getElementById("btn-all");
+        const btnTeorico = document.getElementById("btn-teorico");
+        const btnPractico = document.getElementById("btn-practico");
+        const searchInput = document.getElementById("search-input");
+        const teoricosSection = document.getElementById("teoricos-section");
+        const practicosSection = document.getElementById("practicos-section");
+        const noResults = document.getElementById("no-results");
+        const materialCards = document.querySelectorAll(".material-card");
+
         // Filter buttons
-        btnAll.addEventListener('click', function() {
+        btnAll.addEventListener("click", function () {
           setActiveButton(btnAll);
-          teoricosSection.style.display = 'block';
-          practicosSection.style.display = 'block';
+          teoricosSection.style.display = "block";
+          practicosSection.style.display = "block";
           filterMaterials();
         });
-        
-        btnTeorico.addEventListener('click', function() {
+
+        btnTeorico.addEventListener("click", function () {
           setActiveButton(btnTeorico);
-          teoricosSection.style.display = 'block';
-          practicosSection.style.display = 'none';
+          teoricosSection.style.display = "block";
+          practicosSection.style.display = "none";
           filterMaterials();
         });
-        
-        btnPractico.addEventListener('click', function() {
+
+        btnPractico.addEventListener("click", function () {
           setActiveButton(btnPractico);
-          teoricosSection.style.display = 'none';
-          practicosSection.style.display = 'block';
+          teoricosSection.style.display = "none";
+          practicosSection.style.display = "block";
           filterMaterials();
         });
-        
+
         // Search functionality
-        searchInput.addEventListener('input', filterMaterials);
-        
+        searchInput.addEventListener("input", filterMaterials);
+
         function setActiveButton(activeBtn) {
-          [btnAll, btnTeorico, btnPractico].forEach(btn => {
-            btn.classList.remove('bg-blue-600');
-            btn.classList.add('bg-gray-700');
+          [btnAll, btnTeorico, btnPractico].forEach((btn) => {
+            btn.classList.remove("bg-blue-600");
+            btn.classList.add("bg-gray-700");
           });
-          activeBtn.classList.remove('bg-gray-700');
-          activeBtn.classList.add('bg-blue-600');
+          activeBtn.classList.remove("bg-gray-700");
+          activeBtn.classList.add("bg-blue-600");
         }
-        
+
         function filterMaterials() {
           const searchTerm = searchInput.value.toLowerCase();
           let visibleCount = 0;
-          
-          materialCards.forEach(card => {
-            const description = card.getAttribute('data-description');
+
+          materialCards.forEach((card) => {
+            const description = card.getAttribute("data-description");
             const isVisible = description.includes(searchTerm);
-            
+
             // Check if card's section is visible based on filter
-            const inTeoricos = card.closest('#teoricos-section') === teoricosSection;
-            const teoricosSectionVisible = teoricosSection.style.display !== 'none';
-            const practicosSectionVisible = practicosSection.style.display !== 'none';
-            
-            const shouldShow = isVisible && 
-              ((inTeoricos && teoricosSectionVisible) || (!inTeoricos && practicosSectionVisible));
-            
-            card.style.display = shouldShow ? 'block' : 'none';
-            
+            const inTeoricos =
+              card.closest("#teoricos-section") === teoricosSection;
+            const teoricosSectionVisible =
+              teoricosSection.style.display !== "none";
+            const practicosSectionVisible =
+              practicosSection.style.display !== "none";
+
+            const shouldShow =
+              isVisible &&
+              ((inTeoricos && teoricosSectionVisible) ||
+                (!inTeoricos && practicosSectionVisible));
+
+            card.style.display = shouldShow ? "block" : "none";
+
             if (shouldShow) {
               visibleCount++;
             }
           });
-          
+
           // Show/hide no results message
-          noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+          noResults.style.display = visibleCount === 0 ? "block" : "none";
         }
       });
     </script>
