@@ -5,7 +5,8 @@ import vercel from "@astrojs/vercel";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jotaemeiuy.github.io',
-  output: "server",
+  base: 'appUtu',
+  output: "static",
   adapter: vercel(),
   vite: {
     plugins: [tailwindcss()],
