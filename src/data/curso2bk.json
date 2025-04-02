@@ -8,9 +8,42 @@
   "ascripta": "S/C",
   "color": "bg-purple-600",
   "materiales": [
+    {
+      "id": 1,
+      "tipo": "practico",
+      "descripcion": "Prueba Diagnostica",
+      "fechaSubida": "2025-04-02",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLScNWDbdjSuwJbVds4sw7WkABU279hrblqgzcbDBDDDCKmetiA/viewform"
+    },
+    {
+      "id": 2,
+      "tipo": "teorico",
+      "descripcion": "Libro del Curso",
+      "fechaSubida": "2025-04-02",
+      "link": "https://drive.google.com/file/d/1LUFVfFy_euhH3wChbejNZe019Rg5_TUD/view"
+    },
+    {
+      "id": 3,
+      "tipo": "practico",
+      "descripcion": "Practico de ecuaciones",
+      "fechaSubida": "2025-04-02",
+      "link": "https://drive.google.com/file/d/1zXmkBcYrMFWw-6bNSVShbzHlnntkuiOJ/view"
+    }
+
    
   ],
   "notificaciones": [
-   
-  ]
+    {
+    "id": 1,
+    "mensaje": "Prueba Diagnostica",
+    "prueba": true,
+    "fecha": "2025-04-02"
+    },
+    {
+      "id": 2,
+      "mensaje": "Se sube material teórico y práctico",
+      "fecha": "2025-04-02"
+    }
+
+   ]
 }

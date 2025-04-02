@@ -33,15 +33,19 @@ allCourses.forEach(course => {
       cursoId: course.id,
       opcion: course.opcion,
       color: course.color,
+      isPrueba: notification.prueba || false,
     };
 
-    // No filtramos por expiración aquí, mostramos todas
     allNotifications.push(processedNotification);
   });
 });
 
-// Sort notifications by date (newest first)
-allNotifications.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+// Sort notifications: prueba notifications first, then by date (newest first)
+allNotifications.sort((a, b) => {
+  if (a.isPrueba && !b.isPrueba) return -1;
+  if (!a.isPrueba && b.isPrueba) return 1;
+  return new Date(b.fecha) - new Date(a.fecha);
+});
 
 // Group notifications by month
 const groupedNotifications = {};
@@ -121,19 +125,12 @@ function getMonthName(monthNumber) {
                     month: 'short',
                   });
                   
-                  // Determine if this notification should be initially visible
-                  // Show only notifications less than 2 days old
-                  const todayUtc = new Date();
-                  todayUtc.setHours(0,0,0,0); // Reset time to midnight
-                  const notificationUtc = new Date(date);
-                  notificationUtc.setHours(0,0,0,0); // Reset time to midnight
-                  const timeDiff = todayUtc - notificationUtc;
-                  const daysSincePublication = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-                  const isInitiallyVisible = daysSincePublication < 2;
-
+                  const isPrueba = notification.isPrueba;
+                  const notificationColor = isPrueba ? 'bg-red-600' : notification.color;
+                  
                   return (
                     <div 
-                      class={`notification-item relative pl-8 sm:pl-0 ${isInitiallyVisible ? '' : 'hidden-notification hidden'}`} 
+                      class={`notification-item relative pl-8 sm:pl-0 ${isPrueba ? '' : ''}`} 
                       data-content={notification.mensaje.toLowerCase()}
                     >
                       <div class="flex flex-col sm:flex-row items-start">
@@ -151,21 +148,24 @@ function getMonthName(monthNumber) {
                           <div class="inline-block bg-gray-800 px-3 py-1 rounded-lg text-sm font-medium">
                             {formattedDate}
                           </div>
-                          <div class="absolute right-0 top-3 transform translate-x-[50%] bg-gray-700 rounded-full w-6 h-6 flex items-center justify-center border-2 border-blue-500 z-10">
-                            <div class="bg-blue-500 rounded-full w-2 h-2"></div>
-                          </div>
                         </div>
-                        
-                        <!-- Notification Content -->
-                        <a href={`/curso/${notification.cursoId}`} class="block sm:w-1/2 sm:pl-8">
+
+                        <a href={import.meta.env.BASE_URL + `/curso/${notification.cursoId}`} class="block sm:w-1/2 sm:pl-8">
                           <div class="bg-gray-800 rounded-lg p-4 shadow-lg hover:bg-gray-700 transition-colors">
                             <div class="flex items-center mb-3">
-                              <span class={`${notification.color} text-xs font-semibold px-2 py-1 rounded-full text-white mr-2`}>
+                              <span class={`${notificationColor} text-xs font-semibold px-2 py-1 rounded-full text-white mr-2`}>
                                 {notification.curso}
                               </span>
                               <span class="sm:hidden text-xs text-gray-400">{formattedDate}</span>
+                              {isPrueba && (
+                                <span class="bg-red-600 text-white px-3 py-1.5 rounded-full text-xs font-semibold ml-2">
+                                  PRUEBA
+                                </span>
+                              )}
                             </div>
-                            <p class="text-white">{notification.mensaje}</p>
+                            <p class={`text-white ${isPrueba ? 'text-red-400' : ''}`}>
+                              {notification.mensaje}
+                            </p>
                           </div>
                         </a>
                       </div>

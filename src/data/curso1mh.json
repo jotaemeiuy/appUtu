@@ -8,9 +8,42 @@
     "ascripta": "Lucía Cabral",
     "color": "bg-pink-300",
     "materiales": [
+      {
+        "id": 1,
+        "tipo": "teorico",
+        "descripcion": "Introducción a los conjuntos numéricos",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1FxqVt4Mp1tKcSNHde0GKnrUojm49-Mau/view"
+      },
+      {
+        "id": 2,
+        "tipo": "practico",
+        "descripcion": "Ejercicios con conjuntos naturales",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1wKNIoGYzafHuOMUp2BYfKqudKVdtUmqA/view"
+      },
+      {
+        "id": 3,
+        "tipo": "practico",
+        "descripcion": "Ejercicios con conjuntos enteros",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1-z8LfDzqfy5yESFX1b3TIHtxGhzLsf2t/view"
+      },
+      {
+        "id": 4,
+        "tipo": "practico",
+        "descripcion": "Ejercicios con conjuntos racionales",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1pHWANfmyu7yn63DGsvCHzvWtW62i6-Lg/view"
+      }
       
     ],
     "notificaciones": [
-      
+      {
+        "id": 1,
+        "mensaje": "Se ha subido nuevo material teórico y práctico",
+        "fecha": "2025-04-02"
+       
+      }
     ]
   }

@@ -20,19 +20,10 @@ const today = new Date();
 const twoDaysAgo = new Date();
 twoDaysAgo.setDate(today.getDate() - 2);
 
-const totalNotifications = allCourses.reduce((total, course) => {
-  if (course.notificaciones) {
-    const recentNotifications = course.notificaciones.filter((notification) => {
-      const notificationDate = new Date(notification.fecha);
-      return notificationDate >= twoDaysAgo;
-    });
-    return total + recentNotifications.length;
-  }
-  return total;
-}, 0);
-
-// Get the 3 most recent notifications
+// Get the 3 most recent notifications and those with prueba:true
 let recentNotifications = [];
+let pruebaNotifications = [];
+
 allCourses.forEach((course) => {
   if (course.notificaciones) {
     const courseNotifications = course.notificaciones
@@ -54,13 +45,31 @@ allCourses.forEach((course) => {
           fechaExpiracion: expirationDate.toISOString().split("T")[0],
         };
       });
+
+    // Add to recent notifications
     recentNotifications = [...recentNotifications, ...courseNotifications];
+
+    // Add to prueba notifications
+    const coursePruebaNotifications = courseNotifications.filter(
+      (n) => n.prueba,
+    );
+    pruebaNotifications = [
+      ...pruebaNotifications,
+      ...coursePruebaNotifications,
+    ];
   }
 });
 
-// Sort by date (newest first) and take only the first 3
+// Sort both arrays by date (newest first)
 recentNotifications.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+pruebaNotifications.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
+// Take only the first 3 recent notifications
 recentNotifications = recentNotifications.slice(0, 3);
+
+// Count total notifications (both recent and prueba)
+const totalNotifications =
+  recentNotifications.length + pruebaNotifications.length;
 ---
 
 <header class="bg-gray-800 shadow-lg">
@@ -173,7 +182,7 @@ recentNotifications = recentNotifications.slice(0, 3);
 
               <div class="max-h-96 overflow-y-auto">
                 {
-                  recentNotifications.length > 0 ? (
+                  recentNotifications.length > 0 && (
                     <div>
                       {recentNotifications.map((notification) => {
                         const date = new Date(notification.fecha);
@@ -197,16 +206,50 @@ recentNotifications = recentNotifications.slice(0, 3);
                                 {formattedDate}
                               </span>
                             </div>
-                            <p class="text-white text-sm line-clamp-2">
+                            <p class="text-white text-sm">
                               {notification.mensaje}
                             </p>
                           </a>
                         );
                       })}
                     </div>
-                  ) : (
-                    <div class="p-4 text-center text-gray-400">
-                      <p>No hay notificaciones</p>
+                  )
+                }
+
+                {
+                  pruebaNotifications.length > 0 && (
+                    <div>
+                      <div class="p-3 border-b border-gray-700">
+                        <h3 class="text-white font-medium">Pruebas</h3>
+                      </div>
+                      {pruebaNotifications.map((notification) => {
+                        const date = new Date(notification.fecha);
+                        const formattedDate = date.toLocaleDateString("es-ES", {
+                          day: "numeric",
+                          month: "short",
+                        });
+
+                        return (
+                          <a
+                            href={`${import.meta.env.BASE_URL}/curso/${notification.cursoId}`}
+                            class="block p-3 hover:bg-gray-700 border-b border-gray-700"
+                          >
+                            <div class="flex items-center mb-1">
+                              <span
+                                class={`${notification.color} text-xs font-semibold px-2 py-0.5 rounded-full text-white mr-2`}
+                              >
+                                {notification.curso}
+                              </span>
+                              <span class="text-xs text-gray-400">
+                                {formattedDate}
+                              </span>
+                            </div>
+                            <p class="text-white text-sm">
+                              {notification.mensaje}
+                            </p>
+                          </a>
+                        );
+                      })}
                     </div>
                   )
                 }
