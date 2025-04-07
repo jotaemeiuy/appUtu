@@ -43,20 +43,13 @@
   ],
   "notificaciones": [
     {
-    "id": 1,
-    "mensaje": "Prueba Diagnostica",
-    "prueba": true,
-    "fecha": "2025-04-02",
-    "fechaExpiracion": "2025-04-02"
-    },
-    {
-      "id": 2,
+      "id": 1,
       "mensaje": "Se sube material teórico y práctico",
       "fecha": "2025-04-02",
       "fechaExpiracion": "2025-04-02"
     },
     {
-      "id": 3,
+      "id": 2,
       "mensaje": "Prueba Diagnostica",
       "prueba": true,
       "fecha": "2025-04-02",
