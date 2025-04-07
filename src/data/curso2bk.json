@@ -35,6 +35,13 @@
       "descripcion": "Practico de expresiones algebraicas",
       "fechaSubida": "2025-04-02",
       "link": "https://drive.google.com/file/d/1D7VCv7TD5MoWcB-rD6pfCaj_WeN4fk3C/view"
+    },
+    {
+      "id": 4,
+      "tipo": "practico",
+      "descripcion": "Prueba diagnóstica",
+      "fechaSubida": "2025-04-02",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLScNWDbdjSuwJbVds4sw7WkABU279hrblqgzcbDBDDDCKmetiA/viewform"
     }
 
     
@@ -46,12 +53,21 @@
     "id": 1,
     "mensaje": "Prueba Diagnostica",
     "prueba": true,
-    "fecha": "2025-04-02"
+    "fecha": "2025-04-02",
+    "fechaExpiracion": "2025-04-02"
     },
     {
       "id": 2,
       "mensaje": "Se sube material teórico y práctico",
-      "fecha": "2025-04-02"
+      "fecha": "2025-04-02",
+      "fechaExpiracion": "2025-04-02"
+    },
+    {
+      "id": 3,
+      "mensaje": "Prueba Diagnostica",
+      "prueba": true,
+      "fecha": "2025-04-02",
+      "fechaExpiracion": "2025-04-12"
     }
 
    ]

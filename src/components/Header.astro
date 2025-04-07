@@ -17,8 +17,6 @@ const allCourses = await importCursos();
 
 // Count total notifications
 const today = new Date();
-const twoDaysAgo = new Date();
-twoDaysAgo.setDate(today.getDate() - 2);
 
 // Get the 3 most recent notifications and those with prueba:true
 let recentNotifications = [];
@@ -28,35 +26,43 @@ allCourses.forEach((course) => {
   if (course.notificaciones) {
     const courseNotifications = course.notificaciones
       .filter((notification) => {
-        const notificationDate = new Date(notification.fecha);
-        return notificationDate >= twoDaysAgo;
+        // Si no hay fechaExpiracion, usar la lógica original
+        if (!notification.fechaExpiracion) {
+          const notificationDate = new Date(notification.fecha);
+          return notificationDate >= today;
+        }
+
+        // Si hay fechaExpiracion, usar esa fecha para el filtrado
+        const expirationDate = new Date(notification.fechaExpiracion);
+        return expirationDate >= today;
       })
       .map((notification) => {
-        // Calcular fecha de expiración (2 días después)
-        const expirationDate = new Date(notification.fecha);
-        expirationDate.setDate(expirationDate.getDate() + 2);
-
         return {
           ...notification,
           curso: course.curso,
           cursoId: course.id,
           color: course.color,
           tipo: "temporal",
-          fechaExpiracion: expirationDate.toISOString().split("T")[0],
         };
       });
 
-    // Add to recent notifications
-    recentNotifications = [...recentNotifications, ...courseNotifications];
+    // Separar notificaciones en recientes y pruebas
+    const [nonPruebaNotifications, pruebaNotificationsToAdd] =
+      courseNotifications.reduce(
+        ([nonPrueba, prueba], notification) => {
+          if (notification.prueba) {
+            return [nonPrueba, [...prueba, notification]];
+          }
+          return [[...nonPrueba, notification], prueba];
+        },
+        [[], []],
+      );
 
-    // Add to prueba notifications
-    const coursePruebaNotifications = courseNotifications.filter(
-      (n) => n.prueba,
-    );
-    pruebaNotifications = [
-      ...pruebaNotifications,
-      ...coursePruebaNotifications,
-    ];
+    // Agregar solo las notificaciones no-prueba a las recientes
+    recentNotifications = [...recentNotifications, ...nonPruebaNotifications];
+
+    // Agregar las pruebas al array de pruebas
+    pruebaNotifications = [...pruebaNotifications, ...pruebaNotificationsToAdd];
   }
 });
 
@@ -275,7 +281,7 @@ const totalNotifications =
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+                  d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M4 9H10V3M12 11H19V21H5V11H12Z"
                   stroke="currentColor"
                   stroke-width="2"
                   stroke-linecap="round"

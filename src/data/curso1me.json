@@ -8,9 +8,51 @@
     "ascripta": "Cecilia Peláez",
     "color": "bg-green-800",
     "materiales": [
-      
+      {
+        "id": 1,
+        "tipo": "practico",
+        "descripcion": "Ejercicios operaciones combinadas con naturales",
+        "fechaSubida": "2025-04-07",
+        "link": "https://drive.google.com/file/d/1Z8KljdfMz9AD5EmJeKL2oyo2ywy-BxuC/view"
+      },
+      {
+        "id": 2,
+        "tipo": "practico",
+        "descripcion": "Ejercicios operaciones combinadas con enteros",
+        "fechaSubida": "2025-04-07",
+        "link": "https://drive.google.com/file/d/1bLJIgoxVvcgLgjhCF-P43f0y4dKov9EX/view"
+      },
+      {
+        "id": 3,
+        "tipo": "practico",
+        "descripcion": "Ejercicios mcm y MCD",
+        "fechaSubida": "2025-04-07",
+        "link": "https://drive.google.com/file/d/1eCIAtewICF7TjMz1PEYdWpxyRK8i5DR8/view"
+      },
+      {
+        "id": 5,
+        "tipo": "practico",
+        "descripcion": "Prueba diagnóstica",
+        "fechaSubida": "2025-04-02",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSd5jGKSOWeACZb0SKv8rJ5Z5wSDoc_YXl7s_Ygayv5REUWDWg/viewform"
+        
+      }
     ],
     "notificaciones": [
-     
+      {
+        "id": 1,
+        "mensaje": "Se ha subido nuevo material práctico",
+        "fecha": "2025-04-07",
+        "fechaExpiracion": "2025-04-12"
+       
+      },
+      {
+        "id": 2,
+        "mensaje": "Se ha subido prueba diagnóstica",
+        "fecha": "2025-04-07",
+        "fechaExpiracion": "2025-04-12",
+        "prueba":true
+       
+      }
     ]
   }

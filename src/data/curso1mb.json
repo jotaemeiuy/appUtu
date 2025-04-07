@@ -35,7 +35,18 @@
         "descripcion": "Ejercicios con conjuntos racionales",
         "fechaSubida": "2025-04-02",
         "link": "https://drive.google.com/file/d/1pHWANfmyu7yn63DGsvCHzvWtW62i6-Lg/view"
+      },
+      {
+        "id": 5,
+        "tipo": "practico",
+        "descripcion": "Prueba diagnóstica",
+        "fechaSubida": "2025-04-02",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeIWo7pICwQGt237jHUJXPM_v1a2e80NtDCjt4OOMfA9h4VFg/viewform"
+        
       }
+
+
+      
       
     ],
     "notificaciones": [
@@ -44,6 +55,15 @@
         "mensaje": "Se ha subido nuevo material teórico y práctico",
         "fecha": "2025-04-02"
        
+      },  
+      {
+        "id": 2,
+        "mensaje": "Se ha subido prueba diagnóstica",
+        "fecha": "2025-04-07",
+        "fechaExpiracion": "2025-04-12",
+        "prueba":true
+       
       }
+
     ]
   }
