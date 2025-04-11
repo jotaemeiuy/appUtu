@@ -1,0 +1,166 @@
+---
+interface Props {
+    linkBase: string;
+    isFolder: boolean;
+    course: {
+        color: string;
+    };
+    material: {
+        descripcion: string;
+        fechaSubida: string;
+    };
+}
+
+const { linkBase, isFolder } = Astro.props;
+
+const generarNumeroAleatorio = (): number => {
+    return Math.floor(Math.random() * 9) + 1;
+};
+
+const manejarEnvio = (e: Event) => {
+    e.preventDefault();
+
+    const cedula = (document.getElementById("cedula") as HTMLInputElement)
+        .value;
+
+    // Validar que la cédula tenga entre 8 y 9 dígitos
+    if (!/^[0-9]{8,9}$/.test(cedula)) {
+        const errorElement = document.getElementById("error-message");
+        if (errorElement) {
+            errorElement.textContent =
+                "La cédula debe tener entre 8 y 9 dígitos";
+        }
+        return;
+    }
+
+    const errorElement = document.getElementById("error-message");
+    if (errorElement) {
+        errorElement.textContent = "";
+    }
+
+    const numeroAleatorio = generarNumeroAleatorio();
+    const linkCompleto = `${linkBase}/${numeroAleatorio}.pdf?usp=drive_link`;
+
+    // Usar la API de Astro para redirigir
+    Astro.redirect(linkCompleto);
+};
+---
+
+{
+    isFolder ? (
+        <div class="relative">
+            <button
+                class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start w-full"
+                onclick="document.getElementById('prueba-modal').style.display = 'flex';"
+            >
+                <div class={`${Astro.props.course.color} p-3 rounded-lg mr-4`}>
+                    <svg
+                        class="w-6 h-6 text-white"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M19 16V3H10L4 9V16M4 9H10V3M12 11H19V21H5V11H12Z"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="font-medium text-white">
+                        {Astro.props.material.descripcion}
+                    </h4>
+                    <p class="text-sm text-gray-400 mt-1">
+                        Subido: {Astro.props.material.fechaSubida}
+                    </p>
+                </div>
+            </button>
+
+            <div
+                id="prueba-modal"
+                class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4"
+            >
+                <div class="bg-white rounded-lg shadow-xl max-w-md w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Ingresar Cédula</h3>
+                        <form onSubmit={manejarEnvio}>
+                            <div class="mb-4">
+                                <label
+                                    for="cedula"
+                                    class="block text-gray-700 text-sm font-bold mb-2"
+                                >
+                                    Ingrese su cédula:
+                                </label>
+                                <input
+                                    type="text"
+                                    id="cedula"
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    placeholder="12345678"
+                                    required
+                                    pattern="[0-9]{8,9}"
+                                    title="La cédula debe tener entre 8 y 9 dígitos"
+                                    minlength="8"
+                                    maxlength="9"
+                                    inputmode="numeric"
+                                />
+                                <p
+                                    id="error-message"
+                                    class="text-red-500 text-xs italic mt-2"
+                                />
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <button
+                                    type="button"
+                                    onclick="document.getElementById('prueba-modal').style.display = 'none';"
+                                    class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded"
+                                >
+                                    Cancelar
+                                </button>
+                                <button
+                                    type="submit"
+                                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                                >
+                                    Prueba
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ) : (
+        <a
+            href={linkBase}
+            target="_blank"
+            class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start"
+        >
+            <div class={`${Astro.props.course.color} p-3 rounded-lg mr-4`}>
+                <svg
+                    class="w-6 h-6 text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M19 16V3H10L4 9V16M4 9H10V3M12 11H19V21H5V11H12Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </div>
+            <div>
+                <h4 class="font-medium text-white">
+                    {Astro.props.material.descripcion}
+                </h4>
+                <p class="text-sm text-gray-400 mt-1">
+                    Subido: {Astro.props.material.fechaSubida}
+                </p>
+            </div>
+        </a>
+    )
+}
