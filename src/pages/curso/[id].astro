@@ -39,6 +39,10 @@ const teoricos = course.materiales.filter(
 const practicos = course.materiales.filter(
   (material) => material.tipo === "practico",
 );
+// Add this new filter for prueba materials
+const pruebas = course.materiales.filter(
+  (material) => material.tipo === "prueba",
+);
 
 // Sort notifications by date (newest first)
 const sortedNotifications = [...course.notificaciones].sort(
@@ -314,6 +318,69 @@ const sortedNotifications = [...course.notificaciones].sort(
               ) : (
                 <p class="text-gray-400">
                   No hay materiales prácticos disponibles.
+                </p>
+              )
+            }
+          </div>
+
+          <!-- Test Materials -->
+          <div class="mt-8">
+            <h3 class="text-xl font-semibold mb-4 text-white flex items-center">
+              <svg
+                class="w-5 h-5 mr-2 text-red-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+              Pruebas y Evaluaciones
+            </h3>
+
+            {
+              pruebas.length > 0 ? (
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {pruebas.map((material) => (
+                    <a
+                      href={material.link}
+                      target="_blank"
+                      class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start"
+                    >
+                      <div class={`${course.color} p-3 rounded-lg mr-4`}>
+                        <svg
+                          class="w-6 h-6 text-white"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-medium text-white">
+                          {material.descripcion}
+                        </h4>
+                        <p class="text-sm text-gray-400 mt-1">
+                          Subido: {material.fechaSubida}
+                        </p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                <p class="text-gray-400">
+                  No hay pruebas disponibles.
                 </p>
               )
             }
