@@ -22,7 +22,7 @@ const ACTIVAR = true; //Cambiar a true para activar todas las pruebas
         <div class="relative">
             <button
                 class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start w-full"
-                onclick="document.getElementById('prueba-modal').style.display = 'flex';"
+                onclick="(() => { const m = document.getElementById('prueba-modal'); m.classList.remove('hidden'); m.classList.add('flex'); })()"
             >
                 <div class={`${curso.color} p-3 rounded-lg mr-4`}>
                     <svg
@@ -53,7 +53,7 @@ const ACTIVAR = true; //Cambiar a true para activar todas las pruebas
             {ACTIVAR && (
                 <div
                     id="prueba-modal"
-                    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4"
+                    class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center p-4"
                 >
                     <div class="bg-white rounded-lg shadow-xl max-w-md w-full">
                         <div class="p-6">
@@ -83,7 +83,7 @@ const ACTIVAR = true; //Cambiar a true para activar todas las pruebas
                                     <button
                                         type="button"
                                         class="text-gray-500 hover:text-gray-700"
-                                        onclick="document.getElementById('prueba-modal').style.display = 'none';"
+                                        onclick="(() => { const m = document.getElementById('prueba-modal'); m.classList.add('hidden'); m.classList.remove('flex'); })()"
                                     >
                                         Cancelar
                                     </button>
