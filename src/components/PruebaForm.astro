@@ -1,49 +1,20 @@
 ---
 interface Props {
-    linkBase: string;
+    linkBase: string | Record<string, string>;
     isFolder: boolean;
-    course: {
+    curso: {
         color: string;
     };
     material: {
         descripcion: string;
         fechaSubida: string;
+        tipo?: string;
+        links?: Record<string, string>;
     };
 }
 
-const { linkBase, isFolder } = Astro.props;
-
-const generarNumeroAleatorio = (): number => {
-    return Math.floor(Math.random() * 9) + 1;
-};
-
-const manejarEnvio = (e: Event) => {
-    e.preventDefault();
-
-    const cedula = (document.getElementById("cedula") as HTMLInputElement)
-        .value;
-
-    // Validar que la cédula tenga entre 8 y 9 dígitos
-    if (!/^[0-9]{8,9}$/.test(cedula)) {
-        const errorElement = document.getElementById("error-message");
-        if (errorElement) {
-            errorElement.textContent =
-                "La cédula debe tener entre 8 y 9 dígitos";
-        }
-        return;
-    }
-
-    const errorElement = document.getElementById("error-message");
-    if (errorElement) {
-        errorElement.textContent = "";
-    }
-
-    const numeroAleatorio = generarNumeroAleatorio();
-    const linkCompleto = `${linkBase}/${numeroAleatorio}.pdf?usp=drive_link`;
-
-    // Usar la API de Astro para redirigir
-    Astro.redirect(linkCompleto);
-};
+const { linkBase, isFolder, curso, material } = Astro.props;
+const ACTIVAR = true; //Cambiar a true para activar todas las pruebas
 ---
 
 {
@@ -53,7 +24,7 @@ const manejarEnvio = (e: Event) => {
                 class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start w-full"
                 onclick="document.getElementById('prueba-modal').style.display = 'flex';"
             >
-                <div class={`${Astro.props.course.color} p-3 rounded-lg mr-4`}>
+                <div class={`${curso.color} p-3 rounded-lg mr-4`}>
                     <svg
                         class="w-6 h-6 text-white"
                         viewBox="0 0 24 24"
@@ -71,73 +42,71 @@ const manejarEnvio = (e: Event) => {
                 </div>
                 <div>
                     <h4 class="font-medium text-white">
-                        {Astro.props.material.descripcion}
+                        {material.descripcion}
                     </h4>
                     <p class="text-sm text-gray-400 mt-1">
-                        Subido: {Astro.props.material.fechaSubida}
+                        Subido: {material.fechaSubida}
                     </p>
                 </div>
             </button>
 
-            <div
-                id="prueba-modal"
-                class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4"
-            >
-                <div class="bg-white rounded-lg shadow-xl max-w-md w-full">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-4">Ingresar Cédula</h3>
-                        <form onSubmit={manejarEnvio}>
-                            <div class="mb-4">
-                                <label
-                                    for="cedula"
-                                    class="block text-gray-700 text-sm font-bold mb-2"
-                                >
-                                    Ingrese su cédula:
-                                </label>
-                                <input
-                                    type="text"
-                                    id="cedula"
-                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    placeholder="12345678"
-                                    required
-                                    pattern="[0-9]{8,9}"
-                                    title="La cédula debe tener entre 8 y 9 dígitos"
-                                    minlength="8"
-                                    maxlength="9"
-                                    inputmode="numeric"
-                                />
-                                <p
-                                    id="error-message"
-                                    class="text-red-500 text-xs italic mt-2"
-                                />
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <button
-                                    type="button"
-                                    onclick="document.getElementById('prueba-modal').style.display = 'none';"
-                                    class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded"
-                                >
-                                    Cancelar
-                                </button>
-                                <button
-                                    type="submit"
-                                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                                >
-                                    Prueba
-                                </button>
-                            </div>
-                        </form>
+            {ACTIVAR && (
+                <div
+                    id="prueba-modal"
+                    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4"
+                >
+                    <div class="bg-white rounded-lg shadow-xl max-w-md w-full">
+                        <div class="p-6">
+                            <form id="form">
+                                <div class="mb-4">
+                                    <label
+                                        class="block text-gray-700 text-sm font-bold mb-2"
+                                        for="cedula"
+                                    >
+                                        Ingrese su cédula
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="cedula"
+                                        pattern="[0-9]*"
+                                        inputmode="numeric"
+                                        maxlength="9"
+                                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        required
+                                    />
+                                    <p
+                                        id="error-message"
+                                        class="text-red-500 text-xs italic mt-1"
+                                    />
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <button
+                                        type="button"
+                                        class="text-gray-500 hover:text-gray-700"
+                                        onclick="document.getElementById('prueba-modal').style.display = 'none';"
+                                    >
+                                        Cancelar
+                                    </button>
+                                    <button
+                                        type="submit"
+                                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                                    >
+                                        Acceder a la prueba
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
+            )}
         </div>
     ) : (
         <a
-            href={linkBase}
+            href={linkBase as string}
             target="_blank"
             class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start"
         >
-            <div class={`${Astro.props.course.color} p-3 rounded-lg mr-4`}>
+            <div class={`${curso.color} p-3 rounded-lg mr-4`}>
                 <svg
                     class="w-6 h-6 text-white"
                     viewBox="0 0 24 24"
@@ -154,13 +123,50 @@ const manejarEnvio = (e: Event) => {
                 </svg>
             </div>
             <div>
-                <h4 class="font-medium text-white">
-                    {Astro.props.material.descripcion}
-                </h4>
+                <h4 class="font-medium text-white">{material.descripcion}</h4>
                 <p class="text-sm text-gray-400 mt-1">
-                    Subido: {Astro.props.material.fechaSubida}
+                    Subido: {material.fechaSubida}
                 </p>
             </div>
         </a>
     )
 }
+
+<script is:inline define:vars={{ material }}>
+    const generateRandomNumber = (seed) => {
+        const num = parseInt(seed);
+        return (num % 9) + 1;
+    };
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        const errorEl = document.getElementById("error-message");
+        errorEl.textContent = "";
+        const cedula = event.target.cedula.value;
+        if (!/^[0-9]{8,9}$/.test(cedula)) {
+            errorEl.textContent =
+                "Por favor ingrese una cédula válida (8 o 9 dígitos)";
+            return;
+        }
+
+        if (material.links) {
+            const linkSeleccionado =
+                material.links[generateRandomNumber(cedula).toString()];
+            if (linkSeleccionado) {
+                // Aseguramos URL absoluta y navegamos con location.assign para mayor compatibilidad
+                const url = /^https?:\/\//i.test(linkSeleccionado)
+                    ? linkSeleccionado
+                    : `${window.location.origin}${linkSeleccionado}`;
+                window.location.assign(url);
+            }
+        }
+        // Usamos window.open con _self para abrir en la misma pestaña
+        //window.open(`/escritos/${generateRandomNumber(cedula)}.pdf`, "_self");
+
+        //window.location.href = `/escritos/${generateRandomNumber(cedula)}.pdf`;
+    }
+
+    document
+        .querySelector("#prueba-modal form")
+        ?.addEventListener("submit", handleSubmit);
+</script>

@@ -8,46 +8,74 @@ import PruebaForm from "../../components/PruebaForm.astro";
 
 const basePath = import.meta.env.BASE_URL;
 
-// Define getStaticPaths to tell Astro which routes to generate
+// Cambiar la desestructuración
+interface Material {
+  id: number;
+  tipo: string;
+  descripcion: string;
+  fechaSubida: string;
+  link?: string;
+  links?: Record<string, string>;
+  isFolder?: boolean;
+}
+interface Notificacion {
+  id: number;
+  mensaje: string;
+  fecha: string;
+  fechaExpiracion?: string;
+  prueba?: boolean;
+}
+interface Curso {
+  id: string;
+  curso: string;
+  escuela: string;
+  opcion: string;
+  horario: string;
+  salon: string;
+  ascripta: string;
+  color: string;
+  materiales: Material[];
+  notificaciones: Notificacion[];
+}
+const { curso } = Astro.props as { curso: Curso };
+
+// Cambiar en getStaticPaths
 export async function getStaticPaths() {
-  // Importar todos los cursos dinámicamente
-  const cursoFiles = import.meta.glob("../../data/*.json", { eager: true });
-  const allCourses = [];
+  //Importa los cursos dinamicamente
+  const cursoFiles = import.meta.glob<{ default: Curso }>("../../data/*.json", {
+    eager: true,
+  });
+  const allCursos: Curso[] = [];
 
   for (const path in cursoFiles) {
-    const curso = cursoFiles[path];
-    allCourses.push(curso.default || curso);
+    const { default: curso } = cursoFiles[path];
+    allCursos.push(curso);
   }
 
-  return allCourses.map((course) => ({
-    params: { id: course.id },
-    props: { course },
+  return allCursos.map((curso) => ({
+    params: { id: curso.id },
+    props: { curso },
   }));
 }
 
-// Get the course data from props
-const { course } = Astro.props;
-
-// Validar que el curso exista y tenga las propiedades necesarias
-if (!course || !course.materiales || !course.notificaciones) {
+// Validación
+if (!curso || !curso.materiales || !curso.notificaciones) {
   return new Response("Not Found", { status: 404 });
 }
 
-// Separate materials by type
-const teoricos = course.materiales.filter(
+// Filtros
+const teoricos = curso.materiales.filter(
   (material) => material.tipo === "teorico",
 );
-const practicos = course.materiales.filter(
+const practicos = curso.materiales.filter(
   (material) => material.tipo === "practico",
 );
-// Add this new filter for prueba materials
-const pruebas = course.materiales.filter(
+const pruebas = curso.materiales.filter(
   (material) => material.tipo === "prueba",
 );
 
-// Sort notifications by date (newest first)
-const sortedNotifications = [...course.notificaciones].sort(
-  (a, b) => new Date(b.fecha) - new Date(a.fecha),
+const sortedNotifications = [...curso.notificaciones].sort(
+  (a, b) => new Date(b.fecha).getTime() - new Date(a.fecha).getTime(),
 );
 ---
 
@@ -55,21 +83,21 @@ const sortedNotifications = [...course.notificaciones].sort(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{course.curso} - {course.opcion} | Sistema de Cursos UTU</title>
+    <title>{curso.curso} - {curso.opcion} | Sistema de Cursos UTU</title>
   </head>
   <body class="bg-gray-900 text-gray-200 min-h-screen">
     <Header />
 
     <main class="container mx-auto px-4 py-8">
       <!-- Course Header -->
-      <div class={`${course.color} rounded-lg shadow-lg mb-8 overflow-hidden`}>
+      <div class={`${curso.color} rounded-lg shadow-lg mb-8 overflow-hidden`}>
         <div class="p-6">
           <div
             class="flex flex-col md:flex-row justify-between items-start md:items-center"
           >
             <div>
-              <h1 class="text-3xl font-bold text-white">{course.curso}</h1>
-              <p class="text-xl text-white opacity-90 mt-1">{course.opcion}</p>
+              <h1 class="text-3xl font-bold text-white">{curso.curso}</h1>
+              <p class="text-xl text-white opacity-90 mt-1">{curso.opcion}</p>
             </div>
             <div
               class="mt-4 md:mt-0 bg-black bg-opacity-20 px-4 py-2 rounded-lg"
@@ -89,7 +117,7 @@ const sortedNotifications = [...course.notificaciones].sort(
                     stroke-linejoin="round"></path>
                 </svg>
                 <span class="font-semibold">Escuela:</span>
-                <span class="ml-1">{course.escuela}</span>
+                <span class="ml-1">{curso.escuela}</span>
               </p>
             </div>
           </div>
@@ -125,7 +153,7 @@ const sortedNotifications = [...course.notificaciones].sort(
               </svg>
               <span>
                 <span class="font-semibold">Horario:</span>
-                <span class="inline-block">{course.horario}</span>
+                <span class="inline-block">{curso.horario}</span>
               </span>
             </p>
             <p class="text-gray-300 mb-4 flex items-center">
@@ -143,7 +171,7 @@ const sortedNotifications = [...course.notificaciones].sort(
                   stroke-linejoin="round"></path>
               </svg>
               <span class="font-semibold">Salón:</span>
-              {course.salon}
+              {curso.salon}
             </p>
           </div>
           <div>
@@ -168,7 +196,7 @@ const sortedNotifications = [...course.notificaciones].sort(
                   stroke-linejoin="round"></path>
               </svg>
               <span class="font-semibold">Ascripta:</span>
-              {course.ascripta}
+              {curso.ascripta}
             </p>
             <p class="text-gray-300 mb-4 flex items-center">
               <svg
@@ -185,7 +213,7 @@ const sortedNotifications = [...course.notificaciones].sort(
                   stroke-linejoin="round"></path>
               </svg>
               <span class="font-semibold">Opción:</span>
-              {course.opcion}
+              {curso.opcion}
             </p>
           </div>
         </div>
@@ -193,7 +221,7 @@ const sortedNotifications = [...course.notificaciones].sort(
 
       <!-- Materials Section -->
       <div class="bg-gray-800 rounded-lg shadow-lg mb-8">
-        <div class={`${course.color} text-white py-3 px-6 rounded-t-lg`}>
+        <div class={`${curso.color} text-white py-3 px-6 rounded-t-lg`}>
           <h2 class="text-2xl font-bold">Materiales del Curso</h2>
         </div>
 
@@ -226,7 +254,7 @@ const sortedNotifications = [...course.notificaciones].sort(
                       target="_blank"
                       class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start"
                     >
-                      <div class={`${course.color} p-3 rounded-lg mr-4`}>
+                      <div class={`${curso.color} p-3 rounded-lg mr-4`}>
                         <svg
                           class="w-6 h-6 text-white"
                           viewBox="0 0 24 24"
@@ -289,7 +317,7 @@ const sortedNotifications = [...course.notificaciones].sort(
                       target="_blank"
                       class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start"
                     >
-                      <div class={`${course.color} p-3 rounded-lg mr-4`}>
+                      <div class={`${curso.color} p-3 rounded-lg mr-4`}>
                         <svg
                           class="w-6 h-6 text-white"
                           viewBox="0 0 24 24"
@@ -326,18 +354,40 @@ const sortedNotifications = [...course.notificaciones].sort(
 
           <!-- Test Materials -->
           <div class="mt-8">
-            <h2 class="text-2xl font-bold mb-4">Pruebas</h2>
+            <h3 class="text-xl font-semibold mb-4 text-white flex items-center">
+              <svg
+                class="w-5 h-5 mr-2 text-blue-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 12L11 14L15 10M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+              Pruebas
+            </h3>
             {
               pruebas.length > 0 ? (
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {pruebas.map((material) => (
-                    <PruebaForm
-                      linkBase={material.link}
-                      isFolder={material.link.includes("folder")}
-                      course={course}
-                      material={material}
-                    />
-                  ))}
+                  {pruebas.map((material) => {
+                    const isFolder = "links" in material;
+                    const linkBase = isFolder
+                      ? material.links!
+                      : material.link!;
+
+                    return (
+                      <PruebaForm
+                        linkBase={linkBase}
+                        isFolder={isFolder}
+                        curso={curso}
+                        material={material}
+                      />
+                    );
+                  })}
                 </div>
               ) : (
                 <p class="text-gray-400">No hay pruebas disponibles.</p>
