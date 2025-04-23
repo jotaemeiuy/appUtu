@@ -265,8 +265,7 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+                stroke-linejoin="round"></path>
             </svg>
             Pruebas y Evaluaciones
           </h2>
@@ -423,7 +422,7 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
               card.closest("#practicos-section") === practicosSection;
             const inPruebas =
               card.closest("#pruebas-section") === pruebasSection;
-              
+
             const teoricosSectionVisible =
               teoricosSection.style.display !== "none";
             const practicosSectionVisible =
