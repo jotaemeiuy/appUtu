@@ -82,9 +82,9 @@
       },
       {
         "id": 3,
-        "mensaje": "Hay prueba el 25 de Abril",
+        "mensaje": "Hay prueba el 24 de Abril",
         "prueba": true,
-        "fecha": "2025-04-25",
+        "fecha": "2025-04-24",
         "fechaExpiracion": "2025-04-25"
       }
     ]
