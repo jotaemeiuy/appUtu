@@ -54,14 +54,23 @@
           "9": "https://drive.google.com/file/d/16nyuxOFYj2aKUpD9xyKddix12FQiLsTA/view"
         },
         "isFolder": true
+      },
+      {
+        "id": 7,
+        "tipo": "practico",
+        "descripcion": "Teórico-Práctico de racionales",
+        "fechaSubida": "2025-05-01",
+        "link": "https://drive.google.com/file/d/16i1sePVJnOQpzBkWXB2Og58XEaVmkH2s/view"
+        
       }
+
     ],
     "notificaciones": [
       {
         "id": 1,
         "mensaje": "Se ha subido nuevo material práctico",
-        "fecha": "2025-04-07",
-        "fechaExpiracion": "2025-04-12"
+        "fecha": "2025-05-02",
+        "fechaExpiracion": "2025-05-09"
        
       },
       {
