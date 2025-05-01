@@ -64,15 +64,26 @@ if (!curso || !curso.materiales || !curso.notificaciones) {
 }
 
 // Filtros
-const teoricos = curso.materiales.filter(
-  (material) => material.tipo === "teorico",
-);
-const practicos = curso.materiales.filter(
-  (material) => material.tipo === "practico",
-);
-const pruebas = curso.materiales.filter(
-  (material) => material.tipo === "prueba",
-);
+const teoricos = curso.materiales
+  .filter((material) => material.tipo === "teorico")
+  .sort(
+    (a, b) =>
+      new Date(b.fechaSubida).getTime() - new Date(a.fechaSubida).getTime(),
+  );
+
+const practicos = curso.materiales
+  .filter((material) => material.tipo === "practico")
+  .sort(
+    (a, b) =>
+      new Date(b.fechaSubida).getTime() - new Date(a.fechaSubida).getTime(),
+  );
+
+const pruebas = curso.materiales
+  .filter((material) => material.tipo === "prueba")
+  .sort(
+    (a, b) =>
+      new Date(b.fechaSubida).getTime() - new Date(a.fechaSubida).getTime(),
+  );
 
 const sortedNotifications = [...curso.notificaciones].sort(
   (a, b) => new Date(b.fecha).getTime() - new Date(a.fecha).getTime(),
