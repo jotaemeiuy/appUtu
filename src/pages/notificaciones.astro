@@ -40,11 +40,17 @@ allCourses.forEach(course => {
   });
 });
 
-// Sort notifications: prueba notifications first, then by date (newest first)
+// Sort notifications: prueba notifications first, then by date (oldest first)
 allNotifications.sort((a, b) => {
   if (a.isPrueba && !b.isPrueba) return -1;
   if (!a.isPrueba && b.isPrueba) return 1;
-  return new Date(b.fecha) - new Date(a.fecha);
+  
+  // Get dates
+  const dateA = new Date(a.fecha);
+  const dateB = new Date(b.fecha);
+  
+  // First sort by date (oldest first)
+  return dateA - dateB;
 });
 
 // Group notifications by month
@@ -102,7 +108,18 @@ function getMonthName(monthNumber) {
         <!-- Vertical Timeline Line -->
         <div class="absolute left-0 sm:left-1/2 transform sm:translate-x-[-50%] w-0.5 h-full bg-gray-700"></div>
         
-        {Object.entries(groupedNotifications).map(([monthYear, notifications], monthIndex) => {
+        {Object.entries(groupedNotifications)
+          .sort(([monthYearA], [monthYearB]) => {
+            const [monthA, yearA] = monthYearA.split('-').map(Number);
+            const [monthB, yearB] = monthYearB.split('-').map(Number);
+            
+            // Sort by year first (newest first)
+            if (yearA !== yearB) return yearB - yearA;
+            
+            // Then sort by month (newest first)
+            return monthB - monthA;
+          })
+          .map(([monthYear, notifications], monthIndex) => {
           const [month, year] = monthYear.split('-').map(Number);
           const monthName = getMonthName(month);
           
@@ -118,7 +135,13 @@ function getMonthName(monthNumber) {
               
               <!-- Notifications for this month -->
               <div class="space-y-6">
-                {notifications.map((notification, notifIndex) => {
+                {notifications
+                  .sort((a, b) => {
+                    const dateA = new Date(a.fecha);
+                    const dateB = new Date(b.fecha);
+                    return dateB - dateA; // Newest first
+                  })
+                  .map((notification, notifIndex) => {
                   const date = new Date(notification.fecha);
                   const formattedDate = date.toLocaleDateString('es-ES', {
                     day: 'numeric',

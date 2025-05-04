@@ -61,6 +61,13 @@
           "9": "https://drive.google.com/file/d/1_qo90zs0QuFYkMHjGec4kmiuW_SVYguW/view"
         },
         "isFolder": true
+      },
+      {
+        "id": 7,
+        "tipo": "practico",
+        "descripcion": "Ejercicios de ecuaciones",
+        "fechaSubida": "2025-05-04",
+        "link": "https://drive.google.com/file/d/1zXmkBcYrMFWw-6bNSVShbzHlnntkuiOJ/view"
       }
 
 
@@ -88,7 +95,15 @@
         "prueba": true,
         "fecha": "2025-04-24",
         "fechaExpiracion": "2025-04-24"
+      },
+      {
+        "id": 4,
+        "mensaje": "Se ha subido práctico de ecuaciones",
+        "fecha": "2025-05-04",
+        "fechaExpiracion": "2025-05-12"
       }
+      
+      
 
     ]
   }

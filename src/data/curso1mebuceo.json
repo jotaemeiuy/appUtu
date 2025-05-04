@@ -62,8 +62,15 @@
           "9": "https://drive.google.com/file/d/1Gn6FZfYxM9KWAuRvpRx1MIFK3FTzDYjw/view"
         },
         "isFolder": true
+      },
+      {
+        "id": 7,
+        "tipo": "practico",
+        "descripcion": "Teórico-Práctico de racionales",
+        "fechaSubida": "2025-05-01",
+        "link": "https://drive.google.com/file/d/16i1sePVJnOQpzBkWXB2Og58XEaVmkH2s/view"
+        
       }
-      
     ],
     "notificaciones": [
       {
