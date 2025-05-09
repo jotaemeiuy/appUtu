@@ -68,19 +68,26 @@
         "fechaSubida": "2025-05-01",
         "link": "https://drive.google.com/file/d/16i1sePVJnOQpzBkWXB2Og58XEaVmkH2s/view"
         
+      },
+      {
+        "id": 8,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones",
+        "fechaSubida": "2025-05-08",
+        "link": "https://drive.google.com/file/d/1Xc-5uxLIQJiUhorz-wp9RNv4REqiKrrq/view"
+        
       }
-
-
-
       
     ],
     "notificaciones": [
       {
         "id": 1,
-        "mensaje": "Se ha subido nuevo material teórico y práctico",
-        "fecha": "2025-04-02"
+        "mensaje": "Nuevo material práctico de funciones",
+        "fecha": "2025-05-08",
+        "fechaExpiracion":"2025-05-12"  
        
       },
+     
       {
         "id": 2,
         "mensaje": "Se ha subido prueba diagnóstica",

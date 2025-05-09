@@ -40,7 +40,7 @@ allCourses.forEach(course => {
   });
 });
 
-// Sort notifications: prueba notifications first, then by date (oldest first)
+// Sort notifications: prueba notifications first, then by date (newest first)
 allNotifications.sort((a, b) => {
   if (a.isPrueba && !b.isPrueba) return -1;
   if (!a.isPrueba && b.isPrueba) return 1;
@@ -49,8 +49,8 @@ allNotifications.sort((a, b) => {
   const dateA = new Date(a.fecha);
   const dateB = new Date(b.fecha);
   
-  // First sort by date (oldest first)
-  return dateA - dateB;
+  // Sort by date (newest first)
+  return dateB - dateA;
 });
 
 // Group notifications by month
