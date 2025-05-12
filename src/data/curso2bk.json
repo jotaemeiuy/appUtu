@@ -35,8 +35,23 @@
       "descripcion": "Practico de expresiones algebraicas",
       "fechaSubida": "2025-04-02",
       "link": "https://drive.google.com/file/d/1D7VCv7TD5MoWcB-rD6pfCaj_WeN4fk3C/view"
-     } 
-
+     },
+     {
+      "id": 5,
+      "tipo": "practico",
+      "descripcion": "Práctico de funciones",
+      "fechaSubida": "2025-05-08",
+      "link": "https://drive.google.com/file/d/171HVDcP_H86k7ByaEWAO1QG7wE2cv0-8/view"
+      
+    },
+    {
+      "id": 6,
+      "tipo": "teorico",
+      "descripcion": "Teórico de funciones",
+      "fechaSubida": "2025-05-12",
+      "link": "https://drive.google.com/file/d/1spoOyBtLj2iFlinFPMdWvviTRRhytapY/view"
+      
+    }
     
 
    
@@ -54,6 +69,12 @@
       "prueba": true,
       "fecha": "2025-04-02",
       "fechaExpiracion": "2025-04-12"
+    },
+    {
+      "id": 3,
+      "mensaje": "Se sube material teórico y práctico",
+      "fecha": "2025-05-12",
+      "fechaExpiracion": "2025-05-16"
     }
 
    ]

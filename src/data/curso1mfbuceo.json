@@ -76,20 +76,34 @@
         "fechaSubida": "2025-05-08",
         "link": "https://drive.google.com/file/d/1Xc-5uxLIQJiUhorz-wp9RNv4REqiKrrq/view"
         
+      },
+      {
+        "id": 9,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones",
+        "fechaSubida": "2025-05-12",
+        "link": "https://drive.google.com/file/d/1spoOyBtLj2iFlinFPMdWvviTRRhytapY/view"
+        
       }
       
     ],
     "notificaciones": [
       {
         "id": 1,
-        "mensaje": "Nuevo material práctico de funciones",
-        "fecha": "2025-05-08",
-        "fechaExpiracion":"2025-05-12"  
+        "mensaje": "Nuevo material teórico de funciones",
+        "fecha": "2025-05-12",
+        "fechaExpiracion":"2025-05-16"
        
       },
-     
       {
         "id": 2,
+        "mensaje": "Nuevo material práctico de funciones",
+        "fecha": "2025-05-08",
+        "fechaExpiracion":"2025-05-12"
+       
+      },
+      {
+        "id": 3,
         "mensaje": "Se ha subido prueba diagnóstica",
         "fecha": "2025-04-07",
         "fechaExpiracion": "2025-04-12",
@@ -97,7 +111,7 @@
        
       },
       {
-        "id": 3,
+        "id": 4,
         "mensaje": "Hay prueba el 25 de Abril",
         "prueba": true,
         "fecha": "2025-04-25",
