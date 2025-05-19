@@ -60,8 +60,14 @@
         "tipo": "practico",
         "descripcion": "Teórico-Práctico de racionales",
         "fechaSubida": "2025-05-01",
-        "link": "https://drive.google.com/file/d/16i1sePVJnOQpzBkWXB2Og58XEaVmkH2s/view"
-        
+        "link": "https://drive.google.com/file/d/16i1sePVJnOQpzBkWXB2Og58XEaVmkH2s/view" 
+      }, 
+        {
+        "id": 8,
+        "tipo": "practico",
+        "descripcion": "Práctico de racionales",
+        "fechaSubida": "2025-05-23",
+        "link": "https://drive.google.com/file/d/1uu7zSOt7Y658UM3nS6qdcFFQWM9_mnWH/view" 
       }
 
     ],
@@ -87,13 +93,18 @@
         "prueba": true,
         "fecha": "2025-04-25",
         "fechaExpiracion": "2025-04-25"
-      },
+      },    
       {
         "id": 4,
         "mensaje": "Se sube práctico de fracciones",
         "fecha": "2025-05-04",
-        "fechaExpiracion": "2025-05-12"
-      }
-      
+        "fechaExpiracion":"2025-05-25"       
+      }, 
+     {
+        "id": 5,
+        "mensaje": "Práctico de fracciones",
+        "fecha": "2025-05-23",
+        "fechaExpiracion": "2025-05-25"
+      }    
     ]
   }
