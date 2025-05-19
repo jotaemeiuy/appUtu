@@ -65,7 +65,7 @@
         {
         "id": 8,
         "tipo": "practico",
-        "descripcion": "Práctico de racionales",
+        "descripcion": "Otro práctico de racionales",
         "fechaSubida": "2025-05-23",
         "link": "https://drive.google.com/file/d/1uu7zSOt7Y658UM3nS6qdcFFQWM9_mnWH/view" 
       }
@@ -102,7 +102,7 @@
       }, 
      {
         "id": 5,
-        "mensaje": "Práctico de fracciones",
+        "mensaje": "Nuevo práctico de fracciones",
         "fecha": "2025-05-23",
         "fechaExpiracion": "2025-05-25"
       }    
