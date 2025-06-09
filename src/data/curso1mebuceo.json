@@ -86,7 +86,24 @@
         "fechaSubida": "2025-05-12",
         "link": "https://drive.google.com/file/d/1spoOyBtLj2iFlinFPMdWvviTRRhytapY/view"
         
+      },
+      {
+        "id": 10,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones cuadráticas",
+        "fechaSubida": "2025-06-09",
+        "link": "https://drive.google.com/file/d/1VDjCO0MWFkHnFNUkbSpurH4bkpljRr_Z/view"
+        
+      },
+      {
+        "id": 11,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones cuadráticas",
+        "fechaSubida": "2025-06-09",
+        "link": "https://drive.google.com/file/d/1KioC1INGPHbGuCSz3U_Ylu4GhENHdq_t/view"
+        
       }
+      
       
     ],
     "notificaciones": [
@@ -118,6 +135,12 @@
         "prueba": true,
         "fecha": "2025-04-25",
         "fechaExpiracion": "2025-04-25"
+      },
+      {
+        "id": 4,
+        "mensaje": "Se sube práctico y teórico de funciones cuadráticas",
+        "fecha": "2025-06-09",
+        "fechaExpiracion": "2025-06-12"
       }
       
     ]

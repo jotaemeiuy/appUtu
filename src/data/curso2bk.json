@@ -51,6 +51,30 @@
       "fechaSubida": "2025-05-12",
       "link": "https://drive.google.com/file/d/1spoOyBtLj2iFlinFPMdWvviTRRhytapY/view"
       
+    },
+    {
+      "id": 7,
+      "tipo": "teorico",
+      "descripcion": "Teórico de funciones polinomicas",
+      "fechaSubida": "2025-06-09",
+      "link": "https://drive.google.com/file/d/1k_E6QqB46Zj2GrDbY5R2Sgr5yM0uo8VW/view"
+      
+    },
+    {
+      "id": 8,
+      "tipo": "practico",
+      "descripcion": "Práctico 1 de funciones polinomicas",
+      "fechaSubida": "2025-06-09",
+      "link": "https://drive.google.com/file/d/1j23Kxb8iKL6AqUFxYDFY4KwT_SLZCxeb/view"
+      
+    },
+    { 
+      "id": 9,
+      "tipo": "practico",
+      "descripcion": "Práctico 2 de funciones polinomicas",
+      "fechaSubida": "2025-06-09",
+      "link": "https://drive.google.com/file/d/1iYQCupETHbnyUfboza7rNgLk8VZXZE5D/view"
+      
     }
     
 
@@ -75,6 +99,12 @@
       "mensaje": "Se sube material teórico y práctico",
       "fecha": "2025-05-12",
       "fechaExpiracion": "2025-05-16"
+    },
+    {
+      "id": 4,
+      "mensaje": "Se sube material teórico y práctico de funciones polinomicas",
+      "fecha": "2025-06-09",
+      "fechaExpiracion": "2025-06-12"
     }
 
    ]
