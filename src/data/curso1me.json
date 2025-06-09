@@ -60,7 +60,6 @@
         "tipo": "practico",
         "descripcion": "Teórico-Práctico de racionales",
         "fechaSubida": "2025-05-01",
-<<<<<<< HEAD
         "link": "https://drive.google.com/file/d/16i1sePVJnOQpzBkWXB2Og58XEaVmkH2s/view" 
       }, 
         {
@@ -69,17 +68,13 @@
         "descripcion": "Otro práctico de racionales",
         "fechaSubida": "2025-05-23",
         "link": "https://drive.google.com/file/d/1uu7zSOt7Y658UM3nS6qdcFFQWM9_mnWH/view" 
-=======
-        "link": "https://drive.google.com/file/d/16i1sePVJnOQpzBkWXB2Og58XEaVmkH2s/view"
-        
       },
       {
-        "id": 8,
+        "id": 9,
         "tipo": "practico",
         "descripcion": "Ejercicios de ecuaciones",
         "fechaSubida": "2025-06-09",
         "link": "https://drive.google.com/file/d/1zXmkBcYrMFWw-6bNSVShbzHlnntkuiOJ/view"
->>>>>>> 54fbf76 (Se agrega material en distintos cursos)
       }
 
     ],
@@ -110,7 +105,6 @@
         "id": 4,
         "mensaje": "Se sube práctico de fracciones",
         "fecha": "2025-05-04",
-<<<<<<< HEAD
         "fechaExpiracion":"2025-05-25"       
       }, 
      {
@@ -118,17 +112,12 @@
         "mensaje": "Nuevo práctico de fracciones",
         "fecha": "2025-05-23",
         "fechaExpiracion": "2025-05-25"
-      }    
-=======
-        "fechaExpiracion": "2025-05-12"
-      },
+      },      
       {
-        "id": 5,
+        "id": 6,
         "mensaje": "Se ha subido práctico de ecuaciones",
         "fecha": "2025-06-09",
         "fechaExpiracion": "2025-06-12"
-      }
-      
->>>>>>> 54fbf76 (Se agrega material en distintos cursos)
+      }  
     ]
   }
