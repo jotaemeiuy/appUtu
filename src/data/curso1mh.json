@@ -76,6 +76,38 @@
         "descripcion": "Ejercicios de ecuaciones",
         "fechaSubida": "2025-05-04",
         "link": "https://drive.google.com/file/d/1zXmkBcYrMFWw-6bNSVShbzHlnntkuiOJ/view"
+      },
+      {
+        "id": 8,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones lineales",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1aE_d-lLIhYin703nvaaw_vQ-DKN5b7fq/view"
+        
+      },
+      {
+        "id": 9,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones lineales",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1Xc-5uxLIQJiUhorz-wp9RNv4REqiKrrq/view"
+        
+      },
+      {
+        "id": 10,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones cuadráticas",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1VDjCO0MWFkHnFNUkbSpurH4bkpljRr_Z/view"
+        
+      },
+      {
+        "id": 11,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones cuadráticas",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1KioC1INGPHbGuCSz3U_Ylu4GhENHdq_t/view"
+        
       }
       
       
@@ -107,6 +139,12 @@
         "mensaje": "Se ha subido práctico de ecuaciones",
         "fecha": "2025-05-04",
         "fechaExpiracion": "2025-05-12"
+      },
+      {
+        "id": 5,
+        "mensaje": "Se han subido teoricos y practicos de funciones",
+        "fecha": "2025-06-17",
+        "fechaExpiracion": "2025-06-21"
       }
     ]
   }

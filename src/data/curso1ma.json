@@ -127,6 +127,12 @@
         "mensaje": "Se ha subido práctico de ecuaciones",
         "fecha": "2025-05-04",
         "fechaExpiracion": "2025-05-12"
+      },
+      {
+        "id": 5,
+        "mensaje": "Se han subido teoricos y practicos de funciones",
+        "fecha": "2025-06-17",
+        "fechaExpiracion": "2025-06-21"
       }
       
 
