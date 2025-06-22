@@ -105,6 +105,14 @@
       "mensaje": "Se sube material teórico y práctico de funciones polinomicas",
       "fecha": "2025-06-09",
       "fechaExpiracion": "2025-06-12"
+    },
+    {
+      "id": 6,
+      "mensaje": "Prueba 25/6",
+      "fecha": "2025-06-22",
+      "fechaExpiracion": "2025-06-25",
+      "prueba": true
+       
     }
 
    ]

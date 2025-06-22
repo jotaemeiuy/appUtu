@@ -133,7 +133,16 @@
         "mensaje": "Se han subido teoricos y practicos de funciones",
         "fecha": "2025-06-17",
         "fechaExpiracion": "2025-06-21"
+      },
+      {
+        "id": 6,
+        "mensaje": "Prueba 27/6",
+        "fecha": "2025-06-22",
+        "fechaExpiracion": "2025-07-01",
+        "prueba": true
+       
       }
+
       
 
     ]

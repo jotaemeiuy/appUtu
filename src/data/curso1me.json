@@ -118,6 +118,15 @@
         "mensaje": "Se ha subido práctico de ecuaciones",
         "fecha": "2025-06-09",
         "fechaExpiracion": "2025-06-12"
-      }  
+      },
+           
+      {
+        "id": 7,
+        "mensaje": "Prueba 27/6",
+        "fecha": "2025-06-22",
+        "fechaExpiracion": "2025-06-27",
+        "prueba": true
+       
+      }
     ]
   }

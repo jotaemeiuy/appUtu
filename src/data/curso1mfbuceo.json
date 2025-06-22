@@ -100,7 +100,16 @@
         "fechaSubida": "2025-06-09",
         "link": "https://drive.google.com/file/d/1KioC1INGPHbGuCSz3U_Ylu4GhENHdq_t/view"
         
+      },
+      {
+        "id": 12,
+        "tipo": "practico",
+        "descripcion": "Práctico de inecuaciones",
+        "fechaSubida": "2025-06-09",
+        "link": "https://drive.google.com/file/d/1l4l2-OIrn1N9FPcBk5pnHnGGk5lKTCkK/view"
+        
       }
+      
       
     ],
     "notificaciones": [
@@ -134,10 +143,24 @@
         "fechaExpiracion": "2025-04-25"
       },
       {
-        "id": 4,
+        "id": 5,
         "mensaje": "Se sube práctico y teórico de funciones cuadráticas",
         "fecha": "2025-06-09",
         "fechaExpiracion": "2025-06-12"
+      },
+      {
+        "id": 6,
+        "mensaje": "Se sube práctico de inecuaciones",
+        "fecha": "2025-06-22",
+        "fechaExpiracion": "2025-06-29"
+      },
+      {
+        "id": 7,
+        "mensaje": "Prueba 27/6",
+        "fecha": "2025-06-22",
+        "fechaExpiracion": "2025-07-01",
+        "prueba": true
+       
       }
 
     ]
