@@ -101,6 +101,14 @@
         "fechaSubida": "2025-06-17",
         "link": "https://drive.google.com/file/d/1KioC1INGPHbGuCSz3U_Ylu4GhENHdq_t/view"
         
+      },
+      {
+        "id": 12,
+        "tipo": "practico",
+        "descripcion": "Práctico de sistemas de ecuaciones",
+        "fechaSubida": "2025-10-08",
+        "link": "https://drive.google.com/file/d/1ZV2zrQ_WQ63Nj26op0S6ztaIh8XBa3az/view"
+        
       }
 
 
@@ -148,9 +156,13 @@
         "fechaExpiracion": "2025-07-01",
         "prueba": true
        
-      }
-      
-      
+      },
+      {
+        "id": 7,
+        "mensaje": "Se sube practico de sistemas",
+        "fecha": "2025-10-08",
+        "fechaExpiracion": "2025-10-15"
+      } 
 
     ]
   }

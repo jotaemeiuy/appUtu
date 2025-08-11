@@ -116,6 +116,14 @@
         "fechaExpiracion": "2025-07-01",
         "prueba": true
        
+      },
+      {
+        "id": 13,
+        "tipo": "practico",
+        "descripcion": "Práctico de sistemas de ecuaciones",
+        "fechaSubida": "2025-10-08",
+        "link": "https://drive.google.com/file/d/1ZV2zrQ_WQ63Nj26op0S6ztaIh8XBa3az/view"
+        
       }
 
       
