@@ -75,10 +75,40 @@
       "fechaSubida": "2025-06-09",
       "link": "https://drive.google.com/file/d/1iYQCupETHbnyUfboza7rNgLk8VZXZE5D/view"
       
+    },
+    { 
+      "id": 10,
+      "tipo": "practico",
+      "descripcion": "Práctico Puntos Y Segmentos",
+      "fechaSubida": "2025-08-14",
+      "link": "https://drive.google.com/file/d/1aW7OdLQPixmiNHSL9Q34p1j_Mn5bkKxx/view"
+      
+    },
+    { 
+      "id": 11,
+      "tipo": "practico",
+      "descripcion": "Práctico Recta",
+      "fechaSubida": "2025-08-14",
+      "link": "https://drive.google.com/file/d/1tpVN-ExcmISwzMp4U8Dk9LlCo8Rw3j4J/view"
+      
+    },
+    { 
+      "id": 12,
+      "tipo": "practico",
+      "descripcion": "Práctico Recta",
+      "fechaSubida": "2025-08-14",
+      "link": "https://drive.google.com/file/d/1tpVN-ExcmISwzMp4U8Dk9LlCo8Rw3j4J/view"
+      
+    },
+    { 
+      "id": 13,
+      "tipo": "practico",
+      "descripcion": "Práctico Circunferencia",
+      "fechaSubida": "2025-08-14",
+      "link": "https://drive.google.com/file/d/1ICpOn0jYYYgfY6jRz5o5hIt3mgsMDdWy/view"
+      
     }
-    
-
-   
+     
   ],
   "notificaciones": [
     {
@@ -113,7 +143,13 @@
       "fechaExpiracion": "2025-06-25",
       "prueba": true
        
-    }
+    },
+    {
+      "id": 7,
+      "mensaje":"Se sube material teórico y práctico de geoemetría analitica",
+      "fecha": "2025-08-14",
+      "fechaExpiracion": "2025-08-21"
+   }
 
    ]
 }
