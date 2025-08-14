@@ -95,14 +95,6 @@
     { 
       "id": 12,
       "tipo": "practico",
-      "descripcion": "Práctico Recta",
-      "fechaSubida": "2025-08-14",
-      "link": "https://drive.google.com/file/d/1tpVN-ExcmISwzMp4U8Dk9LlCo8Rw3j4J/view"
-      
-    },
-    { 
-      "id": 13,
-      "tipo": "practico",
       "descripcion": "Práctico Circunferencia",
       "fechaSubida": "2025-08-14",
       "link": "https://drive.google.com/file/d/1ICpOn0jYYYgfY6jRz5o5hIt3mgsMDdWy/view"
