@@ -197,14 +197,14 @@
         "id": 9,
         "mensaje": "Se sube practico de funciones racionales",
         "fecha": "2025-09-18",
-        "fechaExpiracion": "2025-08-21" 
+        "fechaExpiracion": "2025-09-30" 
       },
 
       {
         "id": 10,
         "mensaje": "Se sube teorico de funciones racionales",
         "fecha": "2025-09-18",
-        "fechaExpiracion": "2025-08-21" 
+        "fechaExpiracion": "2025-09-30" 
       }
 
     ]
