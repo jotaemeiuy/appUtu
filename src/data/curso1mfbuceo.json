@@ -116,6 +116,23 @@
         "fechaSubida": "2025-10-08",
         "link": "https://drive.google.com/file/d/1ZV2zrQ_WQ63Nj26op0S6ztaIh8XBa3az/view"
         
+      },
+      {
+        "id": 14,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones racionales",
+        "fechaSubida": "2025-09-18",
+        "link":"https://drive.google.com/file/d/18EZftsYSPDjLd6qGPrLs5ioFDS7LAImX/view"
+        
+        
+      },
+      {
+        "id": 15,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones racionales",
+        "fechaSubida": "2025-09-18",
+        "link": "https://drive.google.com/file/d/18EZftsYSPDjLd6qGPrLs5ioFDS7LAImX/view"
+        
       }
       
       
@@ -174,6 +191,19 @@
         "id": 8,
         "mensaje": "Se sube practico de sistemas",
         "fecha": "2025-08-14",
+        "fechaExpiracion": "2025-08-21" 
+      },
+      {
+        "id": 9,
+        "mensaje": "Se sube practico de funciones racionales",
+        "fecha": "2025-09-18",
+        "fechaExpiracion": "2025-08-21" 
+      },
+
+      {
+        "id": 10,
+        "mensaje": "Se sube teorico de funciones racionales",
+        "fecha": "2025-09-18",
         "fechaExpiracion": "2025-08-21" 
       }
 
