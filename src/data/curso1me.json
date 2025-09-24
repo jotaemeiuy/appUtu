@@ -83,6 +83,39 @@
         "fechaSubida": "2025-10-08",
         "link": "https://drive.google.com/file/d/1ZV2zrQ_WQ63Nj26op0S6ztaIh8XBa3az/view"
         
+      },
+      {
+        "id": 11,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones lineales",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1aE_d-lLIhYin703nvaaw_vQ-DKN5b7fq/view"
+        
+      },
+      {
+        "id": 12,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones lineales",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1CjATuXoSRFxmYEvRa8nhlxscig5rCPHx/view"
+        
+      },
+      
+      {
+        "id": 13,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones cuadráticas",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1VDjCO0MWFkHnFNUkbSpurH4bkpljRr_Z/view"
+        
+      },
+      {
+        "id": 14,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones cuadráticas",
+        "fechaSubida": "2025-06-17",
+        "link": ""
+        
       }
 
     ],
