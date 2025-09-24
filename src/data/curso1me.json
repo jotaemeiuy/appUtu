@@ -114,7 +114,7 @@
         "tipo": "practico",
         "descripcion": "Práctico de funciones cuadráticas",
         "fechaSubida": "2025-09-24",
-        "link": ""
+        "link": "https://drive.google.com/file/d/1UatwFWDVBeNAoFa3mP9yx02SrfdyZmUo/view"
         
       }
 
@@ -177,7 +177,7 @@
       },
       { 
         "id": 9,
-        "mensaje": "Se suben teoricos y practicos de funciones lineales",
+        "mensaje": "Se suben teoricos y practicos de funciones lineales y cuadráticas",
         "fecha": "2025-09-24",
         "fechaExpiracion": "2025-10-2" 
       }
