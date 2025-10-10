@@ -133,7 +133,24 @@
         "fechaSubida": "2025-09-18",
         "link":"https://drive.google.com/file/d/19NZdj5eqU5r8x6JxR7v6GpU7PS_JP1rk/view"
         
+      },
+      {
+        "id": 16,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones exponenciales",
+        "fechaSubida": "2025-10-09",
+        "link": "https://drive.google.com/file/d/1x8-7YLPN82zoeJcDQGdGqTK3h930MFv4/view"
+   
+      },
+      {
+        "id": 17,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones logaritmicas",
+        "fechaSubida": "2025-10-09",
+        "link": "https://drive.google.com/file/d/1r42J1ENXZe79RLldGi6SXEdCivMe-Eyg/view"
+        
       }
+      
       
       
     ],
@@ -205,6 +222,12 @@
         "mensaje": "Se sube teorico de funciones racionales",
         "fecha": "2025-09-18",
         "fechaExpiracion": "2025-09-30" 
+      },
+      {
+        "id": 11,
+        "mensaje": "Se sube teorico de potencia y logaritmo",
+        "fecha": "2025-10-09",
+        "fechaExpiracion": "2025-10-17" 
       }
 
     ]

@@ -78,7 +78,7 @@
         "link": "https://drive.google.com/file/d/1zXmkBcYrMFWw-6bNSVShbzHlnntkuiOJ/view"
       },
       {
-        "id": 8,
+        "id": 9,
         "tipo": "teorico",
         "descripcion": "Teórico de funciones lineales",
         "fechaSubida": "2025-06-17",
@@ -86,7 +86,7 @@
         
       },
       {
-        "id": 9,
+        "id": 10,
         "tipo": "practico",
         "descripcion": "Práctico de funciones lineales",
         "fechaSubida": "2025-06-17",
@@ -94,7 +94,7 @@
         
       },
       {
-        "id": 10,
+        "id": 11,
         "tipo": "teorico",
         "descripcion": "Teórico de funciones cuadráticas",
         "fechaSubida": "2025-06-17",
@@ -102,7 +102,7 @@
         
       },
       {
-        "id": 11,
+        "id": 12,
         "tipo": "practico",
         "descripcion": "Práctico de funciones cuadráticas",
         "fechaSubida": "2025-06-17",
@@ -110,7 +110,7 @@
         
       },
       {
-        "id": 12,
+        "id": 13,
         "mensaje": "Prueba 26/6",
         "fecha": "2025-06-22",
         "fechaExpiracion": "2025-07-01",
@@ -118,11 +118,28 @@
        
       },
       {
-        "id": 13,
+        "id": 14,
         "tipo": "practico",
         "descripcion": "Práctico de sistemas de ecuaciones",
         "fechaSubida": "2025-10-08",
         "link": "https://drive.google.com/file/d/1ZV2zrQ_WQ63Nj26op0S6ztaIh8XBa3az/view"
+        
+      },
+      {
+        "id": 15,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones racionales",
+        "fechaSubida": "2025-10-09",
+        "link": "https://drive.google.com/file/d/1r42J1ENXZe79RLldGi6SXEdCivMe-Eyg/view"
+        
+      },
+      {
+        "id": 16,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones racionales",
+        "fechaSubida": "2025-10-09",
+        "link":"https://drive.google.com/file/d/18EZftsYSPDjLd6qGPrLs5ioFDS7LAImX/view"
+        
         
       }
 
@@ -164,13 +181,13 @@
         "fechaExpiracion": "2025-06-27"
       },
       {
-        "id": 5,
+        "id": 6,
         "mensaje": "Se han subido teoricos y practicos de funciones",
         "fecha": "2025-06-17",
         "fechaExpiracion": "2025-06-21"
       },
       {
-        "id": 6,
+        "id": 7,
         "mensaje": "Prueba 26/6",
         "fecha": "2025-06-22",
         "fechaExpiracion": "2025-06-26",
@@ -178,10 +195,16 @@
        
       },
       {
-        "id": 7,
+        "id": 8,
         "mensaje": "Se sube practico de sistemas",
         "fecha": "2025-08-14",
         "fechaExpiracion": "2025-08-21" 
+      },
+      {
+        "id": 9,
+        "mensaje": "Se sube teórico y práctico de funciones racionales",
+        "fecha": "2025-10-09",
+        "fechaExpiracion": "2025-10-23"   
       }
     ]
   }
