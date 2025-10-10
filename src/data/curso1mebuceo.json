@@ -1,24 +1,234 @@
+{
+"id": "1mebuceo",
+    "curso": "1ME",
+    "escuela":"Informática Buceo",
+    "opcion": "Tecnologías de la información",
+    "horario": "Jueves 16:30-18:00 Viernes 18:00-19:30",
+    "salon": "Salón 2",
+    "ascripta": "S/C",
+    "color": "bg-blue-600",
+    "materiales": [
+      {
+        "id": 1,
+        "tipo": "teorico",
+        "descripcion": "Introducción a los conjuntos numéricos",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1FxqVt4Mp1tKcSNHde0GKnrUojm49-Mau/view"
+      },
+      {
+        "id": 2,
+        "tipo": "practico",
+        "descripcion": "Ejercicios con conjuntos naturales",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1wKNIoGYzafHuOMUp2BYfKqudKVdtUmqA/view"
+      },
+      {
+        "id": 3,
+        "tipo": "practico",
+        "descripcion": "Ejercicios con conjuntos enteros",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1-z8LfDzqfy5yESFX1b3TIHtxGhzLsf2t/view"
+      },
+      {
+        "id": 4,
+        "tipo": "practico",
+        "descripcion": "Ejercicios con conjuntos racionales",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1pHWANfmyu7yn63DGsvCHzvWtW62i6-Lg/view"
+      },{
+        "id": 5,
+        "tipo": "prueba",
+        "descripcion": "Prueba diagnóstica",
+        "fechaSubida": "2025-04-02",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSd6Cb9o9EW6BrLdZahy0OmjpMZPduR5qbsLJmIPekbB2c6bPA/viewform"
+        
+      },
+      {
+        "id": 6,
+        "tipo": "prueba",
+        "descripcion": "Prueba",
+        "fechaSubida": "2025-04-25",
+        "links": {
+          "1": "https://drive.google.com/file/d/1Sw7DrcVsdZWlLZ3X2i64ekUKUBOhbwmo/view",
+          "2": "https://drive.google.com/file/d/1yHmC8BwZWZilGCByOVx05aVsQ7zC8KLW/view",
+          "3": "https://drive.google.com/file/d/1XQxLTq5Uuswwp4lDko0UEjHIALIfmZH1/view",
+          "4": "https://drive.google.com/file/d/1PvGOxF6I1VnHnPTrj9p6_o1uI8SvQWkL/view",
+          "5": "https://drive.google.com/file/d/1B5oXqvJWoHFMNWNdFhGHP2ialxQTWYrr/view",
+          "6": "https://drive.google.com/file/d/17lHQXarXk8aWJVIRvtiYKOfM-6U5Xpou/view",
+          "7": "https://drive.google.com/file/d/1T0O_gWSg9zc0Ww2Ed_yW9UILjAC2gQgv/view",
+          "8": "https://drive.google.com/file/d/1eWOAB9GXgPOF2bhfz9Eqgw4BkwBGRxl5/view",
+          "9": "https://drive.google.com/file/d/1Gn6FZfYxM9KWAuRvpRx1MIFK3FTzDYjw/view"
+        },
+        "isFolder": true
+      },
+      {
+        "id": 7,
+        "tipo": "practico",
+        "descripcion": "Teórico-Práctico de racionales",
+        "fechaSubida": "2025-05-01",
+        "link": "https://drive.google.com/file/d/16i1sePVJnOQpzBkWXB2Og58XEaVmkH2s/view"
+        
+      },
+      {
+        "id": 8,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones",
+        "fechaSubida": "2025-05-08",
+        "link": "https://drive.google.com/file/d/1Xc-5uxLIQJiUhorz-wp9RNv4REqiKrrq/view"
+        
+      },
+      {
+        "id": 9,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones",
+        "fechaSubida": "2025-05-12",
+        "link": "https://drive.google.com/file/d/1spoOyBtLj2iFlinFPMdWvviTRRhytapY/view"
+        
+      },
+      {
+        "id": 10,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones cuadráticas",
+        "fechaSubida": "2025-06-09",
+        "link": "https://drive.google.com/file/d/1VDjCO0MWFkHnFNUkbSpurH4bkpljRr_Z/view"
+        
+      },
+      {
+        "id": 11,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones cuadráticas",
+        "fechaSubida": "2025-06-09",
+        "link": "https://drive.google.com/file/d/1KioC1INGPHbGuCSz3U_Ylu4GhENHdq_t/view"
+        
+      },
+      {
+        "id": 12,
+        "tipo": "practico",
+        "descripcion": "Práctico de inecuaciones",
+        "fechaSubida": "2025-06-09",
+        "link": "https://drive.google.com/file/d/1l4l2-OIrn1N9FPcBk5pnHnGGk5lKTCkK/view"
+        
+      },
+      {
+        "id": 13,
+        "tipo": "practico",
+        "descripcion": "Práctico de sistemas de ecuaciones",
+        "fechaSubida": "2025-08-10",
+        "link": "https://drive.google.com/file/d/1ZV2zrQ_WQ63Nj26op0S6ztaIh8XBa3az/view"
+        
+      },
+      {
+        "id": 14,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones racionales",
+        "fechaSubida": "2025-09-18",
+        "link":"https://drive.google.com/file/d/18EZftsYSPDjLd6qGPrLs5ioFDS7LAImX/view"
+        
+        
+      },
       {
         "id": 15,
         "tipo": "teorico",
-        "descripcion": "Teórico de función racional",
+        "descripcion": "Teórico de funciones racionales",
         "fechaSubida": "2025-09-18",
-        "link": "https://drive.google.com/file/d/19NZdj5eqU5r8x6JxR7v6GpU7PS_JP1rk/view"
+        "link":"https://drive.google.com/file/d/19NZdj5eqU5r8x6JxR7v6GpU7PS_JP1rk/view"
         
       },
       {
         "id": 16,
         "tipo": "teorico",
-        "descripcion": "Teórico de función exponencial",
+        "descripcion": "Teórico de funciones exponenciales",
         "fechaSubida": "2025-10-09",
         "link": "https://drive.google.com/file/d/1x8-7YLPN82zoeJcDQGdGqTK3h930MFv4/view"
-      
+   
       },
       {
         "id": 17,
         "tipo": "teorico",
-        "descripcion": "Teórico de función logarítmica",
+        "descripcion": "Teórico de funciones logaritmicas",
         "fechaSubida": "2025-10-09",
-        "link": "https://drive.google.com/file/d/13hG2Y6vLyOkLo2G7dhInuANL9-vOi4ID/view"
+        "link": "https://drive.google.com/file/d/1r42J1ENXZe79RLldGi6SXEdCivMe-Eyg/view"
         
       }
+      
+      
+      
+    ],
+    "notificaciones": [
+      {
+        "id": 1,
+        "mensaje": "Nuevo material teórico de funciones",
+        "fecha": "2025-05-12",
+        "fechaExpiracion":"2025-05-16"
+       
+      },
+      {
+        "id": 2,
+        "mensaje": "Nuevo material práctico de funciones",
+        "fecha": "2025-05-08",
+        "fechaExpiracion":"2025-05-12"
+       
+      },
+      {
+        "id": 3,
+        "mensaje": "Se ha subido prueba diagnóstica",
+        "fecha": "2025-04-07",
+        "fechaExpiracion": "2025-04-12",
+        "prueba": true
+       
+      },
+      {
+        "id": 4,
+        "mensaje": "Hay prueba el 25 de Abril",
+        "prueba": true,
+        "fecha": "2025-04-25",
+        "fechaExpiracion": "2025-04-25"
+      },
+      {
+        "id": 5,
+        "mensaje": "Se sube práctico y teórico de funciones cuadráticas",
+        "fecha": "2025-06-09",
+        "fechaExpiracion": "2025-06-12"
+      },
+      {
+        "id": 6,
+        "mensaje": "Se sube práctico de inecuaciones",
+        "fecha": "2025-06-22",
+        "fechaExpiracion": "2025-06-29"
+      },
+      {
+        "id": 7,
+        "mensaje": "Prueba 27/6",
+        "fecha": "2025-06-22",
+        "fechaExpiracion": "2025-07-01",
+        "prueba": true
+       
+      },
+      {
+        "id": 8,
+        "mensaje": "Se sube practico de sistemas",
+        "fecha": "2025-08-14",
+        "fechaExpiracion": "2025-08-21" 
+      },
+      {
+        "id": 9,
+        "mensaje": "Se sube practico de funciones racionales",
+        "fecha": "2025-09-18",
+        "fechaExpiracion": "2025-09-30" 
+      },
+
+      {
+        "id": 10,
+        "mensaje": "Se sube teorico de funciones racionales",
+        "fecha": "2025-09-18",
+        "fechaExpiracion": "2025-09-30" 
+      },
+      {
+        "id": 11,
+        "mensaje": "Se sube teorico de potencia y logaritmo",
+        "fecha": "2025-10-09",
+        "fechaExpiracion": "2025-10-17" 
+      }
+
+    ]
+  }
