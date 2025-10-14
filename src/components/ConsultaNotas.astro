@@ -205,7 +205,12 @@ const gruposDisponibles = Object.keys(gruposData).sort();
       
       notasList.appendChild(notaElement);
     });
-
+    const confetti = (await import("https://esm.sh/canvas-confetti@1.9.3")).default;
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
     // Mostrar la sección de resultados
     resultados.classList.remove('hidden');
     errorMessage.classList.add('hidden');
