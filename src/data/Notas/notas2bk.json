@@ -1,0 +1,226 @@
+{
+  "alumnos": [
+    {
+      "id": "3",
+      "nombre": "ALMEDA ALMEYRA, SOLEDAD ALEXANDRA",
+      "ci": "55562540",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 1, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 5, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 6, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 3, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 3, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "8",
+      "nombre": "BONILLA FALCON, MIKAELA VICTORIA",
+      "ci": "50924458",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 5, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 5, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 3, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "11",
+      "nombre": "CHARQUERO CUSTODIO, PATRIC EZEQUIEL",
+      "ci": "52841894",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 4, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 3, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "13",
+      "nombre": "DE LOS SANTOS CASTRO, YAZZMINN DAYANN",
+      "ci": "54969200",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 2, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 1, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "14",
+      "nombre": "DUARTE PALLEIRO, JESSICA LETICIA",
+      "ci": "51009524",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 1, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 1, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "18",
+      "nombre": "GARCIA FERREIRA, CINTIA VERÓNICA",
+      "ci": "36643216",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 1, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 1, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "19",
+      "nombre": "GOMEZ SANA, BRUNO",
+      "ci": "54170778",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 3, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 1, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "23",
+      "nombre": "MACHADO BARRIOS, HELEN LORENA",
+      "ci": "49854268",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 10, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 7, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 4, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 3, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "24",
+      "nombre": "MAQUEIRA TRINDADE, VERONICA ISABEL",
+      "ci": "53654426",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 7, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 2, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 6, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 6, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 5, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "30",
+      "nombre": "PEREIRA CASAS, VALERIA ELIZABETH",
+      "ci": "47375551",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 5, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 1, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "31",
+      "nombre": "PINTOS BENTANCUR, SHAMILA LUJÁN",
+      "ci": "49996975",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 1, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 1, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "36",
+      "nombre": "SAN MARTÍN ARCOSA, JULIÁN",
+      "ci": "54150697",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 1, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 3, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "37",
+      "nombre": "SOUZA SCOTTO, EDINSON SEBASTIAN",
+      "ci": "49583091",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 2, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 3, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "38",
+      "nombre": "LAXAGUE SILVEIRA, ALDANA",
+      "ci": "55647342",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 1, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 1, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "39",
+      "nombre": "MAIDANA PINTOS, ANA LAURA",
+      "ci": "54246054",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 1, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 1, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "40",
+      "nombre": "AMARO CERIANI, DIEGO",
+      "ci": "50761056",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 3, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 1, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 4, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "42",
+      "nombre": "ODRIOZOLA DIAZ, AILEN BELEN",
+      "ci": "59331199",
+      "escritos": [
+        {"fecha": "2025-04-28", "nota": 3, "tema": "Conjuntos, ecuaciones de primer y segundo grado"},
+        {"fecha": "2025-05-26", "nota": 4, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 3, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 3, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "44",
+      "nombre": "FRAYGOLA RODRIGUEZ, KATHERINE BELÉN",
+      "ci": "47515808",
+      "escritos": [
+        {"fecha": "2025-05-26", "nota": 5, "tema": "Funciones"},
+        {"fecha": "2025-06-25", "nota": 3, "tema": "División, Ruffini, Teorema del Resto"},
+        {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    },
+    {
+      "id": "46",
+      "nombre": "GARCÍA FIORI, LUCIA MARÍA",
+      "ci": "58284682",
+      "escritos": [
+        {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"}
+      ]
+    }
+  ]
+}
