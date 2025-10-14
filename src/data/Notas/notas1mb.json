@@ -1,0 +1,847 @@
+{
+  "alumnos": [
+    {
+      "id": 1,
+      "nombre": "AMARO SOBRERA, KIARA GUADALUPE",
+      "ci": "58365369",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 3,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 1, 
+          "observacion": "No asistió",
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 3,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 3,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 3,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "ARIAS PEREZ, PRISCIILA",
+      "ci": "58350526",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 8,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 4,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 3,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 3,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 4,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "BERAZATEGUI RIVADAVIA, LUCAS",
+      "ci": "58155124",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 6,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 6,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 7,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 3,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 3,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "BLANCO RAMOS, VALENTINA JIMENA",
+      "ci": "58157586",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 8,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 6,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 4,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 8,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 4,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "BUZZI LUNA, MARIA ELENA",
+      "ci": "56743640",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 3,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 1, 
+          "observacion": "No asistió",
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "CAPPETTA RENDELL, LUISANA AGUSTINA",
+      "ci": "58233611",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 4,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 6,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 4,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 2,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 2,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nombre": "CARBALLO HEIT, LUCÍA NICOLE",
+      "ci": "58054786",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 6,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 3,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 2,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 2,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 3,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nombre": "DE LEON RODRIGUEZ, MARTINA",
+      "ci": "58061737",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 1,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 1, 
+          "observacion": "No asistió",
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 2,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 1,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 1,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nombre": "DIANIS ALVIRA, FRANCO",
+      "ci": "57978973",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 10,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 8,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 5,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 5,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 6,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nombre": "FERNANDEZ MARTINEZ, SERGIO EZEQUIEL",
+      "ci": "58343321",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 9,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 1, 
+          "observacion": "No asistió",
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Prueba semestral"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nombre": "GOPAR BATALLA, LUCAS ROGELIO",
+      "ci": "57599282",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 6,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 7,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 5,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 6,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 5,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nombre": "IACONO MINERVINI, AGUSTIN EZEQUIEL",
+      "ci": "56579633",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 2,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 1, 
+          "observacion": "No asistió",
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "nombre": "LARROSA ALFONSO, ELIAS EZEQUIEL",
+      "ci": "58332001",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 7,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 7,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 4,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 3,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 6,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "nombre": "LEZCANO COELHO, ENZO BENJAMIN",
+      "ci": "58385707",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 4,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 6,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 3,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 4,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 3,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "nombre": "MAQUEIRA SANCHEZ, LUCIANA NATALIE",
+      "ci": "57882083",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 2,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 1, 
+          "observacion": "No asistió",
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 1,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "nombre": "MONZON MARTINEZ, ROMINA AYELEN",
+      "ci": "58011419",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 4,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 5,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 3,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "nombre": "MORGANTI OLIVERA, MALENA",
+      "ci": "58065476",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 6,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 5,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 3,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 4,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 4,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "nombre": "NAREZ PEREIRA, AGUSTIN GABRIEL",
+      "ci": "56853491",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 3,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 6,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 7,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 3,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 5,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "nombre": "PEREZ PACHECO, MILAGROS JAQUELINE",
+      "ci": "57889564",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 3,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 6,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 3,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 4,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "nombre": "RIVERO BRUZZONE, ANGEL EZEQUIEL",
+      "ci": "58498607",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 5,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 2,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 3,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 4,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 1,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "nombre": "ROSAS SOLER, LUZMILA ROCIÓ",
+      "ci": "58331994",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 7,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 6,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 6,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 5,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 4,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "nombre": "SILVA RODRÍGUEZ, EMILIANO MOISES",
+      "ci": "57860089",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 1, 
+          "observacion": "No lo hizo",
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 2,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 1, 
+          "observacion": "No entrego la hoja de escrito",
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 3,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 3,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "nombre": "VALERI DIAZ, JULIETA VALENTINA",
+      "ci": "58012601",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 9,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 3,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 3,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 1,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 2,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "nombre": "VAZ MARTINS SEOANE, JEREMIAS SHEN",
+      "ci": "59831058",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 4,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 3,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 2,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 3,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 4,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "nombre": "VIERA LOPEZ, FLORENCIA",
+      "ci": "57019896",
+      "escritos": [
+        { 
+          "fecha": "2025-04-24", 
+          "nota": 6,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 8,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 4,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 2,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 6,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "nombre": "BATISTA PEREZ, DANIELA MARIA",
+      "ci": "N2981310",
+      "escritos": [
+        { 
+          "fecha": "2025-06-02", 
+          "nota": 6,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-26", 
+          "nota": 7,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-04", 
+          "nota": 6,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-15", 
+          "nota": 3,
+          "tema": "Funciones lineales y cuadráticas"
+        }
+      ]
+    }
+  ]
+}

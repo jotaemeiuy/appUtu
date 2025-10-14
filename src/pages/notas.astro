@@ -1,0 +1,57 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ConsultaNotas from "../components/ConsultaNotas.astro";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://jotaemeiuy.github.io/appUtu/favicon.svg"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Consulta de Notas - UTU</title>
+    <meta name="description" content="Consulta tus notas del curso 1MA de UTU" />
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <Header />
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+      <section class="mb-12">
+        <div class="text-center mb-8">
+          <h1 class="text-4xl font-bold mb-4">Consulta de Notas</h1>
+          <p class="text-gray-300 text-lg">
+            Selecciona tu grupo e ingresa tu cédula de identidad para consultar tus calificaciones
+          </p>
+        </div>
+        
+        <!-- Información adicional -->
+        <div class="max-w-3xl mx-auto mb-8 p-4 bg-blue-900 bg-opacity-50 rounded-lg border-l-4 border-blue-500">
+          <h2 class="text-lg font-semibold mb-2 text-blue-200">
+            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Información Importante
+          </h2>
+          <ul class="text-blue-100 space-y-1">
+            <li>• Primero selecciona tu grupo de clase</li>
+            <li>• Las notas se muestran del 1 al 10</li>
+            <li>• Notas menores o iguales a 3 aparecen marcadas como "Insuficiente"</li>
+            <li>• Notas mayores a 3 aparecen marcadas como "Ok"</li>
+            <li>• Se incluyen observaciones cuando corresponde</li>
+          </ul>
+        </div>
+
+        <!-- Componente de consulta -->
+        <ConsultaNotas />
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>

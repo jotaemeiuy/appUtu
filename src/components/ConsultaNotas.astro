@@ -1,0 +1,266 @@
+---
+// Importar todos los archivos de notas dinámicamente
+const importNotasFiles = async () => {
+  const notasFiles = import.meta.glob("../data/Notas/notas*.json", { eager: true });
+  const gruposData = {};
+  
+  for (const path in notasFiles) {
+    const fileName = path.split('/').pop().replace('.json', '');
+    const grupoId = fileName.replace('notas', '').toUpperCase();
+    const notasData = notasFiles[path];
+    gruposData[grupoId] = {
+      data: notasData.default || notasData,
+      nombre: grupoId
+    };
+  }
+  
+  return gruposData;
+};
+
+// Cargar todos los datos de notas
+const gruposData = await importNotasFiles();
+const gruposDisponibles = Object.keys(gruposData).sort();
+---
+
+<div class="max-w-4xl mx-auto p-6 bg-gray-800 rounded-lg shadow-xl">
+  <h2 class="text-2xl font-bold mb-6 text-center text-white">Consulta de Notas</h2>
+  
+  <!-- Selector de grupo -->
+  <div class="mb-6">
+    <label for="grupoSelect" class="block text-sm font-medium text-gray-300 mb-2">
+      Selecciona tu grupo:
+    </label>
+    <select 
+      id="grupoSelect" 
+      class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white"
+    >
+      <option value="">-- Selecciona un grupo --</option>
+      {
+        gruposDisponibles.map((grupo) => (
+          <option value={grupo}>{grupo}</option>
+        ))
+      }
+    </select>
+  </div>
+
+  <!-- Formulario de búsqueda -->
+  <form id="consultaForm" class="mb-6">
+    <div class="flex flex-col sm:flex-row gap-4 items-end">
+      <div class="flex-1">
+        <label for="cedula" class="block text-sm font-medium text-gray-300 mb-2">
+          Ingresa tu cédula de identidad:
+        </label>
+        <input
+          type="text"
+          id="cedula"
+          name="cedula"
+          placeholder="Ej: 58197340"
+          class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400"
+          required
+          disabled
+        />
+      </div>
+      <button
+        type="submit"
+        id="consultarBtn"
+        class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 disabled:bg-gray-600 disabled:cursor-not-allowed"
+        disabled
+      >
+        Consultar
+      </button>
+    </div>
+  </form>
+
+  <!-- Área de resultados -->
+  <div id="resultados" class="hidden">
+    <div id="alumnoInfo" class="mb-6 p-4 bg-gray-700 rounded-lg">
+      <!-- Información del alumno se insertará aquí -->
+    </div>
+    
+    <div id="notasContainer">
+      <h3 class="text-xl font-semibold mb-4 text-white">Historial de Evaluaciones</h3>
+      <div id="notasList" class="space-y-3">
+        <!-- Lista de notas se insertará aquí -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensaje de error -->
+  <div id="errorMessage" class="hidden p-4 bg-red-600 text-white rounded-lg">
+    <p id="errorText">No se encontró ningún estudiante con esa cédula.</p>
+  </div>
+</div>
+
+<script define:vars={{ gruposData }}>
+  const form = document.getElementById('consultaForm');
+  const grupoSelect = document.getElementById('grupoSelect');
+  const cedulaInput = document.getElementById('cedula');
+  const consultarBtn = document.getElementById('consultarBtn');
+  const resultados = document.getElementById('resultados');
+  const errorMessage = document.getElementById('errorMessage');
+  const alumnoInfo = document.getElementById('alumnoInfo');
+  const notasList = document.getElementById('notasList');
+  
+  let grupoSeleccionado = null;
+  let datosGrupoActual = null;
+
+  function formatearFecha(fecha) {
+    const date = new Date(fecha + 'T00:00:00');
+    return date.toLocaleDateString('es-ES', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
+  }
+
+  function getEstadoNota(nota) {
+    if (nota <= 3) {
+      return {
+        clase: 'text-red-400 font-semibold',
+        texto: 'Insuficiente',
+      };
+    } else {
+      return {
+        clase: 'text-green-400 font-semibold',
+        texto: 'Ok',
+      };
+    }
+  }
+
+  // Manejar selección de grupo
+  grupoSelect.addEventListener('change', function() {
+    const grupoSeleccionadoValue = this.value;
+    
+    if (grupoSeleccionadoValue) {
+      grupoSeleccionado = grupoSeleccionadoValue;
+      datosGrupoActual = gruposData[grupoSeleccionado];
+      
+      // Habilitar el formulario de cédula
+      cedulaInput.disabled = false;
+      consultarBtn.disabled = false;
+      cedulaInput.placeholder = `Ej: Ingresa tu cédula para ${grupoSeleccionado}`;
+      
+      // Limpiar resultados anteriores
+      resultados.classList.add('hidden');
+      errorMessage.classList.add('hidden');
+      cedulaInput.value = '';
+    } else {
+      // Deshabilitar el formulario
+      cedulaInput.disabled = true;
+      consultarBtn.disabled = true;
+      cedulaInput.placeholder = 'Primero selecciona un grupo';
+      
+      // Limpiar resultados
+      resultados.classList.add('hidden');
+      errorMessage.classList.add('hidden');
+    }
+  });
+  
+  function mostrarResultados(alumno) {
+    // Mostrar información del alumno
+    alumnoInfo.innerHTML = `
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-semibold text-white">${alumno.nombre}</h3>
+          <p class="text-gray-300">Cédula: ${alumno.ci}</p>
+        </div>
+        <div class="text-right">
+          <span class="inline-block px-3 py-1 bg-blue-600 text-white text-sm font-semibold rounded-full">
+            Grupo ${grupoSeleccionado}
+          </span>
+        </div>
+      </div>
+    `;
+
+    // Mostrar notas
+    notasList.innerHTML = '';
+    
+    alumno.escritos.forEach((escrito, index) => {
+      const estado = getEstadoNota(escrito.nota);
+      
+      const notaElement = document.createElement('div');
+      notaElement.className = 'p-4 bg-gray-700 rounded-lg border-l-4 ' + 
+        (escrito.nota <= 3 ? 'border-red-500' : 'border-green-500');
+      
+      notaElement.innerHTML = `
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+          <div class="flex-1">
+            <h4 class="font-semibold text-white mb-1">${escrito.tema}</h4>
+            <p class="text-sm text-gray-300 mb-2">
+              <span class="inline-flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                ${formatearFecha(escrito.fecha)}
+              </span>
+            </p>
+            ${escrito.observacion ? `<p class="text-sm text-yellow-300 italic">${escrito.observacion}</p>` : ''}
+          </div>
+          <div class="text-right">
+            <div class="text-2xl font-bold text-white mb-1">${escrito.nota}</div>
+            <div class="${estado.clase}">${estado.texto}</div>
+          </div>
+        </div>
+      `;
+      
+      notasList.appendChild(notaElement);
+    });
+
+    // Mostrar la sección de resultados
+    resultados.classList.remove('hidden');
+    errorMessage.classList.add('hidden');
+  }
+
+  function ocultarResultados() {
+    const errorText = document.getElementById('errorText');
+    if (grupoSeleccionado) {
+      errorText.textContent = `No se encontró ningún estudiante con esa cédula en el grupo ${grupoSeleccionado}.`;
+    } else {
+      errorText.textContent = 'No se encontró ningún estudiante con esa cédula.';
+    }
+    resultados.classList.add('hidden');
+    errorMessage.classList.remove('hidden');
+  }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    if (!grupoSeleccionado || !datosGrupoActual) {
+      alert('Por favor selecciona un grupo primero');
+      return;
+    }
+    
+    const cedula = cedulaInput.value.trim();
+    
+    if (!cedula) {
+      return;
+    }
+
+    // Buscar al alumno por cédula en el grupo seleccionado
+    const alumno = datosGrupoActual.data.alumnos.find(a => a.ci === cedula);
+    
+    if (alumno) {
+      mostrarResultados(alumno);
+    } else {
+      ocultarResultados();
+    }
+  });
+
+  // Limpiar resultados al cambiar la cédula
+  cedulaInput.addEventListener('input', function() {
+    resultados.classList.add('hidden');
+    errorMessage.classList.add('hidden');
+  });
+</script>
+
+<style>
+  /* Animaciones suaves */
+  #resultados, #errorMessage {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Estilo para inputs en focus */
+  input:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+</style>
