@@ -149,7 +149,7 @@ const totalNotifications =
               Materiales
             </a>
           </li>
-          <li>
+          <!--li>
             <a
               href={`${import.meta.env.BASE_URL}/notas`}
               class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${import.meta.env.BASE_URL + "/notas" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
@@ -169,7 +169,7 @@ const totalNotifications =
               </svg>
               Notas
             </a>
-          </li>
+          </li-->
           <li class="relative">
             <button
               id="notifications-btn"
@@ -287,6 +287,12 @@ const totalNotifications =
                 class="block p-3 text-center text-blue-400 hover:text-blue-300 bg-gray-900 font-medium"
               >
                 Ver todas las notificaciones
+              </a>
+              <a
+                href={`${import.meta.env.BASE_URL}/notas`}
+                class="block p-3 text-center text-blue-400 hover:text-blue-300 bg-gray-900 font-medium"
+              >
+                Ver Notas de Alumnos
               </a>
             </div>
           </li>
