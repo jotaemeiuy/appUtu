@@ -52,7 +52,9 @@ const gruposDisponibles = Object.keys(gruposData).sort();
 
   <!-- Formulario de búsqueda -->
   <form id="consultaForm" class="mb-6">
-    <div class="flex flex-col sm:flex-row gap-4 items-end">
+    <div
+      class="flex flex-col sm:flex-row sm:justify-center gap-0.5 sm:gap-6 md:gap-10 items-stretch sm:items-end"
+    >
       <div class="flex-1">
         <label
           for="cedula"
@@ -65,42 +67,44 @@ const gruposDisponibles = Object.keys(gruposData).sort();
           id="cedula"
           name="cedula"
           placeholder="Ej: 58197340"
-          class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400"
+          class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400"
           required
           disabled
         />
       </div>
-      <button
-        type="submit"
-        id="consultarBtn"
-        class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 disabled:bg-gray-600 disabled:cursor-not-allowed"
-        disabled
-      >
-        Consultar
-      </button>
-    </div>
-  </form>
 
-  <!-- Área de resultados -->
-  <div id="resultados" class="hidden">
-    <div id="alumnoInfo" class="mb-6 p-4 bg-gray-700 rounded-lg">
-      <!-- Información del alumno se insertará aquí -->
-    </div>
-
-    <div id="notasContainer">
-      <h3 class="text-xl font-semibold mb-4 text-white">
-        Historial de Evaluaciones
-      </h3>
-      <div id="notasList" class="space-y-3">
-        <!-- Lista de notas se insertará aquí -->
+      <div class="mt-4 sm:mt-0">
+        <button
+          type="submit"
+          id="consultarBtn"
+          class="w-full sm:w-32 md:w-40 mx-auto block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 disabled:bg-gray-600 disabled:cursor-not-allowed"
+          disabled
+        >
+          Consultar
+        </button>
       </div>
     </div>
+  </form>
+</div>
+<!-- Área de resultados -->
+<div id="resultados" class="hidden">
+  <div id="alumnoInfo" class="mb-6 p-4 bg-gray-700 rounded-lg">
+    <!-- Información del alumno se insertará aquí -->
   </div>
 
-  <!-- Mensaje de error -->
-  <div id="errorMessage" class="hidden p-4 bg-red-600 text-white rounded-lg">
-    <p id="errorText">No se encontró ningún estudiante con esa cédula.</p>
+  <div id="notasContainer">
+    <h3 class="text-xl font-semibold mb-4 text-white">
+      Historial de Evaluaciones
+    </h3>
+    <div id="notasList" class="space-y-3">
+      <!-- Lista de notas se insertará aquí -->
+    </div>
   </div>
+</div>
+
+<!-- Mensaje de error -->
+<div id="errorMessage" class="hidden p-4 bg-red-600 text-white rounded-lg">
+  <p id="errorText">No se encontró ningún estudiante con esa cédula.</p>
 </div>
 
 <script define:vars={{ gruposData }}>
