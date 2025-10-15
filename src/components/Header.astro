@@ -106,11 +106,11 @@ const totalNotifications =
 
       <!-- Navigation -->
       <nav>
-        <ul class="flex space-x-1 md:space-x-4">
+        <ul class="flex flex-wrap justify-center gap-1 md:gap-4">
           <li>
             <a
               href={`${import.meta.env.BASE_URL}`}
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${import.meta.env.BASE_URL ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${Astro.url.pathname === "/" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
             >
               <svg
                 class="w-5 h-5 mr-1"
@@ -131,7 +131,7 @@ const totalNotifications =
           <li>
             <a
               href={`${import.meta.env.BASE_URL}/materiales`}
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${import.meta.env.BASE_URL + "/materiales" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${Astro.url.pathname.startsWith("/materiales") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
             >
               <svg
                 class="w-5 h-5 mr-1"
@@ -149,10 +149,10 @@ const totalNotifications =
               Materiales
             </a>
           </li>
-          <!--li>
+          <li>
             <a
               href={`${import.meta.env.BASE_URL}/notas`}
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${import.meta.env.BASE_URL + "/notas" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${Astro.url.pathname.startsWith("/notas") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
             >
               <svg
                 class="w-5 h-5 mr-1"
@@ -169,11 +169,11 @@ const totalNotifications =
               </svg>
               Notas
             </a>
-          </li-->
+          </li>
           <li class="relative">
             <button
               id="notifications-btn"
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${import.meta.env.BASE_URL + "/notificaciones" ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"} relative`}
+              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${Astro.url.pathname.startsWith("/notificaciones") ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"} relative`}
             >
               <svg
                 class="w-5 h-5 mr-1"
@@ -288,75 +288,69 @@ const totalNotifications =
               >
                 Ver todas las notificaciones
               </a>
-              <a
-                href={`${import.meta.env.BASE_URL}/notas`}
-                class="block p-3 text-center text-blue-400 hover:text-blue-300 bg-gray-900 font-medium"
-              >
-                Ver Notas de Alumnos
-              </a>
             </div>
-          </li>
-          <li>
-            <a
-              href="mailto:prof.javier.martin@gmail.com"
-              class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${import.meta.env.BASE_URL ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
-            >
-              <svg
-                class="w-5 h-5 mr-1"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <li>
+              <a
+                href="mailto:prof.javier.martin@gmail.com"
+                class={`px-3 py-2 rounded-md text-sm font-medium flex items-center ${import.meta.env.BASE_URL ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}`}
               >
-                <path
-                  d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z M3 7l9 6l9 -6"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-              </svg>
-              Contacto
-            </a>
+                <svg
+                  class="w-5 h-5 mr-1"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z M3 7l9 6l9 -6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+                Contacto
+              </a>
+            </li>
           </li>
         </ul>
       </nav>
     </div>
   </div>
-</header>
 
-<script>
-  // Notifications dropdown functionality
-  document.addEventListener("DOMContentLoaded", function () {
-    const notificationsBtn = document.getElementById("notifications-btn");
-    const notificationsDropdown = document.getElementById(
-      "notifications-dropdown",
-    );
+  <script>
+    // Notifications dropdown functionality
+    document.addEventListener("DOMContentLoaded", function () {
+      const notificationsBtn = document.getElementById("notifications-btn");
+      const notificationsDropdown = document.getElementById(
+        "notifications-dropdown",
+      );
 
-    if (notificationsBtn && notificationsDropdown) {
-      // Toggle dropdown when clicking the button
-      notificationsBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        notificationsDropdown.classList.toggle("hidden");
-      });
+      if (notificationsBtn && notificationsDropdown) {
+        // Toggle dropdown when clicking the button
+        notificationsBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          notificationsDropdown.classList.toggle("hidden");
+        });
 
-      // Close dropdown when clicking outside
-      document.addEventListener("click", function (e) {
-        if (
-          !notificationsBtn.contains(e.target) &&
-          !notificationsDropdown.contains(e.target)
-        ) {
-          notificationsDropdown.classList.add("hidden");
-        }
-      });
+        // Close dropdown when clicking outside
+        document.addEventListener("click", function (e) {
+          if (
+            !notificationsBtn.contains(e.target) &&
+            !notificationsDropdown.contains(e.target)
+          ) {
+            notificationsDropdown.classList.add("hidden");
+          }
+        });
+      }
+    });
+  </script>
+
+  <style>
+    /* Add line-clamp utility for truncating notification text */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
-  });
-</script>
-
-<style>
-  /* Add line-clamp utility for truncating notification text */
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-</style>
+  </style>
+</header>
