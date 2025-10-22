@@ -13,12 +13,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 9,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 8,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -29,7 +29,7 @@
         { 
           "fecha": "2025-09-19", 
           "nota": 2,
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -46,12 +46,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 2,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 7,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -61,7 +61,7 @@
         { 
           "fecha": "2025-09-19", 
           "nota": 6,
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -78,12 +78,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 8,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 6,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -93,7 +93,7 @@
         { 
           "fecha": "2025-09-19", 
           "nota": 2,
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -110,13 +110,13 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "Entrega en blanco",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -128,7 +128,7 @@
           "fecha": "2025-09-19", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -145,12 +145,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 7,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -160,7 +160,7 @@
         { 
           "fecha": "2025-09-19", 
           "nota": 7,
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -177,12 +177,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 4,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 3,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -193,7 +193,7 @@
           "fecha": "2025-09-19", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -210,13 +210,13 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 2,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "Entrego en blanco",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -226,7 +226,7 @@
         { 
           "fecha": "2025-09-19", 
           "nota": 2,
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -243,12 +243,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 2,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -260,7 +260,7 @@
           "fecha": "2025-09-19", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -277,12 +277,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 3,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 7,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -292,7 +292,7 @@
         { 
           "fecha": "2025-09-19", 
           "nota": 4,
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -309,12 +309,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 3,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 3,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -325,7 +325,7 @@
           "fecha": "2025-09-19", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -342,12 +342,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 8,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 8,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -357,7 +357,7 @@
         { 
           "fecha": "2025-09-19", 
           "nota": 4,
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -374,13 +374,13 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 5,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -403,12 +403,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -420,7 +420,7 @@
           "fecha": "2025-09-19", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -437,13 +437,13 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 2,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "Entrego en blanco",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -455,7 +455,7 @@
           "fecha": "2025-09-19", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -472,12 +472,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 5,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 5,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -488,7 +488,7 @@
         { 
           "fecha": "2025-09-19", 
           "nota": 9,
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -505,12 +505,12 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 4,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 5,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -520,7 +520,7 @@
         { 
           "fecha": "2025-09-19", 
           "nota": 3,
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     },
@@ -537,13 +537,13 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Función Lineal"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "Entrega en blanco",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Función Cuadrática"
         },
         { 
           "fecha": "2025-08-05", 
@@ -555,7 +555,7 @@
           "fecha": "2025-09-19", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Funciones lineales y cuadráticas"
+          "tema": "Sistemas lineales y no lineales"
         }
       ]
     }
