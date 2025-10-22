@@ -9,18 +9,18 @@
           "fecha": "2025-04-25", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "Entrega en blanco",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -31,8 +31,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 3,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -44,19 +50,19 @@
           "fecha": "2025-04-25", 
           "nota": 1, 
           "observacion": "Entrego en blanco",
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1, 
           "observacion": "Faltó",
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "Entrega en blanco",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -67,8 +73,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "No lo hizo",
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -80,18 +92,18 @@
           "fecha": "2025-04-25", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "Entrega en blanco",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -102,8 +114,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+         {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -114,17 +132,17 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 9,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 3,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 8,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -134,8 +152,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 3,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+         {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "No lo hizo",
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -146,17 +170,17 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 9,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 8,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 9,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -166,8 +190,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 6,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+         {
+          "fecha": "2025-10-20", 
+          "nota": 8,
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -178,17 +207,17 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 5,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 2,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 7,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -198,8 +227,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        }, 
+        {
+          "fecha": "2025-10-20", 
+          "nota": 5,
+          "tema": "Funciones lineales"
+        } 
+        
       ]
     },
     {
@@ -211,17 +246,17 @@
           "fecha": "2025-04-25", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 5,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 4,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -231,8 +266,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 7,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 3,
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -243,18 +283,18 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 10,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 4,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -264,8 +304,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 6,
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -276,18 +321,18 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 2,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 3,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -297,8 +342,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 2,
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -309,17 +359,17 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 3,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 3,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 5,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -330,8 +380,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 7,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 4,
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -342,18 +397,18 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 6,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -364,8 +419,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "No lo hizo",
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -376,17 +437,17 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 8,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 5,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 9,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -396,8 +457,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 5,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 7,
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -408,17 +474,17 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 4,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 4,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -428,8 +494,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 2,
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -440,18 +511,18 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 8,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 3,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -462,8 +533,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "No lo hizo",
+          "tema": "Funciones lineales"
+        } 
       ]
     },
     {
@@ -474,17 +551,17 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 9,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 3,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 9,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -494,8 +571,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 7,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "No lo hizo",
+          "tema": "Funciones lineales"
+        }  
       ]
     },
     {
@@ -506,19 +589,19 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 2,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -529,8 +612,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "No lo hizo",
+          "tema": "Funciones lineales"
+        }  
       ]
     },
     {
@@ -541,19 +630,19 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 3,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 2, 
           "observacion": "Entrega en blanco",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -564,8 +653,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Funciones lineales"
+        }  
       ]
     },
     {
@@ -577,19 +672,19 @@
           "fecha": "2025-04-25", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1, 
           "observacion": "No asistió",
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -600,8 +695,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Funciones lineales"
+        }  
       ]
     },
     {
@@ -612,18 +713,18 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 5,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "Entrega en blanco",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -634,8 +735,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 5,
+          "tema": "Funciones lineales"
+        }  
       ]
     },
     {
@@ -646,17 +752,17 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 7,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 3,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 6,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -666,8 +772,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 3,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 2,
+          "tema": "Funciones lineales"
+        }  
       ]
     },
     {
@@ -678,17 +789,17 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 9,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 9,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 10,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -698,8 +809,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 9,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 8,
+          "tema": "Funciones lineales"
+        }  
       ]
     },
     {
@@ -710,17 +826,17 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 9,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 8,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 10,
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -730,8 +846,13 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 9,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 9,
+          "tema": "Funciones lineales"
+        }  
       ]
     },
     {
@@ -743,18 +864,18 @@
           "fecha": "2025-04-25", 
           "nota": 1, 
           "observacion": "No lo hizo",
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "No vino",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -765,8 +886,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion":"No lo hizo",
+          "tema": "Funciones lineales"
+        }  
       ]
     },
     {
@@ -777,18 +904,18 @@
         { 
           "fecha": "2025-04-25", 
           "nota": 5,
-          "tema": "Evaluación inicial"
+          "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
-          "tema": "Ecuaciones de primer grado"
+          "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
           "nota": 1, 
           "observacion": "Entrega en blanco",
-          "tema": "Ecuaciones de segundo grado"
+          "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
@@ -799,8 +926,14 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
-          "tema": "Funciones lineales y cuadráticas"
-        }
+          "tema": "Sistemas de ecuaciones lineales"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion":"No lo hizo",
+          "tema": "Funciones lineales"
+        }  
       ]
     }
   ]

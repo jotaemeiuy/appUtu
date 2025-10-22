@@ -30,6 +30,11 @@
           "fecha": "2025-09-15", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 4,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
         }
       ]
     },
@@ -62,6 +67,11 @@
           "fecha": "2025-09-15", 
           "nota": 4,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 4,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
         }
       ]
     },
@@ -94,7 +104,12 @@
           "fecha": "2025-09-15", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -126,7 +141,12 @@
           "fecha": "2025-09-15", 
           "nota": 4,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 7,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -162,7 +182,13 @@
           "nota": 1, 
           "observacion": "No lo hizo",
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -194,7 +220,12 @@
           "fecha": "2025-09-15", 
           "nota": 2,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -226,7 +257,12 @@
           "fecha": "2025-09-15", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -259,7 +295,12 @@
           "fecha": "2025-09-15", 
           "nota": 1,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 2,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -291,37 +332,12 @@
           "fecha": "2025-09-15", 
           "nota": 6,
           "tema": "Funciones lineales y cuadráticas"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "nombre": "FERNANDEZ MARTINEZ, SERGIO EZEQUIEL",
-      "ci": "58343321",
-      "escritos": [
-        { 
-          "fecha": "2025-04-24", 
-          "nota": 9,
-          "tema": "Evaluación inicial"
         },
-        { 
-          "fecha": "2025-06-02", 
-          "nota": 1, 
-          "observacion": "No asistió",
-          "tema": "Ecuaciones de primer grado"
-        },
-        { 
-          "fecha": "2025-06-26", 
-          "nota": 1, 
-          "observacion": "No lo hizo",
-          "tema": "Ecuaciones de segundo grado"
-        },
-        { 
-          "fecha": "2025-08-04", 
-          "nota": 1, 
-          "observacion": "No lo hizo",
-          "tema": "Prueba semestral"
-        }
+        {
+          "fecha": "2025-10-20", 
+          "nota": 7,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -353,7 +369,12 @@
           "fecha": "2025-09-15", 
           "nota": 5,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 10,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -389,7 +410,13 @@
           "nota": 1, 
           "observacion": "No lo hizo",
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "No lo hizo",
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -421,7 +448,12 @@
           "fecha": "2025-09-15", 
           "nota": 6,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 10,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -453,7 +485,12 @@
           "fecha": "2025-09-15", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 10,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -488,7 +525,13 @@
           "nota": 1, 
           "observacion": "No lo hizo",
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -522,7 +565,12 @@
           "fecha": "2025-09-15", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 4,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -554,7 +602,12 @@
           "fecha": "2025-09-15", 
           "nota": 4,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -586,7 +639,12 @@
           "fecha": "2025-09-15", 
           "nota": 5,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 7,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -619,7 +677,12 @@
           "fecha": "2025-09-15", 
           "nota": 4,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 4,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -651,7 +714,12 @@
           "fecha": "2025-09-15", 
           "nota": 1,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -683,7 +751,12 @@
           "fecha": "2025-09-15", 
           "nota": 4,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 7,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -717,7 +790,12 @@
           "fecha": "2025-09-15", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -749,7 +827,12 @@
           "fecha": "2025-09-15", 
           "nota": 2,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -781,7 +864,12 @@
           "fecha": "2025-09-15", 
           "nota": 4,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -813,7 +901,13 @@
           "fecha": "2025-09-15", 
           "nota": 6,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 1,
+          "observacion": "No lo hizo",
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     },
     {
@@ -840,7 +934,12 @@
           "fecha": "2025-09-15", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
-        }
+        },
+        {
+          "fecha": "2025-10-20", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones lineales 2x2"
+        } 
       ]
     }
   ]
