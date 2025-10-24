@@ -31,6 +31,11 @@
           "fecha": "2025-09-12", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23",
+          "nota": 9,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -64,6 +69,11 @@
           "fecha": "2025-09-12", 
           "nota": 1,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23",
+          "nota": 2,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -97,7 +107,13 @@
           "fecha": "2025-09-12", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23",
+          "nota": 8,
+          "tema": "Sistemas de ecuaciones"
         }
+        
       ]
     },
     {
@@ -129,6 +145,11 @@
           "fecha": "2025-09-12", 
           "nota": 4,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 4,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -164,6 +185,12 @@
           "fecha": "2025-09-12", 
           "nota": 1,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -198,6 +225,11 @@
           "fecha": "2025-09-12", 
           "nota": 1,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 8,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -233,6 +265,11 @@
           "fecha": "2025-09-12", 
           "nota": 1,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 2,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -265,6 +302,11 @@
           "fecha": "2025-09-12", 
           "nota": 4,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 10,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -298,6 +340,11 @@
           "fecha": "2025-09-12", 
           "nota": 1,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 2,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -333,6 +380,11 @@
           "fecha": "2025-09-12", 
           "nota": 1,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -365,6 +417,11 @@
           "fecha": "2025-09-12", 
           "nota": 2,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 2,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -397,6 +454,11 @@
           "fecha": "2025-09-12", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 4,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -429,7 +491,13 @@
           "fecha": "2025-09-12", 
           "nota": 4,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 10,
+          "tema": "Sistemas de ecuaciones"
         }
+        
       ]
     },
     {
@@ -458,12 +526,20 @@
         { 
           "fecha": "2025-08-01", 
           "nota": 1,
+          "observacion": "Entrega en blanco",
           "tema": "Prueba semestral"
         },
         { 
           "fecha": "2025-09-12", 
           "nota": 1,
+          "observacion": "Entrega en blanco",
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -497,6 +573,11 @@
           "fecha": "2025-09-12", 
           "nota": 1,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -529,6 +610,11 @@
           "fecha": "2025-09-12", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 7,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -561,6 +647,11 @@
           "fecha": "2025-09-12", 
           "nota": 3,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -593,6 +684,11 @@
           "fecha": "2025-09-12", 
           "nota": 4,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 3,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
@@ -626,11 +722,94 @@
           "fecha": "2025-09-12", 
           "nota": 7,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 7,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     },
+
     {
       "id": 20,
+      "nombre": "ORTIZ DE LEON,IVAN",
+      "ci": "58348371",
+      "escritos": [
+        { 
+          "fecha": "2025-04-25", 
+          "nota": 7,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-05-30", 
+          "nota": 6,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-27", 
+          "nota": 4,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-01", 
+          "nota": 5,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-12", 
+          "nota": 5,
+          "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 6,
+          "tema": "Sistemas de ecuaciones"
+        }
+      ]
+    },
+
+
+    {
+      "id": 21,
+      "nombre": "PÉREZ CUBERO, ELÍAS SAMUEL",
+      "ci": "58173508",
+      "escritos": [
+        { 
+          "fecha": "2025-04-25", 
+          "nota": 9,
+          "tema": "Evaluación inicial"
+        },
+        { 
+          "fecha": "2025-05-30", 
+          "nota": 2,
+          "tema": "Ecuaciones de primer grado"
+        },
+        { 
+          "fecha": "2025-06-27", 
+          "nota": 2,
+          "tema": "Ecuaciones de segundo grado"
+        },
+        { 
+          "fecha": "2025-08-01", 
+          "nota": 2,
+          "tema": "Prueba semestral"
+        },
+        { 
+          "fecha": "2025-09-12", 
+          "nota": 3,
+          "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 2,
+          "tema": "Sistemas de ecuaciones"
+        }
+      ]
+    },
+    
+    {
+      "id": 22,
       "nombre": "TABEIRA BENTANCOURT, LUCIA",
       "ci": "58122612",
       "escritos": [
@@ -658,6 +837,11 @@
           "fecha": "2025-09-12", 
           "nota": 2,
           "tema": "Funciones lineales y cuadráticas"
+        },
+        {
+          "fecha": "2025-10-23", 
+          "nota": 6,
+          "tema": "Sistemas de ecuaciones"
         }
       ]
     }
