@@ -148,7 +148,19 @@
         "descripcion": "Teórico de funciones logaritmicas",
         "fechaSubida": "2025-10-09",
         "link": "https://drive.google.com/file/d/13hG2Y6vLyOkLo2G7dhInuANL9-vOi4ID/view"
+      },
+      {
+        "id": 17,
+        "tipo": "practico",
+        "descripcion": "Ejercicios tipo parcial Final",
+        "fechaSubida": "2025-11-07",
+        "link": "https://drive.google.com/file/d/12_yJOrcIO1lA3HIIbiet5BU67qBDsisP/view"
       }
+
+
+      
+
+      
     ],
     "notificaciones": [
       {
@@ -224,6 +236,12 @@
         "mensaje": "Se sube teorico de potencia y logaritmo",
         "fecha": "2025-10-09",
         "fechaExpiracion": "2025-10-17" 
+      },
+      {
+        "id": 12,
+        "mensaje": "Se sube ejercicios tipo parcial final",
+        "fecha": "2025-11-06",
+        "fechaExpiracion": "2025-11-20" 
       }
 
     ]
