@@ -99,7 +99,15 @@
       "fechaSubida": "2025-08-14",
       "link": "https://drive.google.com/file/d/1ICpOn0jYYYgfY6jRz5o5hIt3mgsMDdWy/view"
       
-    }
+    },
+    {
+        "id": 13,
+        "tipo": "practico",
+        "descripcion": "Ejercicios de prueba Final",
+        "fechaSubida": "2025-11-06",
+        "link":"https://drive.google.com/file/d/1g1Bj35oJPOt2i2LJVpQcNvjsUbjZqWMa/view"
+      }
+
      
   ],
   "notificaciones": [
@@ -141,7 +149,13 @@
       "mensaje":"Se sube material teórico y práctico de geoemetría analitica",
       "fecha": "2025-08-14",
       "fechaExpiracion": "2025-08-21"
-   }
+   },
+   {
+        "id": 8,
+        "mensaje": "Se sube ejercicios tipo parcial final",
+        "fecha": "2025-11-06",
+        "fechaExpiracion": "2025-11-20" 
+      }
 
    ]
 }
