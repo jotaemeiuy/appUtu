@@ -38,6 +38,12 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Funciones cuadráticas"
         } 
       ]
     },
@@ -80,6 +86,12 @@
           "nota": 1,
           "observacion": "No lo hizo",
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion": "No asistió",
+          "tema": "Funciones cuadráticas"
         } 
       ]
     },
@@ -121,6 +133,12 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Funciones cuadráticas"
         } 
       ]
     },
@@ -154,11 +172,16 @@
           "nota": 3,
           "tema": "Sistemas de ecuaciones lineales"
         },
-         {
+        {
           "fecha": "2025-10-20", 
           "nota": 1,
           "observacion": "No lo hizo",
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 6,
+          "tema": "Funciones cuadráticas"
         } 
       ]
     },
@@ -196,7 +219,12 @@
           "fecha": "2025-10-20", 
           "nota": 8,
           "tema": "Funciones lineales"
-        } 
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 9,
+          "tema": "Funciones cuadráticas"
+        }  
       ]
     },
     {
@@ -233,6 +261,12 @@
           "fecha": "2025-10-20", 
           "nota": 5,
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion": "Entrega en blanco",
+          "tema": "Funciones cuadráticas"
         } 
         
       ]
@@ -272,6 +306,11 @@
           "fecha": "2025-10-20", 
           "nota": 3,
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 5,
+          "tema": "Funciones cuadráticas"
         } 
       ]
     },
@@ -310,6 +349,12 @@
           "fecha": "2025-10-20", 
           "nota": 6,
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion": "No asistió",
+          "tema": "Funciones cuadráticas"
         } 
       ]
     },
@@ -348,6 +393,12 @@
           "fecha": "2025-10-20", 
           "nota": 2,
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion": "No asistió",
+          "tema": "Funciones cuadráticas"
         } 
       ]
     },
@@ -386,47 +437,57 @@
           "fecha": "2025-10-20", 
           "nota": 4,
           "tema": "Funciones lineales"
-        } 
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 3,
+          "tema": "Funciones cuadráticas"
+        }  
       ]
     },
     {
       "id": 11,
-      "nombre": "FERNANDEZ HERRERA FERNANDEZ, THIAGO FEDERICO",
-      "ci": "57799264",
+      "nombre": "GARCÍA CANABARRO, IGNACIO NICOLÁS",
+      "ci": "57547790",
       "escritos": [
         { 
           "fecha": "2025-04-25", 
-          "nota": 6,
+          "nota": 2,
           "tema":"MCD,mcm"
         },
         { 
           "fecha": "2025-05-30", 
-          "nota": 1,
+          "nota": 3,
           "tema": "Fracciones"
         },
         { 
           "fecha": "2025-06-27", 
-          "nota": 1, 
-          "observacion": "No lo hizo",
+          "nota": 3, 
           "tema": "Ecuaciones de primer grado"
         },
         { 
           "fecha": "2025-08-01", 
           "nota": 1, 
-          "observacion": "No asistió",
+          "observacion": "Entrega en blanco",
           "tema": "Prueba semestral"
         },
         { 
           "fecha": "2025-09-15", 
-          "nota": 1,
+          "nota": 3,
           "tema": "Sistemas de ecuaciones lineales"
         },
         {
           "fecha": "2025-10-20", 
           "nota": 1,
-          "observacion": "No lo hizo",
+          "observacion": "Entrego en blanco",
           "tema": "Funciones lineales"
-        } 
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion": "Entrego en blanco",
+          "tema": "Funciones cuadráticas"
+        }  
       ]
     },
     {
@@ -463,7 +524,12 @@
           "fecha": "2025-10-20", 
           "nota": 7,
           "tema": "Funciones lineales"
-        } 
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 4,
+          "tema": "Funciones cuadráticas"
+        }   
       ]
     },
     {
@@ -500,7 +566,13 @@
           "fecha": "2025-10-20", 
           "nota": 2,
           "tema": "Funciones lineales"
-        } 
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion": "Entrego en blanco",
+          "tema": "Funciones cuadráticas"
+        }   
       ]
     },
     {
@@ -540,7 +612,13 @@
           "nota": 1,
           "observacion": "No lo hizo",
           "tema": "Funciones lineales"
-        } 
+        } ,
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion":"No asistió",
+          "tema": "Funciones cuadráticas"
+        }  
       ]
     },
     {
@@ -578,6 +656,11 @@
           "nota": 1,
           "observacion": "No lo hizo",
           "tema": "Funciones lineales"
+        } ,
+        {
+          "fecha": "2025-11-07", 
+          "nota": 9,
+          "tema": "Funciones cuadráticas"
         }  
       ]
     },
@@ -619,6 +702,12 @@
           "nota": 1,
           "observacion": "No lo hizo",
           "tema": "Funciones lineales"
+        } ,
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion":"Entrega en blanco",
+          "tema": "Funciones cuadráticas"
         }  
       ]
     },
@@ -660,6 +749,12 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion": "Entrego en blanco",
+          "tema": "Funciones cuadráticas"
         }  
       ]
     },
@@ -702,7 +797,13 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Funciones lineales"
-        }  
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion": "No asistió",
+          "tema": "Funciones cuadráticas"
+        }   
       ]
     },
     {
@@ -741,6 +842,11 @@
           "fecha": "2025-10-20", 
           "nota": 5,
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 2,
+          "tema": "Funciones cuadráticas"
         }  
       ]
     },
@@ -778,6 +884,11 @@
           "fecha": "2025-10-20", 
           "nota": 2,
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 5,
+          "tema": "Funciones cuadráticas"
         }  
       ]
     },
@@ -815,6 +926,11 @@
           "fecha": "2025-10-20", 
           "nota": 8,
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 4,
+          "tema": "Funciones cuadráticas"
         }  
       ]
     },
@@ -852,6 +968,11 @@
           "fecha": "2025-10-20", 
           "nota": 9,
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 9,
+          "tema": "Funciones cuadráticas"
         }  
       ]
     },
@@ -893,6 +1014,12 @@
           "nota": 1,
           "observacion":"No lo hizo",
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion":"No lo hizo",
+          "tema": "Funciones cuadráticas"
         }  
       ]
     },
@@ -909,6 +1036,7 @@
         { 
           "fecha": "2025-05-30", 
           "nota": 1,
+          "observacion": "Entrega en blanco",
           "tema": "Fracciones"
         },
         { 
@@ -926,6 +1054,7 @@
         { 
           "fecha": "2025-09-15", 
           "nota": 1,
+          "observacion": "No lo hizo",
           "tema": "Sistemas de ecuaciones lineales"
         },
         {
@@ -933,6 +1062,12 @@
           "nota": 1,
           "observacion":"No lo hizo",
           "tema": "Funciones lineales"
+        },
+        {
+          "fecha": "2025-11-07", 
+          "nota": 1,
+          "observacion":"No lo hizo",
+          "tema": "Funciones cuadráticas"
         }  
       ]
     }
