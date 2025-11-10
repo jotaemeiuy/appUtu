@@ -116,6 +116,13 @@
         "fechaSubida": "2025-09-24",
         "link": "https://drive.google.com/file/d/1UatwFWDVBeNAoFa3mP9yx02SrfdyZmUo/view"
         
+      },
+      {
+        "id": 15,
+        "tipo": "practico",
+        "descripcion": "Ejercicios de prueba Final",
+        "fechaSubida": "2025-11-04",
+        "link":"https://drive.google.com/file/d/1efKB9JpZj9b4pDy047tJS9mbDQVgI_QL/view"
       }
 
     ],
@@ -180,6 +187,13 @@
         "mensaje": "Se suben teoricos y practicos de funciones lineales y cuadráticas",
         "fecha": "2025-09-24",
         "fechaExpiracion": "2025-10-2" 
+      },
+      {
+        "id": 10,
+        "mensaje": "Se suben pruebas para prácticar",
+        "fecha": "2025-10-09",
+        "fechaExpiracion": "2025-11-24"   
       }
+
     ]
   }
