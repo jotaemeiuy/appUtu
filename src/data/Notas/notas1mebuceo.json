@@ -30,6 +30,12 @@
           "fecha": "2025-09-19", 
           "nota": 2,
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 6,
+          "tema": "Nota final del año"
+          
         }
       ]
     },
@@ -62,6 +68,11 @@
           "fecha": "2025-09-19", 
           "nota": 6,
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 7,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -94,6 +105,11 @@
           "fecha": "2025-09-19", 
           "nota": 2,
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 5,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -129,6 +145,12 @@
           "nota": 1, 
           "observacion": "No asistió",
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 1,
+          "tema": "Nota final del año",
+          "observacion": "Ape Diciembre"
         }
       ]
     },
@@ -161,6 +183,12 @@
           "fecha": "2025-09-19", 
           "nota": 7,
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 7,
+          "tema": "Nota final del año"
+         
         }
       ]
     },
@@ -194,6 +222,12 @@
           "nota": 1, 
           "observacion": "No asistió",
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 3,
+          "tema": "Nota final del año",
+          "observacion": "Ape Diciembre"
         }
       ]
     },
@@ -227,6 +261,12 @@
           "fecha": "2025-09-19", 
           "nota": 2,
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 5,
+          "tema": "Nota final del año"
+          
         }
       ]
     },
@@ -261,6 +301,12 @@
           "nota": 1, 
           "observacion": "No asistió",
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "Ape Diciembre"
         }
       ]
     },
@@ -293,6 +339,12 @@
           "fecha": "2025-09-19", 
           "nota": 4,
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 5,
+          "tema": "Nota final del año"
+         
         }
       ]
     },
@@ -326,6 +378,12 @@
           "nota": 1, 
           "observacion": "No asistió",
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 3,
+          "tema": "Nota final del año",
+          "observacion": "Ape Diciembre"
         }
       ]
     },
@@ -358,6 +416,12 @@
           "fecha": "2025-09-19", 
           "nota": 4,
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 7,
+          "tema": "Nota final del año"
+          
         }
       ]
     },
@@ -387,6 +451,12 @@
           "nota": 1, 
           "observacion": "No asistió",
           "tema": "Prueba semestral"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "Ape Diciembre"
         }
       ]
     },
@@ -421,6 +491,12 @@
           "nota": 1, 
           "observacion": "No asistió",
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 1,
+          "tema": "Nota final del año",
+          "observacion": "Ape Diciembre"
         }
       ]
     },
@@ -456,6 +532,12 @@
           "nota": 1, 
           "observacion": "No asistió",
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 1,
+          "tema": "Nota final del año",
+          "observacion": "Ape Diciembre"
         }
       ]
     },
@@ -489,6 +571,12 @@
           "fecha": "2025-09-19", 
           "nota": 9,
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 7,
+          "tema": "Nota final del año"
+         
         }
       ]
     },
@@ -521,6 +609,11 @@
           "fecha": "2025-09-19", 
           "nota": 3,
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 5,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -556,6 +649,12 @@
           "nota": 1, 
           "observacion": "No asistió",
           "tema": "Sistemas lineales y no lineales"
+        },
+        {
+          "fecha": "2025-11-20",
+          "nota": 1,
+          "tema": "Nota final del año",
+          "observacion": "Ape Diciembre"
         }
       ]
     }
