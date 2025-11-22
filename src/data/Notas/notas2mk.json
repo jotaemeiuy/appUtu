@@ -10,7 +10,8 @@
         {"fecha": "2025-06-25", "nota": 6, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 3, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 3, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 3, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 3, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 5, "tema": "Nota final del año"}
       ]
     },
     {
@@ -23,7 +24,8 @@
         {"fecha": "2025-06-25", "nota": 3, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -36,7 +38,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -62,7 +65,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -75,7 +79,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -88,7 +93,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -101,7 +107,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 4, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 3, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 5, "tema": "Nota final del año"}
       ]
     },
     {
@@ -114,7 +121,8 @@
         {"fecha": "2025-06-25", "nota": 6, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 6, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 5, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 8, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 8, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 7, "tema": "Nota final del año"}
       ]
     },
     {
@@ -127,7 +135,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -140,7 +149,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -153,7 +163,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -165,7 +176,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 3, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 2, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -178,7 +190,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -191,7 +204,8 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -204,7 +218,10 @@
         {"fecha": "2025-06-25", "nota": 1, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 4, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 8, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 8, "tema": "Geometría Analítica"}, 
+        {"fecha": "2025-11-21", "nota": 5, "tema": "Nota final del año"} 
+        
+        
       ]
     },
     {
@@ -217,7 +234,8 @@
         {"fecha": "2025-06-25", "nota": 3, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 3, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 5, "tema": "Nota final del año"}
       ]
     },
     {
@@ -229,7 +247,8 @@
         {"fecha": "2025-06-25", "nota": 3, "tema": "División, Ruffini, Teorema del Resto"},
         {"fecha": "2025-07-30", "nota": 1, "tema": "Semestral"},
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     },
     {
@@ -238,7 +257,8 @@
       "ci": "58284682",
       "escritos": [
         {"fecha": "2025-09-15", "nota": 1, "tema": "Funciones polinómicas, gráficos y descomposición factorial"},
-        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"}
+        {"fecha": "2025-10-20", "nota": 1, "tema": "Geometría Analítica"},
+        {"fecha": "2025-11-21", "nota": 1, "tema": "Nota final del año","observacion": "Prueba tribunalizada Febrero"}
       ]
     }
   ]
