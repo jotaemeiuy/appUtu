@@ -35,6 +35,12 @@
           "fecha": "2025-10-20", 
           "nota": 4,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 3,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }
       ]
     },
@@ -72,6 +78,12 @@
           "fecha": "2025-10-20", 
           "nota": 4,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+          
         }
       ]
     },
@@ -109,6 +121,11 @@
           "fecha": "2025-10-20", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         } 
       ]
     },
@@ -146,7 +163,12 @@
           "fecha": "2025-10-20", 
           "nota": 7,
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 8,
+          "tema": "Nota final del año"
+        }
       ]
     },
     {
@@ -188,7 +210,13 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
+        }
       ]
     },
     {
@@ -225,7 +253,12 @@
           "fecha": "2025-10-20", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+        }
       ]
     },
     {
@@ -262,7 +295,12 @@
           "fecha": "2025-10-20", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+        }
       ]
     },
     {
@@ -300,7 +338,13 @@
           "fecha": "2025-10-20", 
           "nota": 2,
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 3,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
+        }
       ]
     },
     {
@@ -337,7 +381,13 @@
           "fecha": "2025-10-20", 
           "nota": 7,
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 8,
+          "tema": "Nota final del año"
+          
+        }
       ]
     },
     {
@@ -374,7 +424,13 @@
           "fecha": "2025-10-20", 
           "nota": 10,
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 8,
+          "tema": "Nota final del año"
+        }
+
       ]
     },
     {
@@ -416,7 +472,13 @@
           "nota": 1,
           "observacion": "No lo hizo",
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 1,
+          "tema": "Nota final del año",
+          "observacion": "Recursa"
+        }
       ]
     },
     {
@@ -453,6 +515,11 @@
           "fecha": "2025-10-20", 
           "nota": 10,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 7,
+          "tema": "Nota final del año"
         } 
       ]
     },
@@ -490,6 +557,11 @@
           "fecha": "2025-10-20", 
           "nota": 10,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         } 
       ]
     },
@@ -531,7 +603,13 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 3,
+          "tema": "Nota final del año",
+          "observacion": "Ape diciembre"
+        }
       ]
     },
     {
@@ -570,6 +648,12 @@
           "fecha": "2025-10-20", 
           "nota": 4,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 3,
+          "tema": "Nota final del año",
+          "observacion": "Ape diciembre"
         } 
       ]
     },
@@ -607,6 +691,12 @@
           "fecha": "2025-10-20", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 6,
+          "tema": "Nota final del año"
+          
         } 
       ]
     },
@@ -644,6 +734,11 @@
           "fecha": "2025-10-20", 
           "nota": 7,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 7,
+          "tema": "Nota final del año"
         } 
       ]
     },
@@ -682,6 +777,11 @@
           "fecha": "2025-10-20", 
           "nota": 4,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         } 
       ]
     },
@@ -719,6 +819,12 @@
           "fecha": "2025-10-20", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 3,
+          "tema": "Nota final del año",
+          "observacion": "Ape diciembre"
         } 
       ]
     },
@@ -756,6 +862,11 @@
           "fecha": "2025-10-20", 
           "nota": 7,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 8,
+          "tema": "Nota final del año"
         } 
       ]
     },
@@ -795,6 +906,12 @@
           "fecha": "2025-10-20", 
           "nota": 1,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "Ape diciembre"
         } 
       ]
     },
@@ -832,6 +949,12 @@
           "fecha": "2025-10-20", 
           "nota": 1,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 3,
+          "tema": "Nota final del año",
+          "observacion": "Ape diciembre"
         } 
       ]
     },
@@ -869,7 +992,13 @@
           "fecha": "2025-10-20", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+        }
+                  
       ]
     },
     {
@@ -907,7 +1036,12 @@
           "nota": 1,
           "observacion": "No lo hizo",
           "tema": "Sistemas de ecuaciones lineales 2x2"
-        } 
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+        }
       ]
     },
     {
@@ -939,6 +1073,11 @@
           "fecha": "2025-10-20", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones lineales 2x2"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         } 
       ]
     }
