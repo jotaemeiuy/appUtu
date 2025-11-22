@@ -190,13 +190,7 @@ const gruposDisponibles = Object.keys(gruposData).sort();
 
     // Mostrar notas
     notasList.innerHTML = "";
-    //Se fija en cuantas notas bajas tiene
-    let notas_bajas = 0;
-
     alumno.escritos.forEach((escrito, index) => {
-      if (escrito.nota <= 3) {
-        notas_bajas++;
-      }
       const estado = getEstadoNota(escrito.nota);
       const notaElement = document.createElement("div");
       notaElement.className =
@@ -230,8 +224,12 @@ const gruposDisponibles = Object.keys(gruposData).sort();
     // Mostrar la sección de resultados
     resultados.classList.remove("hidden");
     errorMessage.classList.add("hidden");
-    //Muestra el confetti
-    if (notas_bajas <= 1) {
+    //Busca la nota final del alumno
+    const notaFinal = alumno.escritos.find(
+      (escrito) => escrito.tema === "Nota final del año",
+    ).nota;
+    console.log(notaFinal);
+    if (notaFinal >= 5) {
       confetti({
         particleCount: 150,
         spread: 160,

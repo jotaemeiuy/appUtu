@@ -36,6 +36,16 @@
           "fecha": "2025-10-23",
           "nota": 9,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -74,6 +84,12 @@
           "fecha": "2025-10-23",
           "nota": 2,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 3,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }
       ]
     },
@@ -112,8 +128,13 @@
           "fecha": "2025-10-23",
           "nota": 8,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+          
         }
-        
       ]
     },
     {
@@ -150,6 +171,12 @@
           "fecha": "2025-10-23", 
           "nota": 4,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 8,
+          "tema": "Nota final del año"
+          
         }
       ]
     },
@@ -191,6 +218,13 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
+          
         }
       ]
     },
@@ -230,6 +264,13 @@
           "fecha": "2025-10-23", 
           "nota": 8,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
+          
         }
       ]
     },
@@ -270,6 +311,13 @@
           "fecha": "2025-10-23", 
           "nota": 2,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
+          
         }
       ]
     },
@@ -307,6 +355,13 @@
           "fecha": "2025-10-23", 
           "nota": 10,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 8,
+          "tema": "Nota final del año"
+          
+          
         }
       ]
     },
@@ -345,6 +400,15 @@
           "fecha": "2025-10-23", 
           "nota": 2,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
+          
+          
+          
         }
       ]
     },
@@ -385,6 +449,15 @@
           "fecha": "2025-10-23", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+          
+          
+          
+          
         }
       ]
     },
@@ -422,6 +495,17 @@
           "fecha": "2025-10-23", 
           "nota": 2,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }
       ]
     },
@@ -459,6 +543,11 @@
           "fecha": "2025-10-23", 
           "nota": 4,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 7,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -496,6 +585,11 @@
           "fecha": "2025-10-23", 
           "nota": 10,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 9,
+          "tema": "Nota final del año"
         }
         
       ]
@@ -540,6 +634,11 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -578,6 +677,12 @@
           "fecha": "2025-10-23", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }
       ]
     },
@@ -615,6 +720,11 @@
           "fecha": "2025-10-23", 
           "nota": 7,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -652,6 +762,11 @@
           "fecha": "2025-10-23", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -689,6 +804,11 @@
           "fecha": "2025-10-23", 
           "nota": 3,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -727,6 +847,11 @@
           "fecha": "2025-10-23", 
           "nota": 7,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 8,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -765,6 +890,16 @@
           "fecha": "2025-10-23", 
           "nota": 6,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 6,
+          "tema": "Nota final del año"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 7,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -804,6 +939,11 @@
           "fecha": "2025-10-23", 
           "nota": 2,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 3,
+          "tema": "Nota final del año"
         }
       ]
     },
@@ -842,6 +982,11 @@
           "fecha": "2025-10-23", 
           "nota": 6,
           "tema": "Sistemas de ecuaciones"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         }
       ]
     }
