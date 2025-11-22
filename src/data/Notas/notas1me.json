@@ -44,6 +44,13 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
+
         } 
       ]
     },
@@ -92,7 +99,13 @@
           "nota": 1,
           "observacion": "No asistió",
           "tema": "Funciones cuadráticas"
-        } 
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 1,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
+        }
       ]
     },
     {
@@ -139,7 +152,13 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Funciones cuadráticas"
-        } 
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
+        }
       ]
     },
     {
@@ -182,7 +201,13 @@
           "fecha": "2025-11-07", 
           "nota": 6,
           "tema": "Funciones cuadráticas"
-        } 
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+          
+        }
       ]
     },
     {
@@ -224,7 +249,12 @@
           "fecha": "2025-11-07", 
           "nota": 9,
           "tema": "Funciones cuadráticas"
-        }  
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 8,
+          "tema": "Nota final del año"
+        } 
       ]
     },
     {
@@ -267,6 +297,11 @@
           "nota": 1,
           "observacion": "Entrega en blanco",
           "tema": "Funciones cuadráticas"
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         } 
         
       ]
@@ -311,6 +346,11 @@
           "fecha": "2025-11-07", 
           "nota": 5,
           "tema": "Funciones cuadráticas"
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         } 
       ]
     },
@@ -355,6 +395,11 @@
           "nota": 1,
           "observacion": "No asistió",
           "tema": "Funciones cuadráticas"
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
         } 
       ]
     },
@@ -399,6 +444,12 @@
           "nota": 1,
           "observacion": "No asistió",
           "tema": "Funciones cuadráticas"
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         } 
       ]
     },
@@ -442,7 +493,13 @@
           "fecha": "2025-11-07", 
           "nota": 3,
           "tema": "Funciones cuadráticas"
-        }  
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+          
+        } 
       ]
     },
     {
@@ -487,7 +544,14 @@
           "nota": 1,
           "observacion": "Entrego en blanco",
           "tema": "Funciones cuadráticas"
-        }  
+        } ,
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
+          
+        } 
       ]
     },
     {
@@ -529,7 +593,12 @@
           "fecha": "2025-11-07", 
           "nota": 4,
           "tema": "Funciones cuadráticas"
-        }   
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 7,
+          "tema": "Nota final del año"
+        } 
       ]
     },
     {
@@ -572,6 +641,12 @@
           "nota": 1,
           "observacion": "Entrego en blanco",
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }   
       ]
     },
@@ -618,6 +693,12 @@
           "nota": 1,
           "observacion":"No asistió",
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 1,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }  
       ]
     },
@@ -661,6 +742,11 @@
           "fecha": "2025-11-07", 
           "nota": 9,
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 7,
+          "tema": "Nota final del año"
         }  
       ]
     },
@@ -708,6 +794,12 @@
           "nota": 1,
           "observacion":"Entrega en blanco",
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 1,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }  
       ]
     },
@@ -755,6 +847,12 @@
           "nota": 1,
           "observacion": "Entrego en blanco",
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }  
       ]
     },
@@ -803,6 +901,12 @@
           "nota": 1,
           "observacion": "No asistió",
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }   
       ]
     },
@@ -847,6 +951,12 @@
           "fecha": "2025-11-07", 
           "nota": 2,
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 3,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }  
       ]
     },
@@ -889,6 +999,12 @@
           "fecha": "2025-11-07", 
           "nota": 5,
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 5,
+          "tema": "Nota final del año"
+          
         }  
       ]
     },
@@ -931,6 +1047,11 @@
           "fecha": "2025-11-07", 
           "nota": 4,
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 8,
+          "tema": "Nota final del año"
         }  
       ]
     },
@@ -973,6 +1094,11 @@
           "fecha": "2025-11-07", 
           "nota": 9,
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 9,
+          "tema": "Nota final del año"
         }  
       ]
     },
@@ -1020,6 +1146,12 @@
           "nota": 1,
           "observacion":"No lo hizo",
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 1,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }  
       ]
     },
@@ -1068,6 +1200,12 @@
           "nota": 1,
           "observacion":"No lo hizo",
           "tema": "Funciones cuadráticas"
+        },
+        {
+          "fecha": "2025-11-21", 
+          "nota": 2,
+          "tema": "Nota final del año",
+          "observacion": "APE Diciembre"
         }  
       ]
     }
