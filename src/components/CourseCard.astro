@@ -14,6 +14,19 @@ export interface Props {
 // Recibir las props
 const { id, curso, opcion, escuela, horario, salon, ascripta, color } =
   Astro.props;
+
+const headerColor = color === "bg-cyan-600" ? "bg-cyan-800" : color;
+const lightHeaders = new Set([
+  "bg-yellow-600",
+  "bg-yellow-300",
+  "bg-pink-300",
+  "bg-pink-200",
+  "bg-pink-100",
+  "bg-cyan-300",
+]);
+const headerTextColor = lightHeaders.has(headerColor)
+  ? "text-gray-900"
+  : "text-white";
 ---
 
 <a href={import.meta.env.BASE_URL + "/curso/" + id} class="block h-full">
@@ -21,10 +34,10 @@ const { id, curso, opcion, escuela, horario, salon, ascripta, color } =
     class="bg-gray-800 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 h-full cursor-pointer"
   >
     <div
-      class={`${color} text-white py-3 px-4 flex justify-between items-center`}
+      class={`${headerColor} ${headerTextColor} py-3 px-4 flex justify-between items-center`}
     >
-      <h3 class="text-xl font-semibold">{curso}</h3>
-      <span class="text-xs bg-gray-900 bg-opacity-30 px-2 py-1 rounded-full"
+      <h3 class="text-xl font-semibold text-white">{curso}</h3>
+      <span class="text-xs bg-gray-900 px-2 py-1 rounded-full text-white"
         >{id}</span
       >
     </div>
