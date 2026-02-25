@@ -228,6 +228,7 @@ const gruposDisponibles = Object.keys(gruposData).sort();
     const notaFinal = alumno.escritos.find(
       (escrito) => escrito.tema === "Nota final del año",
     ).nota;
+    
     if (notaFinal >= 5) {
       confetti({
         particleCount: 150,
