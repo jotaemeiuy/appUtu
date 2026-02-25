@@ -1,16 +1,16 @@
 @import "tailwindcss";
 /* Add custom color classes that will always be included */
 @layer utilities {
-    .bg-purple-600 { background-color: rgb(147, 51, 234); }
-    .bg-blue-600 { background-color: rgb(37, 99, 235); }
-    .bg-green-600 { background-color: rgb(22, 163, 74); }
-    .bg-red-600 { background-color: rgb(220, 38, 38); }
-    .bg-yellow-600 { background-color: rgb(202, 138, 4); }
-    .bg-indigo-600 { background-color: rgb(79, 70, 229); }
-    .bg-pink-600 { background-color: rgb(219, 39, 119); }
-    .bg-teal-600 { background-color: rgb(13, 148, 136); }
-    .bg-orange-600 { background-color: rgb(234, 88, 12); }
-    .bg-cyan-600 { background-color: rgb(8, 145, 178); }
+    .bg-purple-600 { background-color: rgb(147, 51, 234); color: rgb(255, 255, 255); }
+    .bg-blue-600 { background-color: rgb(37, 99, 235); color: rgb(255, 255, 255); }
+    .bg-green-600 { background-color: rgb(22, 163, 74); color: rgb(255, 255, 255); }
+    .bg-red-600 { background-color: rgb(220, 38, 38); color: rgb(255, 255, 255); }
+    .bg-yellow-600 { background-color: rgb(202, 138, 4); color: rgb(255, 255, 255); }
+    .bg-indigo-600 { background-color: rgb(79, 70, 229); color: rgb(255, 255, 255); }
+    .bg-pink-600 { background-color: rgb(219, 39, 119); color: rgb(255, 255, 255); }
+    .bg-teal-600 { background-color: rgb(13, 148, 136); color: rgb(255, 255, 255); }
+    .bg-orange-600 { background-color: rgb(234, 88, 12); color: rgb(255, 255, 255); }
+    .bg-cyan-600 { background-color: rgb(8, 145, 178); color: rgb(255, 255, 255); }
   }
 
   /* Mobile responsive styles */
