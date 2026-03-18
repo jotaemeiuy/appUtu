@@ -8,23 +8,16 @@
     "ascripta": "Cecilia Peláez",
     "color": "bg-green-800",
     "materiales": [
+
       {
         "id": 1,
-        "tipo": "practico",
-        "descripcion": "Ejercicios operaciones combinadas con naturales",
+        "tipo": "teorico",
+        "descripcion": "Introducción a los conjuntos numéricos",
         "fechaSubida": "2026-03-18",
-        "link": "https://drive.google.com/file/d/1Z8KljdfMz9AD5EmJeKL2oyo2ywy-BxuC/view"
+        "link": "https://drive.google.com/file/d/1FxqVt4Mp1tKcSNHde0GKnrUojm49-Mau/view"
       },
       {
         "id": 2,
-        "tipo": "practico",
-        "descripcion": "Ejercicios operaciones combinadas con enteros",
-        "fechaSubida": "2026-03-18",
-        "link": "https://drive.google.com/file/d/1bLJIgoxVvcgLgjhCF-P43f0y4dKov9EX/view"
-      },
-
-      {
-        "id": 3,
         "tipo": "prueba",
         "descripcion": "Prueba diagnóstica",
         "fechaSubida": "2026-03-18",
@@ -35,15 +28,16 @@
     "notificaciones": [
       {
         "id": 1,
-        "mensaje": "Se ha subido nuevo material práctico",
+        "mensaje": "Material teórico de conjuntos numéricos",
         "fecha": "2026-03-18"
+
       },
       {
         "id": 2,
         "mensaje": "Se ha subido prueba diagnóstica",
         "fecha": "2026-03-18",
-        "fechaExpiracion": "2025-04-12",
-        "prueba":true
+        "fechaExpiracion": "2026-04-12",
+        "prueba": true
 
       }
 
