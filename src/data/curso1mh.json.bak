@@ -1,0 +1,223 @@
+{
+    "id": "1mhArroyo",
+    "curso": "1MH",
+    "opcion": "Turismo, Recreación y Ocio",
+    "escuela":"Arroyo Seco",
+    "horario": "Lunes 7:00-8:20 Jueves 8:20-9:40",
+    "salon": "14",
+    "ascripta": "Lucía Cabral",
+    "color": "bg-pink-600",
+    "materiales": [
+      {
+        "id": 1,
+        "tipo": "teorico",
+        "descripcion": "Introducción a los conjuntos numéricos",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1FxqVt4Mp1tKcSNHde0GKnrUojm49-Mau/view"
+      },
+      {
+        "id": 2,
+        "tipo": "practico",
+        "descripcion": "Ejercicios con conjuntos naturales",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1wKNIoGYzafHuOMUp2BYfKqudKVdtUmqA/view"
+      },
+      {
+        "id": 3,
+        "tipo": "practico",
+        "descripcion": "Ejercicios con conjuntos enteros",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1-z8LfDzqfy5yESFX1b3TIHtxGhzLsf2t/view"
+      },
+      {
+        "id": 4,
+        "tipo": "practico",
+        "descripcion": "Ejercicios con conjuntos racionales",
+        "fechaSubida": "2025-04-02",
+        "link": "https://drive.google.com/file/d/1pHWANfmyu7yn63DGsvCHzvWtW62i6-Lg/view"
+      },
+      {
+        "id": 5,
+        "tipo": "prueba",
+        "descripcion": "Prueba diagnóstica",
+        "fechaSubida": "2025-04-02",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdXuQKn34_in3hLGUYm9sYlCg7OehO_dchteFqDjPy3MPFtcw/viewform"
+        
+      },
+      {
+        "id": 6,
+        "tipo": "prueba",
+        "descripcion": "Prueba",
+        "fechaSubida": "2025-04-24",
+        "links": {
+          "1": "https://drive.google.com/file/d/1-wcdNeU4csmA_szGfYGmcTfEt0TuGKeG/view",
+          "2": "https://drive.google.com/file/d/1vQqFH07acqwSXZnQwqIVnb0QUBgZgyUd/view",
+          "3": "https://drive.google.com/file/d/1zG3wwL37Vs6LUJIWOB_BfleDm_v0o5oD/view",
+          "4": "https://drive.google.com/file/d/1pYpGGS-ANyZf8fmZALpnz47zoEg5kkUi/view",
+          "5": "https://drive.google.com/file/d/1tR-8Jtirjz20oH1oVd9D0OszHmTIWcI8/view",
+          "6": "https://drive.google.com/file/d/17p3C-Ic4xmPo5Mc41P0nQ4FIzJjCtMwE/view",
+          "7": "https://drive.google.com/file/d/1eoyhKeNOsaM7rcey7ZYq7t7ZNgGNUUsA/view",
+          "8": "https://drive.google.com/file/d/1NHokFisI8qskdiIPdGNw-lvrzgYNFh1z/view",
+          "9": "https://drive.google.com/file/d/1_qo90zs0QuFYkMHjGec4kmiuW_SVYguW/view"
+        },
+        "isFolder": true
+      },
+      {
+        "id": 7,
+        "tipo": "practico",
+        "descripcion": "Teórico-Práctico de racionales",
+        "fechaSubida": "2025-05-01",
+        "link": "https://drive.google.com/file/d/16i1sePVJnOQpzBkWXB2Og58XEaVmkH2s/view"
+        
+      },
+      {
+        "id": 8,
+        "tipo": "practico",
+        "descripcion": "Ejercicios de ecuaciones",
+        "fechaSubida": "2025-05-04",
+        "link": "https://drive.google.com/file/d/1zXmkBcYrMFWw-6bNSVShbzHlnntkuiOJ/view"
+      },
+      {
+        "id": 9,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones lineales",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1aE_d-lLIhYin703nvaaw_vQ-DKN5b7fq/view"
+        
+      },
+      {
+        "id": 10,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones lineales",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1Xc-5uxLIQJiUhorz-wp9RNv4REqiKrrq/view"
+        
+      },
+      {
+        "id": 11,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones cuadráticas",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1VDjCO0MWFkHnFNUkbSpurH4bkpljRr_Z/view"
+        
+      },
+      {
+        "id": 12,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones cuadráticas",
+        "fechaSubida": "2025-06-17",
+        "link": "https://drive.google.com/file/d/1KioC1INGPHbGuCSz3U_Ylu4GhENHdq_t/view"
+        
+      },
+      {
+        "id": 13,
+        "mensaje": "Prueba 26/6",
+        "fecha": "2025-06-22",
+        "fechaExpiracion": "2025-07-01",
+        "prueba": true
+       
+      },
+      {
+        "id": 14,
+        "tipo": "practico",
+        "descripcion": "Práctico de sistemas de ecuaciones",
+        "fechaSubida": "2025-10-08",
+        "link": "https://drive.google.com/file/d/1ZV2zrQ_WQ63Nj26op0S6ztaIh8XBa3az/view"
+        
+      },
+      {
+        "id": 15,
+        "tipo": "teorico",
+        "descripcion": "Teórico de funciones racionales",
+        "fechaSubida": "2025-10-09",
+        "link": "https://drive.google.com/file/d/1r42J1ENXZe79RLldGi6SXEdCivMe-Eyg/view"
+        
+      },
+      {
+        "id": 16,
+        "tipo": "practico",
+        "descripcion": "Práctico de funciones racionales",
+        "fechaSubida": "2025-10-09",
+        "link":"https://drive.google.com/file/d/18EZftsYSPDjLd6qGPrLs5ioFDS7LAImX/view"
+        
+        
+      },
+      {
+        "id": 17,
+        "tipo": "practico",
+        "descripcion": "Ejercicios de prueba Final",
+        "fechaSubida": "2025-11-04",
+        "link":"https://drive.google.com/file/d/1efKB9JpZj9b4pDy047tJS9mbDQVgI_QL/view"
+      }
+
+      
+      
+    ],
+    "notificaciones": [
+      {
+        "id": 1,
+        "mensaje": "Se ha subido nuevo material teórico y práctico",
+        "fecha": "2025-04-02"
+       
+      },
+      {
+        "id": 2,
+        "mensaje": "Se ha subido prueba diagnóstica",
+        "fecha": "2025-04-07",
+        "fechaExpiracion": "2025-04-12",
+        "prueba": true
+       
+      },
+      {
+        "id": 3,
+        "mensaje": "Hay prueba el 24 de Abril",
+        "prueba": true,
+        "fecha": "2025-04-24",
+        "fechaExpiracion": "2025-04-25"
+      },
+      {
+        "id": 4,
+        "mensaje": "Se ha subido práctico de ecuaciones",
+        "fecha": "2025-05-04",
+        "fechaExpiracion": "2025-05-12"
+      },
+      {
+        "id": 5,
+        "mensaje": "Se han subido teoricos y practicos de funciones",
+        "fecha": "2025-06-17",
+        "fechaExpiracion": "2025-06-27"
+      },
+      {
+        "id": 6,
+        "mensaje": "Se han subido teoricos y practicos de funciones",
+        "fecha": "2025-06-17",
+        "fechaExpiracion": "2025-06-21"
+      },
+      {
+        "id": 7,
+        "mensaje": "Prueba 26/6",
+        "fecha": "2025-06-22",
+        "fechaExpiracion": "2025-06-26",
+        "prueba": true
+       
+      },
+      {
+        "id": 8,
+        "mensaje": "Se sube practico de sistemas",
+        "fecha": "2025-08-14",
+        "fechaExpiracion": "2025-08-21" 
+      },
+      {
+        "id": 9,
+        "mensaje": "Se sube teórico y práctico de funciones racionales",
+        "fecha": "2025-10-09",
+        "fechaExpiracion": "2025-10-23"   
+      },
+      {
+        "id": 10,
+        "mensaje": "Se suben pruebas para prácticar",
+        "fecha": "2025-10-09",
+        "fechaExpiracion": "2025-11-24"   
+      }
+    ]
+  }

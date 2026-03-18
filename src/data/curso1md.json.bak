@@ -1,0 +1,53 @@
+{
+    "id": "1meArroyo",
+    "curso": "1MD",
+    "opcion": "Sistemas Mecánicos Automatizados",
+    "escuela":"Arroyo Seco",
+    "horario": "Lunes 7:00-8:20 Martes 9:55-11:15",
+    "salon": "",
+    "ascripta": "Cecilia Peláez",
+    "color": "bg-green-800",
+    "materiales": [
+      {
+        "id": 1,
+        "tipo": "practico",
+        "descripcion": "Ejercicios operaciones combinadas con naturales",
+        "fechaSubida": "2026-03-18",
+        "link": "https://drive.google.com/file/d/1Z8KljdfMz9AD5EmJeKL2oyo2ywy-BxuC/view"
+      },
+      {
+        "id": 2,
+        "tipo": "practico",
+        "descripcion": "Ejercicios operaciones combinadas con enteros",
+        "fechaSubida": "2026-03-18",
+        "link": "https://drive.google.com/file/d/1bLJIgoxVvcgLgjhCF-P43f0y4dKov9EX/view"
+      },
+      {
+        "id": 3,
+        "tipo": "prueba",
+        "descripcion": "Prueba diagnóstica",
+        "fechaSubida": "2026-03-18",
+        "link": ""
+
+      }
+
+
+    ],
+    "notificaciones": [
+      {
+        "id": 1,
+        "mensaje": "Se ha subido nuevo material práctico",
+        "fecha": "2026-03-18"
+
+      },
+      {
+        "id": 2,
+        "mensaje": "Se ha subido prueba diagnóstica",
+        "fecha": "2026-03-18",
+        "fechaExpiracion": "2026-04-12",
+        "prueba":true
+
+      }
+
+    ]
+  }
