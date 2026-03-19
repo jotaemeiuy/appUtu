@@ -1,0 +1,48 @@
+ {
+    "id": "3dcIndustrias",
+    "curso": "3DC",
+    "escuela":"Industrias Graficas",
+    "opcion": "Sistemas de Impresión",
+    "horario": "Viernes:21:20-22:40",
+    "salon": "",
+    "ascripta": "",
+    "color": "bg-indigo-600",
+    "materiales": [
+
+      {
+        "id": 1,
+        "tipo": "teorico",
+        "descripcion": "Cronograma del curso",
+        "fechaSubida": "2026-03-20",
+        "link": "https://drive.google.com/file/d/1HCgnmvj_9V7eQcxeGsZIpQlKtfaqcY14/view"
+      },
+
+      {
+        "id": 2,
+        "tipo": "teorico",
+        "descripcion": "Operaciones numericas basicas",
+        "fechaSubida": "2026-03-20",
+        "link": "https://drive.google.com/file/d/15FHw7adzHcHWbj-AKuuKAP2AmgBI99Aq/view"
+      }
+
+
+
+    ],
+    "notificaciones": [
+      {
+        "id": 1,
+        "mensaje": "Material teórico de operaciones basicas",
+        "fecha": "2026-03-20"
+
+      },
+      {
+        "id": 2,
+        "mensaje": "Se ha subido cronograma anual",
+        "fecha": "2026-03-20",
+        "prueba": true
+
+      }
+
+
+    ]
+  }
