@@ -11,12 +11,19 @@
       {
         "id": 1,
         "tipo": "teorico",
+        "descripcion": "Cronograma del curso",
+        "fechaSubida": "2026-03-18",
+        "link": "https://drive.google.com/file/d/1juBBMla6bFs9TJGm_4BeIbnHtigIEqkY/view"
+      },
+      {
+        "id": 2,
+        "tipo": "teorico",
         "descripcion": "Introducción a los conjuntos numéricos",
         "fechaSubida": "2026-03-18",
         "link": "https://drive.google.com/file/d/1eskGMzqPHUUiSwZmjARtU5C0sdFJZ2u2/view"
       },
        {
-        "id": 2,
+        "id": 3,
         "tipo": "prueba",
         "descripcion": "Prueba diagnóstica",
         "fechaSubida": "2026-03-18",
