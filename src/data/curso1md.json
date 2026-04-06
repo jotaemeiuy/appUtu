@@ -29,22 +29,36 @@
         "fechaSubida": "2026-03-18",
         "link": "https://forms.gle/FUHuwKMASMXwSsT46"
 
+      },
+      {
+      "id": 4,
+      "tipo": "practico",
+      "descripcion": "Numero racional (fracciones)",
+      "fechaSubida": "2026-04-05",
+      "link":"https://drive.google.com/file/d/1uu7zSOt7Y658UM3nS6qdcFFQWM9_mnWH/view"
       }
     ],
     "notificaciones": [
       {
         "id": 1,
         "mensaje": "Material teórico de conjuntos numéricos",
-        "fecha": "2026-03-18"
+        "fecha": "2026-03-18",
+        "fechaExpiracion": "2026-04-05"
 
       },
       {
         "id": 2,
         "mensaje": "Se ha subido prueba diagnóstica",
         "fecha": "2026-03-18",
-        "fechaExpiracion": "2026-04-12",
+        "fechaExpiracion": "2026-04-05",
         "prueba": true
 
+      },
+      {
+        "id": 3,
+        "mensaje": "Se ha subido material de fracciones",
+        "fecha": "2026-04-05",
+        "fechaExpiracion": "2026-05-05"
       }
 
     ]

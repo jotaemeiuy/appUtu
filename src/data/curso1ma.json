@@ -1,58 +1,63 @@
 {
-    "id": "1maArroyo",
-    "curso": "1MA",
-    "escuela":"Arroyo Seco",
-    "opcion": "Gestión y Administración",
-    "horario": "Martes 7:00-8:20 Viernes:9:00-10:35",
-    "salon": "",
-    "ascripta": "",
-    "color": "bg-cyan-600",
-    "materiales": [
-
-      {
-        "id": 1,
-        "tipo": "teorico",
-        "descripcion": "Cronograma del curso",
-        "fechaSubida": "2026-03-18",
-        "link": "https://drive.google.com/file/d/1juBBMla6bFs9TJGm_4BeIbnHtigIEqkY/view"
-      },
-
-      {
-        "id": 2,
-        "tipo": "teorico",
-        "descripcion": "Introducción a los conjuntos numéricos",
-        "fechaSubida": "2026-03-18",
-        "link": "https://drive.google.com/file/d/1eskGMzqPHUUiSwZmjARtU5C0sdFJZ2u2/view"
-      },
-      {
-        "id": 3,
-        "tipo": "prueba",
-        "descripcion": "Prueba diagnóstica",
-        "fechaSubida": "2026-03-18",
-        "link": "https://forms.gle/KSjRqtt9fbxkWdR3A",
-        "fechaExpiracion": "2026-04-12",
-        "prueba":true
-
-      }
-
-
-    ],
-    "notificaciones": [
-      {
-        "id": 1,
-        "mensaje": "Material teórico de conjuntos numéricos",
-        "fecha": "2026-03-18"
-
-      },
-      {
-        "id": 2,
-        "mensaje": "Se ha subido prueba diagnóstica",
-        "fecha": "2026-03-18",
-        "fechaExpiracion": "2026-04-12",
-        "prueba": true
-
-      }
-
-
-    ]
-  }
+  "id": "1maArroyo",
+  "curso": "1MA",
+  "escuela": "Arroyo Seco",
+  "opcion": "Gestión y Administración",
+  "horario": "Martes 7:00-8:20 Viernes:9:00-10:35",
+  "salon": "",
+  "ascripta": "",
+  "color": "bg-cyan-600",
+  "materiales": [
+    {
+      "id": 1,
+      "tipo": "teorico",
+      "descripcion": "Cronograma del curso",
+      "fechaSubida": "2026-03-18",
+      "link": "https://drive.google.com/file/d/1juBBMla6bFs9TJGm_4BeIbnHtigIEqkY/view"
+    },
+    {
+      "id": 2,
+      "tipo": "teorico",
+      "descripcion": "Introducción a los conjuntos numéricos",
+      "fechaSubida": "2026-03-18",
+      "link": "https://drive.google.com/file/d/1eskGMzqPHUUiSwZmjARtU5C0sdFJZ2u2/view"
+    },
+    {
+      "id": 3,
+      "tipo": "prueba",
+      "descripcion": "Prueba diagnóstica",
+      "fechaSubida": "2026-03-18",
+      "link": "https://forms.gle/KSjRqtt9fbxkWdR3A",
+      "fechaExpiracion": "2026-04-12",
+      "prueba": true
+    },
+    {
+      "id": 4,
+      "tipo": "practico",
+      "descripcion": "Ecuaciones de primer y segundo grado",
+      "fechaSubida": "2026-04-05",
+      "link": "https://drive.google.com/file/d/1zXmkBcYrMFWw-6bNSVShbzHlnntkuiOJ/view"
+    }
+  ],
+  "notificaciones": [
+    {
+      "id": 1,
+      "mensaje": "Material teórico de conjuntos numéricos",
+      "fecha": "2026-03-18",
+      "fechaExpiracion": "2026-04-05"
+    },
+    {
+      "id": 2,
+      "mensaje": "Se ha subido prueba diagnóstica",
+      "fecha": "2026-03-18",
+      "fechaExpiracion": "2026-04-05",
+      "prueba": true
+    },
+    {
+      "id": 3,
+      "mensaje": "Se ha subido teórico y práctico de ecuaciones",
+      "fecha": "2026-04-05",
+      "fechaExpiracion": "2026-05-05"
+    }
+  ]
+}

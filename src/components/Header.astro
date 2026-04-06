@@ -70,8 +70,8 @@ allCourses.forEach((course) => {
 recentNotifications.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
 pruebaNotifications.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
 
-// Take only the first 3 recent notifications
-recentNotifications = recentNotifications.slice(0, 3);
+// Take only the first 4 recent notifications
+recentNotifications = recentNotifications.slice(0, 4);
 
 // Count total notifications (both recent and prueba)
 const totalNotifications =
