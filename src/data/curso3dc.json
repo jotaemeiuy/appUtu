@@ -24,6 +24,14 @@
         "fechaSubida": "2026-03-20",
         "link": "https://drive.google.com/file/d/15FHw7adzHcHWbj-AKuuKAP2AmgBI99Aq/view"
       }
+      {
+        "id": 3,
+        "tipo": "practico",
+        "descripcion": "Curso de geometria con processing",
+        "fechaSubida": "2026-04-10",
+         "link":"https://geometria-two.vercel.app/"
+
+      }
 
 
 
@@ -32,13 +40,20 @@
       {
         "id": 1,
         "mensaje": "Material teórico de operaciones basicas",
-        "fecha": "2026-03-20"
+        "fecha": "2026-03-20",
+        "fecha-Expiracion": "2026-04-10"
 
       },
       {
         "id": 2,
         "mensaje": "Se ha subido cronograma anual",
         "fecha": "2026-03-20"
+      },
+      {
+        "id": 3,
+        "mensaje": "Se ha subido material de geometria",
+        "fecha": "2026-04-10",
+        "fecha-Expiracion": "2026-06-10"
       }
 
 
