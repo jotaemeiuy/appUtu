@@ -23,6 +23,13 @@
         "descripcion": "Operaciones numericas basicas",
         "fechaSubida": "2026-03-20",
         "link": "https://drive.google.com/file/d/15FHw7adzHcHWbj-AKuuKAP2AmgBI99Aq/view"
+      },
+      {
+      "id": 3,
+      "tipo": "practico",
+      "descripcion": "Ecuaciones de primer y segundo grado",
+      "fechaSubida": "2026-04-24",
+      "link": "https://drive.google.com/file/d/1zXmkBcYrMFWw-6bNSVShbzHlnntkuiOJ/view"
       }
 
 
@@ -39,7 +46,13 @@
         "id": 2,
         "mensaje": "Se ha subido cronograma anual",
         "fecha": "2026-03-20"
-      }
+      },
+      {
+      "id": 3,
+      "mensaje": "Se ha subido teórico y práctico de ecuaciones",
+      "fecha": "2026-04-24",
+      "fechaExpiracion": "2026-05-24"
+    }
 
 
     ]
