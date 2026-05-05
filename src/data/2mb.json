@@ -1,0 +1,40 @@
+{
+    "id": "2mbFigari",
+    "curso": "2MB",
+    "escuela":"Figari",
+    "horario": "Martes 12:05-13:35 Viernes:7:15-08:45",
+    "salon": "",
+    "ascripta": "",
+    "color": "bg-teal-500",
+    "materiales": [
+
+      {
+        "id": 1,
+        "tipo": "teorico",
+        "descripcion": "Teórico de Polinomios",
+        "fechaSubida": "2026-05-04",
+        "link": "https://drive.google.com/file/d/1k_E6QqB46Zj2GrDbY5R2Sgr5yM0uo8VW/view"
+      },
+
+      {
+        "id": 2,
+        "tipo": "practico",
+        "descripcion": "Práctico 1",
+        "fechaSubida": "2026-05-04",
+        "link": "https://drive.google.com/file/d/1j23Kxb8iKL6AqUFxYDFY4KwT_SLZCxeb/view"
+      }
+
+
+
+    ],
+    "notificaciones": [
+      {
+      "id": 1,
+      "mensaje": "Se ha subido teórico y práctico de polinomios",
+      "fecha": "2026-05-24",
+      "fechaExpiracion": "2026-06-24"
+    }
+
+
+    ]
+  }
