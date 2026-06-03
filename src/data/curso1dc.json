@@ -33,12 +33,18 @@
       },
       {
       "id": 4,
-      "tipo": "practico",
-      "descripcion": "Sistemas de ecuaciones",
+      "tipo": "teorico",
+      "descripcion": "Funciones lineales",
       "fechaSubida": "2026-06-03",
-      "link": "https://drive.google.com/file/d/1ZV2zrQ_WQ63Nj26op0S6ztaIh8XBa3az/view"
+      "link": "https://drive.google.com/file/d/1aE_d-lLIhYin703nvaaw_vQ-DKN5b7fq/view"
+      },
+      {
+      "id": 5,
+      "tipo": "practico",
+      "descripcion": "Funciónes lineales",
+      "fechaSubida": "2026-06-03",
+      "link": "https://drive.google.com/file/d/1A0HvJQimBRi_JJnAvsdreXDVky7MOk_8/view"
       }
-
 
 
     ],
@@ -62,10 +68,11 @@
       },
       {
       "id": 4,
-      "mensaje": "Se ha subido teórico y práctico de sistemas de ecuaciones",
+      "mensaje": "Se ha subido teórico y práctico de funciones lineales",
       "fecha": "2026-06-03",
       "fechaExpiracion": "2026-07-29"
       }
+
 
 
     ]
