@@ -22,6 +22,13 @@
         "descripcion": "Práctico 1",
         "fechaSubida": "2026-05-04",
         "link": "https://drive.google.com/file/d/1j23Kxb8iKL6AqUFxYDFY4KwT_SLZCxeb/view"
+      },
+      {
+        "id": 3,
+        "tipo": "practico",
+        "descripcion": "Práctico 2",
+        "fechaSubida": "2026-07-06",
+        "link": "https://drive.google.com/file/d/1L_BX_lGaOO1xHhojNXY9ItG7A4XPSkds/view"
       }
 
 
@@ -33,7 +40,13 @@
       "mensaje": "Se ha subido teórico y práctico de polinomios",
       "fecha": "2026-05-24",
       "fechaExpiracion": "2026-06-24"
-    }
+      },
+      {
+      "id": 2,
+      "mensaje": "Se ha subido práctico de funciones polinomicas",
+      "fecha": "2026-07-06",
+      "fechaExpiracion": "2026-08-06"
+      }
 
 
     ]
