@@ -453,7 +453,7 @@ const sortedNotifications = [...curso.notificaciones].sort(
                         <audio
                           controls
                           class="w-full"
-                          src={`${basePath}${material.link!.replace(/^\//, "")}`}
+                          src={`${basePath.replace(/\/$/, "")}/${material.link!.replace(/^\//, "")}`}
                         >
                           Tu navegador no soporta audio.
                         </audio>
