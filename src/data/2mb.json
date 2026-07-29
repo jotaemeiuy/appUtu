@@ -29,6 +29,13 @@
         "descripcion": "Práctico 2",
         "fechaSubida": "2026-07-06",
         "link": "https://drive.google.com/file/d/1L_BX_lGaOO1xHhojNXY9ItG7A4XPSkds/view"
+      },
+      {
+         "id": 4,
+         "tipo": "audio",
+         "descripcion": "Audio IA",
+         "fechaSubida": "2026-07-28",
+         "link": "/audio/Polys.mp3"
       }
 
 

@@ -1,10 +1,10 @@
 ---
 export const prerender = true;
 
-import "../../styles/global.css";
-import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
 import PruebaForm from "../../components/PruebaForm.astro";
+import "../../styles/global.css";
 
 const basePath = import.meta.env.BASE_URL;
 
@@ -80,6 +80,19 @@ const practicos = curso.materiales
 
 const pruebas = curso.materiales
   .filter((material) => material.tipo === "prueba")
+  .sort(
+    (a, b) =>
+      new Date(b.fechaSubida).getTime() - new Date(a.fechaSubida).getTime(),
+  );
+
+// Cualquier tipo que no sea teorico/practico/prueba cae acá automáticamente
+const otros = curso.materiales
+  .filter(
+    (material) =>
+      material.tipo !== "teorico" &&
+      material.tipo !== "practico" &&
+      material.tipo !== "prueba",
+  )
   .sort(
     (a, b) =>
       new Date(b.fechaSubida).getTime() - new Date(a.fechaSubida).getTime(),
@@ -402,6 +415,87 @@ const sortedNotifications = [...curso.notificaciones].sort(
                 </div>
               ) : (
                 <p class="text-gray-400">No hay pruebas disponibles.</p>
+              )
+            }
+          </div>
+
+          <!-- Otros Materiales -->
+          <div class="mt-8">
+            <h3 class="text-xl font-semibold mb-4 text-white flex items-center">
+              <svg
+                class="w-5 h-5 mr-2 text-purple-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+              Otros
+            </h3>
+
+            {
+              otros.length > 0 ? (
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {otros.map((material) =>
+                    material.tipo === "audio" ? (
+                      <div class="bg-gray-700 rounded-lg p-4">
+                        <h4 class="font-medium text-white mb-1">
+                          {material.descripcion}
+                        </h4>
+                        <p class="text-sm text-gray-400 mb-3">
+                          Subido: {material.fechaSubida}
+                        </p>
+                        <audio
+                          controls
+                          class="w-full"
+                          src={`${basePath}${material.link!.replace(/^\//, "")}`}
+                        >
+                          Tu navegador no soporta audio.
+                        </audio>
+                      </div>
+                    ) : (
+                      <a
+                        href={material.link}
+                        target="_blank"
+                        class="bg-gray-700 hover:bg-gray-600 rounded-lg p-4 transition-colors flex items-start"
+                      >
+                        <div class={`${curso.color} p-3 rounded-lg mr-4`}>
+                          <svg
+                            class="w-6 h-6 text-white"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-medium text-white">
+                            {material.descripcion}
+                          </h4>
+                          <p class="text-sm text-gray-400 mt-1">
+                            Subido: {material.fechaSubida}
+                          </p>
+                        </div>
+                      </a>
+                    ),
+                  )}
+                </div>
+              ) : (
+                <p class="text-gray-400">
+                  No hay otros materiales disponibles.
+                </p>
               )
             }
           </div>

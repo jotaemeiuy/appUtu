@@ -1,0 +1,58 @@
+---
+export interface Material {
+    id: number;
+    tipo: string;
+    descripcion: string;
+    fechaSubida:string;
+    link:string;
+  }
+
+interface Props {
+    materiales: Material[];
+  }
+
+  const { materiales } = Astro.props;
+---
+<ul class="materiales-list">
+  {materiales.map((m) => (
+    <li class="material-item">
+      <div class="material-info">
+        <span class="material-desc">{m.descripcion}</span>
+        <span class="material-fecha">{m.fechaSubida}</span>
+      </div>
+
+      {m.tipo === "audio" ? (
+        <audio controls src={m.link}>
+          Tu navegador no soporta audio.
+        </audio>
+      ) : (
+        <a href={m.link} target="_blank" rel="noopener noreferrer">
+          Ver material
+        </a>
+      )}
+    </li>
+  ))}
+</ul>
+
+<style>
+  .materiales-list {
+    list-style: none;
+    padding: 0;
+  }
+  .material-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  .material-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  audio {
+    width: 100%;
+  }
+</style>

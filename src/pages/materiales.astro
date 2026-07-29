@@ -40,13 +40,14 @@ const teoricos = allMaterials.filter((material) => material.tipo === "teorico");
 const practicos = allMaterials.filter(
   (material) => material.tipo === "practico",
 );
-// Add this new filter for prueba materials
 const pruebas = allMaterials.filter((material) => material.tipo === "prueba");
+const audios = allMaterials.filter((material) => material.tipo === "audio");
 
 // Sort by date (newest first)
 teoricos.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
 practicos.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
 pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
+audios.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
 ---
 
 <html lang="es">
@@ -71,7 +72,7 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
           <h2 class="text-xl font-semibold text-white mb-2">
             Filtrar por tipo
           </h2>
-          <div class="flex space-x-2">
+          <div class="flex space-x-2 flex-wrap gap-y-2">
             <button
               id="btn-all"
               class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
@@ -95,6 +96,12 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
               class="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors"
             >
               Pruebas
+            </button>
+            <button
+              id="btn-audio"
+              class="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors"
+            >
+              Audios
             </button>
           </div>
         </div>
@@ -320,6 +327,62 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
             }
           </div>
         </div>
+
+        <!-- Audio Materials -->
+        <div id="audios-section">
+          <h2 class="text-2xl font-bold mb-4 text-white flex items-center">
+            <svg
+              class="w-6 h-6 mr-2 text-purple-400"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+            Audios de Clase
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {
+              audios.map((material) => (
+                <div
+                  class="bg-gray-800 rounded-lg overflow-hidden transition-all duration-300 material-card"
+                  data-description={material.descripcion.toLowerCase()}
+                >
+                  <div class={`${material.color} h-2 w-full`} />
+                  <div class="p-5">
+                    <div class="flex justify-between items-start mb-3">
+                      <span
+                        class={`${material.color} text-xs font-semibold px-2 py-1 rounded-full text-white`}
+                      >
+                        {material.curso}
+                      </span>
+                      <span class="text-xs text-gray-400">
+                        {material.fechaSubida}
+                      </span>
+                    </div>
+                    <h3 class="font-semibold text-white mb-2">
+                      {material.descripcion}
+                    </h3>
+                    <p class="text-sm text-gray-400 mb-3">{material.opcion}</p>
+                    <audio
+                      controls
+                      class="w-full"
+                      src={`${import.meta.env.BASE_URL}${material.link.replace(/^\//, "")}`}
+                    >
+                      Tu navegador no soporta audio.
+                    </audio>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
       </div>
 
       <!-- No Results Message -->
@@ -355,10 +418,12 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
         const btnTeorico = document.getElementById("btn-teorico");
         const btnPractico = document.getElementById("btn-practico");
         const btnPrueba = document.getElementById("btn-prueba");
+        const btnAudio = document.getElementById("btn-audio");
         const searchInput = document.getElementById("search-input");
         const teoricosSection = document.getElementById("teoricos-section");
         const practicosSection = document.getElementById("practicos-section");
         const pruebasSection = document.getElementById("pruebas-section");
+        const audiosSection = document.getElementById("audios-section");
         const noResults = document.getElementById("no-results");
         const materialCards = document.querySelectorAll(".material-card");
 
@@ -368,6 +433,7 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
           teoricosSection.style.display = "block";
           practicosSection.style.display = "block";
           pruebasSection.style.display = "block";
+          audiosSection.style.display = "block";
           filterMaterials();
         });
 
@@ -376,6 +442,7 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
           teoricosSection.style.display = "block";
           practicosSection.style.display = "none";
           pruebasSection.style.display = "none";
+          audiosSection.style.display = "none";
           filterMaterials();
         });
 
@@ -384,6 +451,7 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
           teoricosSection.style.display = "none";
           practicosSection.style.display = "block";
           pruebasSection.style.display = "none";
+          audiosSection.style.display = "none";
           filterMaterials();
         });
 
@@ -392,6 +460,16 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
           teoricosSection.style.display = "none";
           practicosSection.style.display = "none";
           pruebasSection.style.display = "block";
+          audiosSection.style.display = "none";
+          filterMaterials();
+        });
+
+        btnAudio.addEventListener("click", function () {
+          setActiveButton(btnAudio);
+          teoricosSection.style.display = "none";
+          practicosSection.style.display = "none";
+          pruebasSection.style.display = "none";
+          audiosSection.style.display = "block";
           filterMaterials();
         });
 
@@ -399,10 +477,12 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
         searchInput.addEventListener("input", filterMaterials);
 
         function setActiveButton(activeBtn) {
-          [btnAll, btnTeorico, btnPractico, btnPrueba].forEach((btn) => {
-            btn.classList.remove("bg-blue-600");
-            btn.classList.add("bg-gray-700");
-          });
+          [btnAll, btnTeorico, btnPractico, btnPrueba, btnAudio].forEach(
+            (btn) => {
+              btn.classList.remove("bg-blue-600");
+              btn.classList.add("bg-gray-700");
+            },
+          );
           activeBtn.classList.remove("bg-gray-700");
           activeBtn.classList.add("bg-blue-600");
         }
@@ -422,6 +502,7 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
               card.closest("#practicos-section") === practicosSection;
             const inPruebas =
               card.closest("#pruebas-section") === pruebasSection;
+            const inAudios = card.closest("#audios-section") === audiosSection;
 
             const teoricosSectionVisible =
               teoricosSection.style.display !== "none";
@@ -429,12 +510,14 @@ pruebas.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
               practicosSection.style.display !== "none";
             const pruebasSectionVisible =
               pruebasSection.style.display !== "none";
+            const audiosSectionVisible = audiosSection.style.display !== "none";
 
             const shouldShow =
               isVisible &&
               ((inTeoricos && teoricosSectionVisible) ||
                 (inPracticos && practicosSectionVisible) ||
-                (inPruebas && pruebasSectionVisible));
+                (inPruebas && pruebasSectionVisible) ||
+                (inAudios && audiosSectionVisible));
 
             card.style.display = shouldShow ? "block" : "none";
 
