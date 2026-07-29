@@ -373,7 +373,7 @@ audios.sort((a, b) => new Date(b.fechaSubida) - new Date(a.fechaSubida));
                     <audio
                       controls
                       class="w-full"
-                      src={`${import.meta.env.BASE_URL}${material.link.replace(/^\//, "")}`}
+                      src={`${basePath.replace(/\/$/, "")}/${material.link!.replace(/^\//, "")}`}
                     >
                       Tu navegador no soporta audio.
                     </audio>
