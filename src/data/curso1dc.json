@@ -47,12 +47,18 @@
       },
       {
       "id": 6,
-      "tipo": "teorico,practico",
+      "tipo": "teorico",
       "descripcion": "Funciones cuadráticas",
       "fechaSubida": "2026-08-28",
       "link": "https://drive.google.com/file/d/1zGbswuULZdu9_vSG29t9dhdyzVzagAf4/view"
+      },
+      {
+      "id": 7,
+      "tipo": "trabajo-domiciliario",
+      "descripcion": "Trabajo Domiciliario",
+      "fechaSubida": "2026-08-28",
+      "link": "https://drive.google.com/file/d/13UZmzS5-9iBUkvBOgvZSFkJM8LqAigZq/view"
       }
-
 
     ],
     "notificaciones": [
