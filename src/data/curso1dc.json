@@ -44,6 +44,13 @@
       "descripcion": "Funciónes lineales",
       "fechaSubida": "2026-06-03",
       "link": "https://drive.google.com/file/d/1A0HvJQimBRi_JJnAvsdreXDVky7MOk_8/view"
+      },
+      {
+      "id": 6,
+      "tipo": "teorico,practico",
+      "descripcion": "Funciones cuadráticas",
+      "fechaSubida": "2026-08-28",
+      "link": "https://drive.google.com/file/d/1zGbswuULZdu9_vSG29t9dhdyzVzagAf4/view"
       }
 
 
@@ -71,6 +78,12 @@
       "mensaje": "Se ha subido teórico y práctico de funciones lineales",
       "fecha": "2026-06-03",
       "fechaExpiracion": "2026-07-29"
+      },
+      {
+      "id": 5,
+      "mensaje": "Se ha subido teórico y práctico de funciones cuadráticas",
+      "fecha": "2026-08-28",
+      "fechaExpiracion": "2026-09-29"
       }
 
 
