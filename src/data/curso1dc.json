@@ -54,6 +54,13 @@
       },
       {
       "id": 7,
+      "tipo": "practico",
+      "descripcion": "Funciones cuadráticas",
+      "fechaSubida": "2026-08-28",
+      "link": "https://drive.google.com/file/d/1Ewws7x_GceO0sMx3wzKTGJs_XA4jsygy/view"
+      },
+      {
+      "id": 8,
       "tipo": "trabajo-domiciliario",
       "descripcion": "Trabajo Domiciliario",
       "fechaSubida": "2026-08-28",
