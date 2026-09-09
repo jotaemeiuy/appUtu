@@ -36,8 +36,15 @@
          "descripcion": "Audio IA",
          "fechaSubida": "2026-07-28",
          "link": "/audio/Polys.mp3"
-      }
+      },
 
+      {
+        "id": 5,
+        "tipo": "teorico",
+        "descripcion": "Teórico y práctico de geometría analítica",
+        "fechaSubida": "2026-09-10",
+        "link": "https://geoanalitica.vercel.app/"
+      }
 
 
     ],
@@ -53,6 +60,12 @@
       "mensaje": "Se ha subido práctico de funciones polinomicas",
       "fecha": "2026-07-06",
       "fechaExpiracion": "2026-08-06"
+      },
+      {
+        "id": 3,
+        "mensaje": "Se ha subido teórico y práctico de geometría analítica",
+        "fecha": "2026-09-10",
+        "fechaExpiracion": "2026-11-10"
       }
 
 
