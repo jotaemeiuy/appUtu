@@ -11,9 +11,9 @@
     "lint:fix": "eslint --ext .astro . --fix"
   },
   "dependencies": {
-    "@astrojs/vercel": "^11.0.8",
+    "@astrojs/vercel": "11.0.14",
     "@tailwindcss/vite": "^4.3.0",
-    "astro": "^7.2.9",
+    "astro": "7.3.8",
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {

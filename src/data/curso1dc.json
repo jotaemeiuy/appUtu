@@ -65,6 +65,13 @@
       "descripcion": "Trabajo Domiciliario",
       "fechaSubida": "2026-08-28",
       "link": "https://drive.google.com/file/d/13UZmzS5-9iBUkvBOgvZSFkJM8LqAigZq/view"
+      },
+      {
+        "id": 9,
+        "tipo": "practico",
+        "descripcion": "Inecuaciones",
+        "fechaSubida": "2026-10-14",
+        "link": "https://drive.google.com/file/d/1vUealT1P9ShHjEOkRjHNf3UtWSnoC1qL/view"
       }
 
     ],
@@ -97,6 +104,12 @@
       "mensaje": "Se ha subido teórico y práctico de funciones cuadráticas",
       "fecha": "2026-08-28",
       "fechaExpiracion": "2026-09-29"
+      },
+      {
+      "id": 6,
+      "mensaje": "Se ha subido práctico de inecuaciones",
+      "fecha": "2026-10-14",
+      "fechaExpiracion": "2026-11-14"
       }
 
 

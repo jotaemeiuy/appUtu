@@ -1,0 +1,30 @@
+{
+    "id": "1mKBrazo",
+    "curso": "1MK",
+    "escuela":"Brazo Oriental",
+    "opcion": "Tecnologías de la Información",
+    "horario": "Miercoles 7:45-9:15 Jueves 7:00-8:30",
+    "salon": "3",
+    "ascripta": "",
+    "color": "bg-cyan-600",
+    "materiales": [
+      {
+        "id": 1,
+        "tipo": "practico",
+        "descripcion": "Introducción a las inecuaciones",
+        "fechaSubida": "2026-10-14",
+        "link": "https://drive.google.com/file/d/1vUealT1P9ShHjEOkRjHNf3UtWSnoC1qL/view"
+      }
+
+    ],
+    "notificaciones": [
+      {
+      "id": 1,
+      "mensaje": "Se ha subido práctico de inecuaciones",
+      "fecha": "2026-10-14",
+      "fechaExpiracion": "2026-11-14"
+      }
+
+
+    ]
+  }
