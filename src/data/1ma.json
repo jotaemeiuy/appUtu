@@ -1,9 +1,9 @@
 {
-    "id": "1mKBrazo",
-    "curso": "1MK",
+    "id": "1maBrazo",
+    "curso": "1MA",
     "escuela":"Brazo Oriental",
-    "opcion": "Tecnologías de la Información",
-    "horario": "Miercoles 7:45-9:15 Jueves 7:00-8:30",
+    "opcion": "Medios Audiovisuales",
+    "horario": "Jueves y Viernes ",
     "salon": "3",
     "ascripta": "",
     "color": "bg-cyan-600",
@@ -11,9 +11,9 @@
       {
         "id": 1,
         "tipo": "practico",
-        "descripcion": "Introducción a las inecuaciones",
-        "fechaSubida": "2026-10-14",
-        "link": "https://drive.google.com/file/d/1vUealT1P9ShHjEOkRjHNf3UtWSnoC1qL/view"
+        "descripcion": "Funciones racionales",
+        "fechaSubida": "2026-10-16",
+        "link": "https://drive.google.com/file/d/1mac-1wKsCnhGaO8AwM65IxC1T46rVx7u/view"
       }
 
     ],
