@@ -72,8 +72,13 @@
         "descripcion": "Inecuaciones",
         "fechaSubida": "2026-10-14",
         "link": "https://drive.google.com/file/d/1vUealT1P9ShHjEOkRjHNf3UtWSnoC1qL/view"
+      },{
+        "id":10,
+        "tipo": "practico",
+        "descripcion": "Geometría del plano",
+        "fechaSubida": "2026-10-14",
+        "link": "https://drive.google.com/file/d/19JrMm4OZz7DUKdwXBq_eulZbOkbcuRRm/view"
       }
-
     ],
     "notificaciones": [
       {
@@ -110,6 +115,12 @@
       "mensaje": "Se ha subido práctico de inecuaciones",
       "fecha": "2026-10-14",
       "fechaExpiracion": "2026-11-14"
+      },
+      {
+        "id":7,
+        "mensaje": "Se ha subido teórico de geometría del plano",
+        "fecha": "2026-10-14",
+        "fechaExpiracion": "2026-11-14"
       }
 
 

@@ -3,15 +3,35 @@
 const importNotasFiles = async () => {
   const notasFiles = import.meta.glob("../data/Notas/notas*.json", {
     eager: true,
-  });
-  const gruposData = {};
+  }) as Record<string, { default?: unknown } | unknown>;
+
+  type GrupoData = {
+    data: {
+      alumnos: Array<Record<string, any>>;
+    };
+    nombre: string;
+  };
+
+  const gruposData: Record<string, GrupoData> = {};
 
   for (const path in notasFiles) {
-    const fileName = path.split("/").pop().replace(".json", "");
+    const fileName = path.split("/").pop()?.replace(".json", "");
+
+    if (!fileName) {
+      continue;
+    }
+
     const grupoId = fileName.replace("notas", "").toUpperCase();
     const notasData = notasFiles[path];
+    const loadedData =
+      typeof notasData === "object" &&
+      notasData !== null &&
+      "default" in notasData
+        ? ((notasData as { default?: unknown }).default ?? notasData)
+        : notasData;
+
     gruposData[grupoId] = {
-      data: notasData.default || notasData,
+      data: loadedData as { alumnos: Array<Record<string, any>> },
       nombre: grupoId,
     };
   }
@@ -228,7 +248,7 @@ const gruposDisponibles = Object.keys(gruposData).sort();
     const notaFinal = alumno.escritos.find(
       (escrito) => escrito.tema === "Nota final del año",
     ).nota;
-    
+
     if (notaFinal >= 5) {
       confetti({
         particleCount: 150,
